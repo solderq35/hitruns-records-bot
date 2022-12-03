@@ -1,138 +1,40 @@
+import discord
+from discord.ext import commands
+
 import json
 import datetime
 import requests
 import math
-
-dateFormat = "%Y-%m-%dT%H:%M:%SZ"
-secondFormat = "PT%SS"
-minuteFormat ="PT%MM%SS"
-noSecondFormat = "PT%MM"
-millisecondFormat = "PT%MM%S.%fS"
-noMinutemillisecondFormat = "PT%S.%fS"
+from basicFunctions import *
 
 GAME = 'j1ne5891'
 VERSION_IL = 'ylpe1pv8=klrpdvwq'
 VERSION_FG = '78962g08=p12dkr2q'
-DIFFICULTY_IL_PRO = 'p854xo3l=gq7jpmpq'
+DIFFICULTY_IL_PRO = 'r8r1dv7n=21dz5xpl'
 # DIFFICULTY_IL_MASTER = 'p854xo3l=21g85z6l'
 DIFFICULTY_FG_PRO = '5lypzk9l=4qyp9g6q'
 # DIFFICULTY_FG_MASTER = ''
 
-def getDictFromFile(jsonFile):
-    file = open(jsonFile)
-    dict = json.load(file)
-    file.close()
-    
-    return dict
-
-def orderDict(records_dict):
-    file = open(records_dict)
-    unorderedRecords = json.load(file)
-    file.close()
-
-    Dict_Ordered = {}
-
-    for i in range (len(unorderedRecords.items())):
-        dateNow = datetime.datetime.now()
-        lowDate = dateNow + datetime.timedelta(hours=-1)
-        for runs in unorderedRecords:
-            currentDate = datetime.datetime.strptime(unorderedRecords[str(runs)].get('run', {}).get('submitted'), dateFormat)
-            if (currentDate <= lowDate):
-                lowDate = currentDate
-                lowDateKey = runs
-        Dict_Ordered[i] = unorderedRecords[str(lowDateKey)]
-        del unorderedRecords[str(lowDateKey)]
-
-    with open('Ordered_' + records_dict, 'w') as write_file:
-        json.dump(Dict_Ordered, write_file, indent=4)
-
-
-def combineDicts(dict1, dict2, name):
-    file1 = open(dict1)
-    orderedDict1 = json.load(file1)
-    file1.close()
-
-    file2 = open(dict2)
-    orderedDict2 = json.load(file2)
-    file2.close()
-
-    Combined_Dict = {}
-    
-    length1 = len(orderedDict1)
-    length2 = len(orderedDict2)
-    counter1 = 0
-    counter2 = 0
-    for i in range(length1 + length2):
-        if counter1 < length1 and counter2 < length2:
-            date1 = datetime.datetime.strptime(orderedDict1[str(counter1)].get('run', {}).get('submitted'), dateFormat)
-            date2 = datetime.datetime.strptime(orderedDict2[str(counter2)].get('run', {}).get('submitted'), dateFormat)
-            if date1 <= date2:
-                Combined_Dict[i] = orderedDict1[str(counter1)]
-                counter1 = counter1 + 1
-            elif date2 <= date1:
-                Combined_Dict[i] = orderedDict2[str(counter2)]
-                counter2 = counter2 + 1
-        elif counter1 < length1:
-            Combined_Dict[i] = orderedDict1[str(counter1)]
-            counter1 = counter1 + 1
-        elif counter2 < length2:
-            Combined_Dict[i] = orderedDict2[str(counter2)]
-            counter2 = counter2 + 1
-
-    with open(name, 'w') as write_file:
-        json.dump(Combined_Dict, write_file, indent=4)
-
-def getNumberOfRuns(jsonFile):
-    runs = getDictFromFile(jsonFile)
-    return len(runs)
-
-def getName(jsonFile, ID):
-    runs = getDictFromFile(jsonFile)
-
-    new_ke_lis = list(runs.keys())
-    new_val = list(runs.values())
-    new_pos = new_val.index(ID)
-    return new_ke_lis[new_pos]
-
-def getTimeFormat(time):
-    res = True
-    try:
-        res = bool(datetime.datetime.strptime(time, millisecondFormat))
-        return millisecondFormat
-    except ValueError:
-        try:
-            res = bool(datetime.datetime.strptime(time, noMinutemillisecondFormat))
-            return noMinutemillisecondFormat
-        except ValueError:
-            try:
-                res = bool(datetime.datetime.strptime(time, secondFormat))
-                return secondFormat
-            except ValueError:
-                try:
-                    res = bool(datetime.datetime.strptime(time, minuteFormat))
-                    return minuteFormat
-                except ValueError:
-                    try:
-                        res = bool(datetime.datetime.strptime(time, noSecondFormat))
-                        return noSecondFormat
-                    except ValueError:
-                        res = False
-
-def getRecordData(jsonFile, counter):
-    runs = getDictFromFile(jsonFile)
-
-    levelID = runs[str(counter)].get('run', {}).get('level')
+# translating ids to useable data for embed
+#TODO: making it work for data from file and requests
+def getRecordData(runs, counter, typeOfData):
+    if typeOfData == 'dict':
+        counter = str(counter)
+    # getting rating and boardIDs from files
+    levelID = runs[counter].get('run', {}).get('level')
     if levelID == None:
-        levelID = runs[str(counter)].get('run', {}).get('category')
-        level = getName('campaignDict.json', levelID)
-        ratingID = runs[str(counter)].get('run', {}).get('values', {}).get('j84eq0wn')
-        rating = getName('Ratings_FG.json', ratingID) 
+        levelID = runs[counter].get('run', {}).get('category')
+        level = getNameOfBoard('campaignDict.json', levelID)
+        ratingID = runs[counter].get('run', {}).get('values', {}).get('j84eq0wn')
+        rating = getNameOfBoard('Ratings_FG.json', ratingID) 
     else:
-        level = getName('levelDict.json', levelID)
-        ratingID = runs[str(counter)].get('run', {}).get('category')
-        rating = getName('Ratings_IL.json', ratingID)
+        level = getNameOfBoard('levelDict.json', levelID)
+        ratingID = runs[counter].get('run', {}).get('category')
+        rating = getNameOfBoard('Ratings_IL.json', ratingID)
   
-    timeObject = datetime.datetime.strptime(runs[str(counter)].get('run', {}).get('times', {}).get('primary'), getTimeFormat(runs[str(counter)].get('run', {}).get('times', {}).get('primary')))
+    # getting time in correct format
+    timeObject = datetime.datetime.strptime(runs[counter].get('run', {}).get('times', {}).get('primary'), \
+        getTimeFormat(runs[counter].get('run', {}).get('times', {}).get('primary')))
     if timeObject.minute == 0:
         if timeObject.microsecond == 0:
             time = timeObject.strftime("%Ss")
@@ -144,34 +46,18 @@ def getRecordData(jsonFile, counter):
         else:
             time = (timeObject.strftime("%Mm%S.%f")[:-3]) + "s"
 
-    if runs[str(counter)].get('run', {}).get('players')[0].get('rel') == 'user':
-        playerID = runs[str(counter)].get('run', {}).get('players')[0].get('id')
+    if runs[counter].get('run', {}).get('players')[0].get('rel') == 'user':
+        playerID = runs[counter].get('run', {}).get('players')[0].get('id')
         player_request = requests.get('https://www.speedrun.com/api/v1/users/' + playerID)
         player = player_request.json().get('data', {}).get('names', {}).get('international')
-    elif runs[str(counter)].get('run', {}).get('players')[0].get('rel') == 'guest':
-        player = runs[str(counter)].get('run', {}).get('players')[0].get('name')
+    elif runs[counter].get('run', {}).get('players')[0].get('rel') == 'guest':
+        player = runs[counter].get('run', {}).get('players')[0].get('name')
     
-    date = runs[str(counter)].get('run', {}).get('date')
+    date = runs[counter].get('run', {}).get('date')
 
     value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date)
     
     return value
-
-def requestBoards(boardType):
-    boardDict = {}
-    x = 0
-    
-    if boardType == 'campaign':
-        x = 3
-        boardRequest = requests.get('https://www.speedrun.com/api/v1/games/j1ne5891/categories')
-    elif boardType == 'level':
-        boardRequest = requests.get('https://www.speedrun.com/api/v1/games/j1ne5891/levels')
-
-    boardObjects = boardRequest.json().get('data')
-    for board in range(len(boardObjects) - x):
-        boardDict[boardObjects[board + x].get('name')] = boardObjects[board + x].get('id')
-    with open(boardType + 'Dict.json', 'w') as write_file:
-        json.dump(boardDict, write_file, indent=4)
         
 def requestRecords(board):
     if board == 'IL':
@@ -181,7 +67,6 @@ def requestRecords(board):
         boardDict = getDictFromFile('campaignDict.json')
         ratingsDict = getDictFromFile('Ratings_FG.json')
     RecordsDict = {}
-    errors:int = 0
 
     for ratingName, ratingID in ratingsDict.items():
         for boardName, boardID in boardDict.items():
@@ -194,10 +79,9 @@ def requestRecords(board):
                 requests.get('https://www.speedrun.com/api/v1/leaderboards/' + GAME + '/category/' \
                 + boardID + '?var-' + DIFFICULTY_FG_PRO + '&var-' + 'j84eq0wn=' + ratingID + \
                 '&var-' + VERSION_FG)
-            
+            # check if runs are available and if they are tied
             runList = leaderboard.json().get('data', {}).get('runs')
             try:
-                len(runList)
                 if len(runList) <= 1:
                     isTied = False
                 elif runList[1].get("place") == 1:
@@ -208,41 +92,177 @@ def requestRecords(board):
                 bestRun = runList[0]
                 RecordsDict[(list(ratingsDict.keys()).index(ratingName) * len(boardDict)) \
                 + (list(boardDict.keys()).index(boardName))] = bestRun
-            except ValueError:
-                errors = errors + 1
+            except TypeError:
+                return True
                 
     with open(board + '_Records.json', 'w') as write_file:
         json.dump(RecordsDict, write_file, indent=4)
-    return errors
+    return False
 
-def untiedRecords(jsonFile):
-    recordsDict = getDictFromFile(jsonFile)
-    untiedRecordsDict = {}
-    counter = 0
-
-    for runs in recordsDict:
-        if(recordsDict[runs].get('isTied') == False):
-            untiedRecordsDict[counter] = recordsDict[runs]
-            counter = counter + 1
-
-    with open('Untied_' + jsonFile, 'w') as write_file:
-        json.dump(untiedRecordsDict, write_file, indent=4)
-
+# Khunee timebot function
 def format_time(time):
-        rounded = round(time, 3)
-        start = math.floor(time / 60)
-        result = round(rounded - (start * 60), 3)
-        if result < 10:
-            result = "0" + str(result)
-        return "{0}:{1}".format(start, result)
+    if (time % 1 > .999):
+        time = round(time)
+    truncated = math.trunc(time * 1000) / 1000
+    start = math.floor(time / 60)
+    result = round(truncated - (start * 60), 3)
+    if result < 10:
+        result = "0" + str(result)
+    return "{0}:{1}".format(start, result)
+
+def getBoardType(input):
+    levelDict = getDictFromFile('levelDict.json')
+    campaignDict = getDictFromFile('campaignDict.json')
+    for levelName, levelID in levelDict.items():
+        if input.lower() in levelName.lower():
+            return 'IL'
+    for campaignName, campaignID in campaignDict.items():
+        if input.lower() in campaignName.lower():
+            return 'FG'
+    return False
+
+def getBoardID(boardType, input):
+    levelDict = getDictFromFile('levelDict.json')
+    campaignDict = getDictFromFile('campaignDict.json')
+    i = 0
+    boardID = ""
+    if boardType == 'IL':
+        for levelName, levelID in levelDict.items():
+            if input.lower() in levelName.lower():
+                i=i+1
+                boardID = levelID
+    elif boardType == 'FG':
+        for campaignName, campaignID in campaignDict.items():
+            if input.lower() in campaignName.lower():
+                i=i+1
+                boardID = campaignID
+    if i == 1:
+        return boardID
+    return False
+
+def getRatingID(boardType, input):
+    ILRatingDict = getDictFromFile('Ratings_IL.json')
+    FGRatingDict = getDictFromFile('Ratings_FG.json')
+    if boardType == 'IL':
+        for ratingName, ratingID in ILRatingDict.items():
+            if input.lower() in ratingName.lower():
+                return ratingID
+    elif boardType == 'FG':
+        for ratingName, ratingID in FGRatingDict.items():
+            if input.lower() in ratingName.lower():
+                return ratingID
+    return False
     
+
+def getBoardData(boardType, boardID, ratingID):
+    if boardType == 'IL':
+        return ILRequest(boardID, ratingID)
+    elif boardType == 'FG':
+        return FGRequest(boardID, ratingID)
+
+# used for list of records in bot.py
+def setOutputLength(tieStatus, lengthInput, embedLimit):
+    if tieStatus == 'all':
+        if lengthInput == 'empty':
+            length = (int)(str(embedLimit))
+        elif int(lengthInput) <= getNumberOfRuns('Ordered_Records.json'):
+            length = (int)(str(lengthInput))
+        else:
+            length = getNumberOfRuns('Ordered_Records.json')
+        file = 'Ordered_Records.json'
+    elif tieStatus == 'untied':
+        if lengthInput == 'empty':
+            length = (int)(str(embedLimit))
+        elif int(lengthInput) <= getNumberOfRuns('Ordered_Untied_Records.json'):
+            length = (int)(str(lengthInput))
+        else:
+            length = getNumberOfRuns('Ordered_Untied_Records.json')
+        file = 'Ordered_Untied_Records.json'
+    return length, file
+
+def getNumberOfPages(length, embedLimit):
+    rest = length % embedLimit
+    if rest != 0:
+        pages = (length // embedLimit) + 1
+    else:
+        pages = (length // embedLimit)
+        rest = embedLimit
+    return pages, rest
+
+def ILRequest(levelID, ratingID):
+    leaderboard = \
+    requests.get('https://www.speedrun.com/api/v1/leaderboards/' + GAME + '/level/' + levelID \
+    + '/' + ratingID + '?var-' + VERSION_IL  + '&var-' + DIFFICULTY_IL_PRO)
+    return leaderboard.json().get('data', {}).get('runs')
+
+def FGRequest(campaignID, ratingID):
+    leaderboard = \
+    requests.get('https://www.speedrun.com/api/v1/leaderboards/' + GAME + '/category/' \
+    + campaignID + '?var-' + DIFFICULTY_FG_PRO + '&var-' + 'j84eq0wn=' + ratingID + \
+    '&var-' + VERSION_FG)
+    return leaderboard.json().get('data', {}).get('runs')
+
+def discordEmbed(pages, rest, runData, embedLimit, counter, typeOfData):
+    embed=discord.Embed(title="Hitman 3 Records (Page " + str(counter + 1) + ")", color=0xFF0000)
+    if counter < (pages - 1):
+        pageSize = embedLimit
+    else:
+        pageSize = rest
+                
+    for runs in range(pageSize):
+        data = getRecordData(runData, (runs + counter * embedLimit), typeOfData)
+        embed.add_field(name="Place " + str((runs + counter * embedLimit) + 1), \
+        value=data, inline=False)
+    return embed
+
+def calcSobs():
+    records = getDictFromFile("IL_Records.json")
+    SOBs = {}
+    sas3 = sas1 = sas2 = sasos3 = sasos1 = sasos2 = anys3 = anys1 = anys2 = 0
+    offset = 36
+    for runs in range(len(records.items())):
+        if(runs > -1 and runs < 6):
+            sas3 = sas3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > 7 and runs < 14):
+            sas1 = sas1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > 13 and runs < 22):
+            sas2 = sas2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > -1 + offset and runs < 6 + offset):
+            sasos3 = sasos3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > 7 + offset and runs < 14 + offset):
+            sasos1 = sasos1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > 13 + offset and runs < 22 + offset):
+            sasos2 = sasos2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > -1 + offset*2 and runs < 6 + offset*2):
+            anys3 = anys3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > 7 + offset*2 and runs < 14 + offset*2):
+            anys1 = anys1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+        elif(runs > 13 + offset*2 and runs < 22 + offset*2):
+            anys2 = anys2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+    SOBs['SA S3'] = inTimeFormat(sas3)
+    SOBs['SA S1'] = inTimeFormat(sas1)
+    SOBs['SA S2'] = inTimeFormat(sas2)
+    SOBs['SA/SO S3'] = inTimeFormat(sasos3)
+    SOBs['SA/SO S1'] = inTimeFormat(sasos1)
+    SOBs['SA/SO S2'] = inTimeFormat(sasos2)
+    SOBs['Any% S3'] = inTimeFormat(anys3)
+    SOBs['Any% S1'] = inTimeFormat(anys1)
+    SOBs['Any% S2'] = inTimeFormat(anys2)
+    SOBs['SA Trilogy'] = inTimeFormat(sas3 + sas1 + sas2)
+    SOBs['SA/SO Trilogy'] = inTimeFormat(sasos3 + sasos1 + sasos2)
+    SOBs['Any% Trilogy'] = inTimeFormat(anys3 + anys1 + anys2)
+    with open('SOBs.json', 'w') as write_file:
+        json.dump(SOBs, write_file, indent=4)
+    return SOBs
+
 def update():
     requestBoards('level')
-    requestRecords('IL')
+    ILRequestResult = requestRecords('IL')
     orderDict('IL_Records.json')
     untiedRecords('Ordered_IL_Records.json')
     requestBoards('campaign')
-    requestRecords('FG')
+    FGRequestResult = requestRecords('FG')
     orderDict('FG_Records.json')
     combineDicts('Untied_Ordered_IL_Records.json', 'Ordered_FG_Records.json', 'Ordered_Untied_Records.json')
     combineDicts('Ordered_IL_Records.json', 'Ordered_FG_Records.json', 'Ordered_Records.json')
+    return ILRequestResult, FGRequestResult
