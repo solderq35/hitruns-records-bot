@@ -14,6 +14,8 @@ Add [Railway variable](https://docs.railway.app/develop/variables) for DISCORD_T
 Other Info: https://nixpacks.com/docs/providers/python
 
 ### Usage Instructions
+Add the bot to your own Discord server with [this URL](https://discord.com/api/oauth2/authorize?client_id=1048593224735932508&permissions=2147486720&scope=bot%20applications.commands) or you can also DM it at `Hitruns Records Bot#1656`.
+
 Commands:
 - `!updateRecords`
   - Updates the database of records by going through speedrun.com's API
