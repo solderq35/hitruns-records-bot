@@ -43,7 +43,7 @@ async def records(ctx, arg, arg2='empty'):
     else:
         await ctx.send('Bad Input!')
     
-    
+'''
 @bot.command()
 async def time(ctx, scoreString):
     try:
@@ -66,7 +66,8 @@ async def time(ctx, scoreString):
     msg = '\n'.join(results)
 
     await ctx.send(msg)
-    
+'''
+
 # sum of bests
 @bot.command()
 async def sobs(ctx):
