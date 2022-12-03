@@ -1,0 +1,68 @@
+https://www.speedrun.com/api/v1/games/j1ne5891/records?top=1&max=110
+
+https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-j84eq0wn=jqzp9k4l
+# Season 3
+
+https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-5lypzk9l=4qyp9g6q&var-j84eq0wn=21g85yxl
+# Season Pro SA/SO Leaderboard
+
+
+Levels:
+
+id:			"j84eq0wn"
+name:		"Rating"
+gq7jpknq	"SA"
+21g85yxl	"SA/SO"
+jqzp9k4l	"Any%"
+
+id:			"r8r1dv7n"
+name:		"Difficulty"
+
+21dz5xpl	"Professional"
+5q86pwy1	"Master"
+
+Fullgame:
+
+id	"j84eq0wn"
+name	"Rating"
+
+gq7jpknq	"SA"
+21g85yxl	"SA/SO"
+jqzp9k4l	"Any%"
+
+id	"5lypzk9l"
+name	"Difficulty"
+
+4qyp9g6q	"Professional"
+mlnw9jol	"Master"
+
+
+
+Season 3: rkl3no8k
+Season 2 (w/ DLC): 9kv6n132
+Season 1: zd3oqzrd
+Trilogy Campaign: ndx5nvvk
+Patient Zero: jdz6jpr2
+Season 2 (no DLC): ndxey65k
+
+https://www.speedrun.com/hitman_3/run/mk7321ly FT SA/SO
+https://www.speedrun.com/hitman_3/run/znop02vy Romania Any%
+https://www.speedrun.com/hitman_3/run/ylonn1ny Dubai SA
+https://www.speedrun.com/hitman_3/run/ylond43y Vector Any%
+https://www.speedrun.com/hitman_3/run/zno2j33y AHBOS SA/SO
+https://www.speedrun.com/hitman_3/run/y9ndj3kz Patient Zero Campaign Any%
+https://www.speedrun.com/hitman_3/run/me92492z WC Any%
+https://www.speedrun.com/hitman_3/run/zqg5141m Embrace SA/SO
+https://www.speedrun.com/hitman_3/run/y9ng5gez Sgail SA/SO
+https://www.speedrun.com/hitman_3/run/zgx11nnm WC SA/SO
+https://www.speedrun.com/hitman_3/run/y66441jy Haven SA/SO
+https://www.speedrun.com/hitman_3/run/z5093jdy Patient Zero Any%
+https://www.speedrun.com/hitman_3/run/z0r5p68z Embrace SA
+https://www.speedrun.com/hitman_3/run/zxgg97ky Sapienza SA
+https://www.speedrun.com/hitman_3/run/z1rx19jm Dartmoor SA/SO
+https://www.speedrun.com/hitman_3/run/me74610y Author SA
+https://www.speedrun.com/hitman_3/run/y6dowpqm Source Any%
+https://www.speedrun.com/hitman_3/run/y6d4dxjm Berlin SA
+https://www.speedrun.com/hitman_3/run/yv1wvq8y WC SA
+https://www.speedrun.com/hitman_3/run/zxovx2ez NY Any%
+https://www.speedrun.com/hitman_3/run/me489e3y Berlin SA/SO

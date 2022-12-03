@@ -1,0 +1,5031 @@
+{
+    "0": {
+        "place": 1,
+        "run": {
+            "id": "zx6no58z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zx6no58z",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndx5nvvk",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/bo_vPd7cN80"
+                    }
+                ]
+            },
+            "comment": "Mod note: loaded save in Dartmoor, but only because menu glitched, and player went to replan screen right away.\r\n\r\nTime Calculation: https://is.gd/yOgG6J\r\n\r\nJust for the archives.",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-14T04:10:03Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8dwnqw9j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8dwnqw9j"
+                }
+            ],
+            "date": "2021-02-24",
+            "submitted": "2021-02-24T20:37:01Z",
+            "times": {
+                "primary": "PT13M5S",
+                "primary_t": 785,
+                "realtime": "PT25M9S",
+                "realtime_t": 1509,
+                "realtime_noloads": "PT13M5S",
+                "realtime_noloads_t": 785,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "z19w45kq"
+            }
+        },
+        "isTied": false
+    },
+    "1": {
+        "place": 1,
+        "run": {
+            "id": "ylonn1ny",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ylonn1ny",
+            "game": "j1ne5891",
+            "level": "owo5jvkd",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=mKxcnWJD7oQ"
+                    }
+                ]
+            },
+            "comment": "mod note: verified as professional by in-game leaderboard",
+            "status": {
+                "status": "verified",
+                "examiner": "8wk490v8",
+                "verify-date": "2021-02-25T09:21:47Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jop1l70x",
+                    "uri": "https://www.speedrun.com/api/v1/users/jop1l70x"
+                }
+            ],
+            "date": "2021-02-24",
+            "submitted": "2021-02-25T07:19:28Z",
+            "times": {
+                "primary": "PT10S",
+                "primary_t": 10,
+                "realtime": "PT10S",
+                "realtime_t": 10,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "2": {
+        "place": 1,
+        "run": {
+            "id": "z18qq7jy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z18qq7jy",
+            "game": "j1ne5891",
+            "level": "owo5jvkd",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=mKxcnWJD7oQ"
+                    }
+                ]
+            },
+            "comment": "mod note: verified as professional by in-game leaderboard",
+            "status": {
+                "status": "verified",
+                "examiner": "x7qe61r8",
+                "verify-date": "2021-02-25T10:16:06Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jop1l70x",
+                    "uri": "https://www.speedrun.com/api/v1/users/jop1l70x"
+                }
+            ],
+            "date": "2021-02-24",
+            "submitted": "2021-02-25T09:39:56Z",
+            "times": {
+                "primary": "PT10S",
+                "primary_t": 10,
+                "realtime": "PT10S",
+                "realtime_t": 10,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "3": {
+        "place": 1,
+        "run": {
+            "id": "y9nrj1ez",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y9nrj1ez",
+            "game": "j1ne5891",
+            "level": "xd1ymo5d",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=qH4HYxgeHMs"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2021-04-04T14:50:32Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8grkqqyx",
+                    "uri": "https://www.speedrun.com/api/v1/users/8grkqqyx"
+                }
+            ],
+            "date": "2021-04-04",
+            "submitted": "2021-04-04T13:54:27Z",
+            "times": {
+                "primary": "PT40S",
+                "primary_t": 40,
+                "realtime": "PT40S",
+                "realtime_t": 40,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "4": {
+        "place": 1,
+        "run": {
+            "id": "y6d4dxjm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y6d4dxjm",
+            "game": "j1ne5891",
+            "level": "ewpo3vjd",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=sNKFG9Bpt-o"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "18vq11yj",
+                "verify-date": "2021-07-11T03:43:35Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8dw2m15j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8dw2m15j"
+                }
+            ],
+            "date": "2021-07-10",
+            "submitted": "2021-07-11T03:31:48Z",
+            "times": {
+                "primary": "PT29S",
+                "primary_t": 29,
+                "realtime": "PT29S",
+                "realtime_t": 29,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "5": {
+        "place": 1,
+        "run": {
+            "id": "z071qgey",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z071qgey",
+            "game": "j1ne5891",
+            "level": "rdnx77qw",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/n-jepdSr4mA)"
+                    },
+                    {
+                        "uri": "https://youtu.be/suoANiP_XMM"
+                    }
+                ]
+            },
+            "comment": "[full game strat](https://youtu.be/n-jepdSr4mA)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2021-08-11T03:22:13Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "kjpk4kxq",
+                    "uri": "https://www.speedrun.com/api/v1/users/kjpk4kxq"
+                }
+            ],
+            "date": "2021-08-10",
+            "submitted": "2021-08-11T03:22:12Z",
+            "times": {
+                "primary": "PT1M11S",
+                "primary_t": 71,
+                "realtime": "PT1M11S",
+                "realtime_t": 71,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "6": {
+        "place": 1,
+        "run": {
+            "id": "zgrw3qem",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zgrw3qem",
+            "game": "j1ne5891",
+            "level": "ewpo3vjd",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=ogl7JKIfow4&lc=UgyyOIia7_6b9CKykEx4AaABAg"
+                    }
+                ]
+            },
+            "comment": "slightly choppy vid because shadowplay was being bad",
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2021-08-12T20:38:57Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "j96vdzvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/j96vdzvj"
+                }
+            ],
+            "date": "2021-08-12",
+            "submitted": "2021-08-12T20:33:53Z",
+            "times": {
+                "primary": "PT23S",
+                "primary_t": 23,
+                "realtime": "PT23S",
+                "realtime_t": 23,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "p12nrzv1"
+            }
+        },
+        "isTied": false
+    },
+    "7": {
+        "place": 1,
+        "run": {
+            "id": "ylreg2ky",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ylreg2ky",
+            "game": "j1ne5891",
+            "level": "592rkkod",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=mgyycf185jM"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8wk490v8",
+                "verify-date": "2021-09-09T18:15:22Z"
+            },
+            "players": [
+                {
+                    "rel": "guest",
+                    "name": "[ar]Ramz1X",
+                    "uri": "https://www.speedrun.com/api/v1/guests/%5Bar%5DRamz1X"
+                }
+            ],
+            "date": "2021-09-09",
+            "submitted": "2021-09-09T18:15:22Z",
+            "times": {
+                "primary": "PT36S",
+                "primary_t": 36,
+                "realtime": "PT36S",
+                "realtime_t": 36,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "8": {
+        "place": 1,
+        "run": {
+            "id": "zxo8ejqz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zxo8ejqz",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndxey65k",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/V9aQTFNZeUQ"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:12&c1=Hawke's%20Bay&t2=25&c2=Miami&t3=1:05&c3=Santa%20Fortuna&t4=47&c4=Mumbai&t5=43&c5=Whittleton%20Creek&t6=30&c6=Sgail&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nMod note: Audio somewhat corrupted in Santa Fortuna and Mumbai. Audio is needed for verification purposes, but for casual viewing, you may want to mute the video during these maps.",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2021-09-22T02:54:24Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2021-09-21",
+            "submitted": "2021-09-20T21:08:52Z",
+            "times": {
+                "primary": "PT4M42S",
+                "primary_t": 282,
+                "realtime": "PT9M3S",
+                "realtime_t": 543,
+                "realtime_noloads": "PT4M42S",
+                "realtime_noloads_t": 282,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "9": {
+        "place": 1,
+        "run": {
+            "id": "z5dx9lgm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z5dx9lgm",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "9kv6n132",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/V9aQTFNZeUQ"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:12&c1=Hawke's%20Bay&t2=25&c2=Miami&t3=1:05&c3=Santa%20Fortuna&t4=47&c4=Mumbai&t5=43&c5=Whittleton&t6=30&c6=Sgail&t7=1:09&c7=New%20York&t8=19&c8=Haven&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2021-09-22T04:20:45Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2021-09-21",
+            "submitted": "2021-09-20T21:08:54Z",
+            "times": {
+                "primary": "PT6M10S",
+                "primary_t": 370,
+                "realtime": "PT12M9S",
+                "realtime_t": 729,
+                "realtime_noloads": "PT6M10S",
+                "realtime_noloads_t": 370,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "10": {
+        "place": 1,
+        "run": {
+            "id": "mrn26l8y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/mrn26l8y",
+            "game": "j1ne5891",
+            "level": "rdnx77qw",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/jii6RcAtP4I"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2021-10-04T05:59:20Z"
+            },
+            "players": [
+                {
+                    "rel": "guest",
+                    "name": "[ar]Ramz1X",
+                    "uri": "https://www.speedrun.com/api/v1/guests/%5Bar%5DRamz1X"
+                }
+            ],
+            "date": "2021-09-22",
+            "submitted": "2021-10-04T05:59:19Z",
+            "times": {
+                "primary": "PT1M10S",
+                "primary_t": 70,
+                "realtime": "PT1M10S",
+                "realtime_t": 70,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "11": {
+        "place": 1,
+        "run": {
+            "id": "zqv8p9xm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zqv8p9xm",
+            "game": "j1ne5891",
+            "level": "ldykxqkw",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=CVb2ANBWgyc"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8wk490v8",
+                "verify-date": "2021-10-12T15:46:18Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2021-10-12",
+            "submitted": "2021-10-12T15:29:55Z",
+            "times": {
+                "primary": "PT22S",
+                "primary_t": 22,
+                "realtime": "PT22S",
+                "realtime_t": 22,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "12": {
+        "place": 1,
+        "run": {
+            "id": "y2728j9z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y2728j9z",
+            "game": "j1ne5891",
+            "level": "ldykxqkw",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=CVb2ANBWgyc"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8wk490v8",
+                "verify-date": "2021-10-12T15:46:22Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2021-10-12",
+            "submitted": "2021-10-12T15:30:05Z",
+            "times": {
+                "primary": "PT22S",
+                "primary_t": 22,
+                "realtime": "PT22S",
+                "realtime_t": 22,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "13": {
+        "place": 1,
+        "run": {
+            "id": "z07d0ney",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z07d0ney",
+            "game": "j1ne5891",
+            "level": "ldykxqkw",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=CVb2ANBWgyc"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8wk490v8",
+                "verify-date": "2021-10-12T15:46:27Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2021-10-12",
+            "submitted": "2021-10-12T15:30:07Z",
+            "times": {
+                "primary": "PT22S",
+                "primary_t": 22,
+                "realtime": "PT22S",
+                "realtime_t": 22,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "14": {
+        "place": 1,
+        "run": {
+            "id": "z12o6ljy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z12o6ljy",
+            "game": "j1ne5891",
+            "level": "xd4e112w",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=acCwoZ7di5s"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8wk490v8",
+                "verify-date": "2021-12-30T23:43:28Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2021-12-31",
+            "submitted": "2021-12-30T23:39:02Z",
+            "times": {
+                "primary": "PT14S",
+                "primary_t": 14,
+                "realtime": "PT14S",
+                "realtime_t": 14,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "15": {
+        "place": 1,
+        "run": {
+            "id": "zgdx4ndz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zgdx4ndz",
+            "game": "j1ne5891",
+            "level": "y9mg6vx9",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=XBmqx3_cpVY"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxzkyl0x",
+                "verify-date": "2022-01-05T14:26:02Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-01-05",
+            "submitted": "2022-01-05T12:57:22Z",
+            "times": {
+                "primary": "PT29S",
+                "primary_t": 29,
+                "realtime": "PT29S",
+                "realtime_t": 29,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "16": {
+        "place": 1,
+        "run": {
+            "id": "ydwelqxm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ydwelqxm",
+            "game": "j1ne5891",
+            "level": "xd1ymmed",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/h03fP23pLAs"
+                    }
+                ]
+            },
+            "comment": "[Mod Note] In Game Time Decimals Calculation (For levels with 10+ ties): https://solderq35.github.io/time-calc-under-5/",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-01-12T20:16:34Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "j96vdzvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/j96vdzvj"
+                }
+            ],
+            "date": "2021-09-02",
+            "submitted": "2022-01-12T20:16:33Z",
+            "times": {
+                "primary": "PT10.087S",
+                "primary_t": 10.087,
+                "realtime": "PT10.087S",
+                "realtime_t": 10.087,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "17": {
+        "place": 1,
+        "run": {
+            "id": "ywjjqgnz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ywjjqgnz",
+            "game": "j1ne5891",
+            "level": "ywe3y0y9",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/XOpY0FvMJKw"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-01-15T21:08:47Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "kjpk4kxq",
+                    "uri": "https://www.speedrun.com/api/v1/users/kjpk4kxq"
+                }
+            ],
+            "date": "2022-01-15",
+            "submitted": "2022-01-15T18:58:36Z",
+            "times": {
+                "primary": "PT54S",
+                "primary_t": 54,
+                "realtime": "PT54S",
+                "realtime_t": 54,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "18": {
+        "place": 1,
+        "run": {
+            "id": "mr66og8m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/mr66og8m",
+            "game": "j1ne5891",
+            "level": "592rkkod",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=Nbtn-9Z-ZDI"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxzkyl0x",
+                "verify-date": "2022-01-16T18:05:20Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-01-16",
+            "submitted": "2022-01-16T17:52:25Z",
+            "times": {
+                "primary": "PT18S",
+                "primary_t": 18,
+                "realtime": "PT18S",
+                "realtime_t": 18,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "19": {
+        "place": 1,
+        "run": {
+            "id": "z12po27y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z12po27y",
+            "game": "j1ne5891",
+            "level": "xd1ymped",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/76BN0vsQof4"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-01-19T19:53:22Z"
+            },
+            "players": [
+                {
+                    "rel": "guest",
+                    "name": "[ar]Ramzi1X",
+                    "uri": "https://www.speedrun.com/api/v1/guests/%5Bar%5DRamzi1X"
+                }
+            ],
+            "date": "2022-01-19",
+            "submitted": "2022-01-19T19:53:22Z",
+            "times": {
+                "primary": "PT42S",
+                "primary_t": 42,
+                "realtime": "PT42S",
+                "realtime_t": 42,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "20": {
+        "place": 1,
+        "run": {
+            "id": "zxl7dlez",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zxl7dlez",
+            "game": "j1ne5891",
+            "level": "xd1ymped",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/76BN0vsQof4"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-01-19T19:53:48Z"
+            },
+            "players": [
+                {
+                    "rel": "guest",
+                    "name": "[ar]Ramzi1X",
+                    "uri": "https://www.speedrun.com/api/v1/guests/%5Bar%5DRamzi1X"
+                }
+            ],
+            "date": "2022-01-19",
+            "submitted": "2022-01-19T19:53:47Z",
+            "times": {
+                "primary": "PT42S",
+                "primary_t": 42,
+                "realtime": "PT42S",
+                "realtime_t": 42,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "21": {
+        "place": 1,
+        "run": {
+            "id": "m7w6wl9z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/m7w6wl9z",
+            "game": "j1ne5891",
+            "level": "rdnx77qw",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=0uC-qfsMTpk"
+                    }
+                ]
+            },
+            "comment": "Mod note: FPS uncapped, check upper left corner of video for FPS (as it affects boost height).",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-01-20T19:16:57Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-01-20",
+            "submitted": "2022-01-20T19:11:32Z",
+            "times": {
+                "primary": "PT18S",
+                "primary_t": 18,
+                "realtime": "PT18S",
+                "realtime_t": 18,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "22": {
+        "place": 1,
+        "run": {
+            "id": "y8j861wz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y8j861wz",
+            "game": "j1ne5891",
+            "level": "xd4e112w",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=OgsepqGgh0E"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-01-21T14:37:24Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-01-21",
+            "submitted": "2022-01-21T14:06:40Z",
+            "times": {
+                "primary": "PT10S",
+                "primary_t": 10,
+                "realtime": "PT10S",
+                "realtime_t": 10,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "23": {
+        "place": 1,
+        "run": {
+            "id": "y48x5dnm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y48x5dnm",
+            "game": "j1ne5891",
+            "level": "xd1pjeed",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=RQhzPuxjDAs"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxzkyl0x",
+                "verify-date": "2022-01-24T06:46:51Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-01-23",
+            "submitted": "2022-01-23T20:52:19Z",
+            "times": {
+                "primary": "PT36S",
+                "primary_t": 36,
+                "realtime": "PT36S",
+                "realtime_t": 36,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "24": {
+        "place": 1,
+        "run": {
+            "id": "zxl31qqz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zxl31qqz",
+            "game": "j1ne5891",
+            "level": "5wkexx2w",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=66ymDhq3SZU"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-02-06T01:32:22Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8grkqqyx",
+                    "uri": "https://www.speedrun.com/api/v1/users/8grkqqyx"
+                }
+            ],
+            "date": "2022-02-05",
+            "submitted": "2022-02-05T22:02:01Z",
+            "times": {
+                "primary": "PT1M24S",
+                "primary_t": 84,
+                "realtime": "PT1M24S",
+                "realtime_t": 84,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "25": {
+        "place": 1,
+        "run": {
+            "id": "z5vpq8gm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z5vpq8gm",
+            "game": "j1ne5891",
+            "level": "5wkexx2w",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=66ymDhq3SZU"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-02-06T01:32:20Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8grkqqyx",
+                    "uri": "https://www.speedrun.com/api/v1/users/8grkqqyx"
+                }
+            ],
+            "date": "2022-02-05",
+            "submitted": "2022-02-05T22:02:15Z",
+            "times": {
+                "primary": "PT1M24S",
+                "primary_t": 84,
+                "realtime": "PT1M24S",
+                "realtime_t": 84,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "26": {
+        "place": 1,
+        "run": {
+            "id": "yvqn5o4m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yvqn5o4m",
+            "game": "j1ne5891",
+            "level": "owo5jjod",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/dKJLfVIaQaM"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-02-26T05:48:50Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8e6e6kpj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8e6e6kpj"
+                }
+            ],
+            "date": "2022-02-19",
+            "submitted": "2022-02-26T05:37:39Z",
+            "times": {
+                "primary": "PT49S",
+                "primary_t": 49,
+                "realtime": "PT49S",
+                "realtime_t": 49,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "27": {
+        "place": 1,
+        "run": {
+            "id": "y48jvrkm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y48jvrkm",
+            "game": "j1ne5891",
+            "level": "ywe3y0y9",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=DAjXG1SI_kA"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-02-26T13:12:33Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-02-26",
+            "submitted": "2022-02-26T12:35:19Z",
+            "times": {
+                "primary": "PT24S",
+                "primary_t": 24,
+                "realtime": "PT24S",
+                "realtime_t": 24,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "28": {
+        "place": 1,
+        "run": {
+            "id": "m7wvd94z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/m7wvd94z",
+            "game": "j1ne5891",
+            "level": "592rk13d",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/FeKWz-cQMOI"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-03-06T11:33:15Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "x7qpml08",
+                    "uri": "https://www.speedrun.com/api/v1/users/x7qpml08"
+                }
+            ],
+            "date": "2022-03-06",
+            "submitted": "2022-03-06T11:07:54Z",
+            "times": {
+                "primary": "PT1M52S",
+                "primary_t": 112,
+                "realtime": "PT1M52S",
+                "realtime_t": 112,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "29": {
+        "place": 1,
+        "run": {
+            "id": "ywj5rg2z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ywj5rg2z",
+            "game": "j1ne5891",
+            "level": "29v0663w",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=IUjtWujwdL0"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxzkyl0x",
+                "verify-date": "2022-03-07T21:03:23Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-03-07",
+            "submitted": "2022-03-07T20:49:51Z",
+            "times": {
+                "primary": "PT8S",
+                "primary_t": 8,
+                "realtime": "PT8S",
+                "realtime_t": 8,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "30": {
+        "place": 1,
+        "run": {
+            "id": "yjx72o7z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yjx72o7z",
+            "game": "j1ne5891",
+            "level": "29v0663w",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=IUjtWujwdL0"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxzkyl0x",
+                "verify-date": "2022-03-07T21:03:10Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-03-07",
+            "submitted": "2022-03-07T20:49:54Z",
+            "times": {
+                "primary": "PT8S",
+                "primary_t": 8,
+                "realtime": "PT8S",
+                "realtime_t": 8,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "31": {
+        "place": 1,
+        "run": {
+            "id": "yle56d2z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yle56d2z",
+            "game": "j1ne5891",
+            "level": "29v0663w",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=IUjtWujwdL0"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxzkyl0x",
+                "verify-date": "2022-03-07T21:03:17Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-03-07",
+            "submitted": "2022-03-07T20:49:56Z",
+            "times": {
+                "primary": "PT8S",
+                "primary_t": 8,
+                "realtime": "PT8S",
+                "realtime_t": 8,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "32": {
+        "place": 1,
+        "run": {
+            "id": "zn76ojlm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zn76ojlm",
+            "game": "j1ne5891",
+            "level": "5wkexm2w",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/ronlVOtK7oQ"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-03-12T06:49:03Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-03-12",
+            "submitted": "2022-03-12T01:13:29Z",
+            "times": {
+                "primary": "PT20S",
+                "primary_t": 20,
+                "realtime": "PT20S",
+                "realtime_t": 20,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "33": {
+        "place": 1,
+        "run": {
+            "id": "zp2v8xry",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zp2v8xry",
+            "game": "j1ne5891",
+            "level": "r9gnl65d",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/BKQEv_GY1C0"
+                    }
+                ]
+            },
+            "comment": "https://i.imgur.com/XC7tD8K.png",
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-03-12T15:58:13Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "kjp9n58q",
+                    "uri": "https://www.speedrun.com/api/v1/users/kjp9n58q"
+                }
+            ],
+            "date": "2022-03-12",
+            "submitted": "2022-03-12T15:41:27Z",
+            "times": {
+                "primary": "PT26.220S",
+                "primary_t": 26.22,
+                "realtime": "PT26.220S",
+                "realtime_t": 26.22,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "34": {
+        "place": 1,
+        "run": {
+            "id": "ydwx02wm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ydwx02wm",
+            "game": "j1ne5891",
+            "level": "r9gnl65d",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=BKQEv_GY1C0"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-03-17T10:59:09Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "kjp9n58q",
+                    "uri": "https://www.speedrun.com/api/v1/users/kjp9n58q"
+                }
+            ],
+            "date": "2022-03-12",
+            "submitted": "2022-03-17T10:59:08Z",
+            "times": {
+                "primary": "PT26.220S",
+                "primary_t": 26.22,
+                "realtime": "PT26.220S",
+                "realtime_t": 26.22,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "35": {
+        "place": 1,
+        "run": {
+            "id": "zxl1on8z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zxl1on8z",
+            "game": "j1ne5891",
+            "level": "n93l11n9",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/qhPvLHf_Ir4"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-03-24T02:58:58Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-03-24",
+            "submitted": "2022-03-24T02:58:58Z",
+            "times": {
+                "primary": "PT1M9S",
+                "primary_t": 69,
+                "realtime": "PT1M9S",
+                "realtime_t": 69,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "36": {
+        "place": 1,
+        "run": {
+            "id": "ywj9j2pz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ywj9j2pz",
+            "game": "j1ne5891",
+            "level": "gdronr6d",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/Kv8gXsGnzy0"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-03-24T13:08:21Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "48gl5z7x",
+                    "uri": "https://www.speedrun.com/api/v1/users/48gl5z7x"
+                }
+            ],
+            "date": "2022-03-24",
+            "submitted": "2022-03-24T13:08:21Z",
+            "times": {
+                "primary": "PT20S",
+                "primary_t": 20,
+                "realtime": "PT20S",
+                "realtime_t": 20,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "37": {
+        "place": 1,
+        "run": {
+            "id": "yjx0xq3z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yjx0xq3z",
+            "game": "j1ne5891",
+            "level": "gdronr6d",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/Kv8gXsGnzy0"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-03-24T13:08:41Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "48gl5z7x",
+                    "uri": "https://www.speedrun.com/api/v1/users/48gl5z7x"
+                }
+            ],
+            "date": "2022-03-24",
+            "submitted": "2022-03-24T13:08:41Z",
+            "times": {
+                "primary": "PT20S",
+                "primary_t": 20,
+                "realtime": "PT20S",
+                "realtime_t": 20,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "38": {
+        "place": 1,
+        "run": {
+            "id": "y48pxr2m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y48pxr2m",
+            "game": "j1ne5891",
+            "level": "r9gnl65d",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/MMONBWP2CKk"
+                    }
+                ]
+            },
+            "comment": "https://i.imgur.com/2skJ9f2.png\r\n\r\nhttps://i.imgur.com/ml8wU4p.png",
+            "status": {
+                "status": "verified",
+                "examiner": "kjpk4kxq",
+                "verify-date": "2022-03-30T14:30:01Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "kjpk4kxq",
+                    "uri": "https://www.speedrun.com/api/v1/users/kjpk4kxq"
+                }
+            ],
+            "date": "2022-03-30",
+            "submitted": "2022-03-30T14:30:01Z",
+            "times": {
+                "primary": "PT25.987S",
+                "primary_t": 25.987,
+                "realtime": "PT25.987S",
+                "realtime_t": 25.987,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "p12nrzv1"
+            }
+        },
+        "isTied": false
+    },
+    "39": {
+        "place": 1,
+        "run": {
+            "id": "z525985z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z525985z",
+            "game": "j1ne5891",
+            "level": "592rk6od",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=5Y_XnrbcshU"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-04-08T20:28:03Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-04-08",
+            "submitted": "2022-04-08T20:24:07Z",
+            "times": {
+                "primary": "PT41S",
+                "primary_t": 41,
+                "realtime": "PT41S",
+                "realtime_t": 41,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "40": {
+        "place": 1,
+        "run": {
+            "id": "mr79k12z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/mr79k12z",
+            "game": "j1ne5891",
+            "level": "y9mg6vx9",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/ZNfYz219wBY"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-05-02T17:55:28Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "48gl5z7x",
+                    "uri": "https://www.speedrun.com/api/v1/users/48gl5z7x"
+                }
+            ],
+            "date": "2022-05-02",
+            "submitted": "2022-05-02T17:55:28Z",
+            "times": {
+                "primary": "PT39S",
+                "primary_t": 39,
+                "realtime": "PT39S",
+                "realtime_t": 39,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "41": {
+        "place": 1,
+        "run": {
+            "id": "zq7g0prm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zq7g0prm",
+            "game": "j1ne5891",
+            "level": "xd1pjeed",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=m9HkkYNEOBI"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-05-09T16:57:22Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-05-09",
+            "submitted": "2022-05-09T16:52:12Z",
+            "times": {
+                "primary": "PT31S",
+                "primary_t": 31,
+                "realtime": "PT31S",
+                "realtime_t": 31,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "42": {
+        "place": 1,
+        "run": {
+            "id": "y2pv085z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y2pv085z",
+            "game": "j1ne5891",
+            "level": "xd1pjeed",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=m9HkkYNEOBI"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-05-09T16:57:27Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-05-09",
+            "submitted": "2022-05-09T16:52:14Z",
+            "times": {
+                "primary": "PT31S",
+                "primary_t": 31,
+                "realtime": "PT31S",
+                "realtime_t": 31,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "43": {
+        "place": 1,
+        "run": {
+            "id": "y88w2gny",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y88w2gny",
+            "game": "j1ne5891",
+            "level": "5wkexm2w",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/bLBJIsAlILc"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-06-22T18:06:31Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "x7qpml08",
+                    "uri": "https://www.speedrun.com/api/v1/users/x7qpml08"
+                }
+            ],
+            "date": "2022-06-22",
+            "submitted": "2022-06-22T18:03:37Z",
+            "times": {
+                "primary": "PT31S",
+                "primary_t": 31,
+                "realtime": "PT31S",
+                "realtime_t": 31,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "44": {
+        "place": 1,
+        "run": {
+            "id": "yvrl67ez",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yvrl67ez",
+            "game": "j1ne5891",
+            "level": "5wkexm2w",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/bLBJIsAlILc"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-06-22T18:06:35Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "x7qpml08",
+                    "uri": "https://www.speedrun.com/api/v1/users/x7qpml08"
+                }
+            ],
+            "date": "2022-06-22",
+            "submitted": "2022-06-22T18:03:43Z",
+            "times": {
+                "primary": "PT31S",
+                "primary_t": 31,
+                "realtime": "PT31S",
+                "realtime_t": 31,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "45": {
+        "place": 1,
+        "run": {
+            "id": "y2e3kjjy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y2e3kjjy",
+            "game": "j1ne5891",
+            "level": "5wkvoepd",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/0zMxQ-E-dpE"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-08-03T12:44:31Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "kjp9n58q",
+                    "uri": "https://www.speedrun.com/api/v1/users/kjp9n58q"
+                }
+            ],
+            "date": "2022-08-03",
+            "submitted": "2022-08-03T12:38:42Z",
+            "times": {
+                "primary": "PT48S",
+                "primary_t": 48,
+                "realtime": "PT48S",
+                "realtime_t": 48,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "46": {
+        "place": 1,
+        "run": {
+            "id": "mrre557m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/mrre557m",
+            "game": "j1ne5891",
+            "level": "ldykxxkw",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=iMUuSdqqx_Y"
+                    }
+                ]
+            },
+            "comment": ":-D ",
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-08-11T16:15:58Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "x7w39nv8",
+                    "uri": "https://www.speedrun.com/api/v1/users/x7w39nv8"
+                }
+            ],
+            "date": "2022-08-11",
+            "submitted": "2022-08-11T14:28:48Z",
+            "times": {
+                "primary": "PT1M5S",
+                "primary_t": 65,
+                "realtime": "PT1M5S",
+                "realtime_t": 65,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "47": {
+        "place": 1,
+        "run": {
+            "id": "yd16pwvy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yd16pwvy",
+            "game": "j1ne5891",
+            "level": "ldykxxkw",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=iMUuSdqqx_Y"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-08-11T16:42:03Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "x7w39nv8",
+                    "uri": "https://www.speedrun.com/api/v1/users/x7w39nv8"
+                }
+            ],
+            "date": "2022-08-11",
+            "submitted": "2022-08-11T16:42:03Z",
+            "times": {
+                "primary": "PT1M5S",
+                "primary_t": 65,
+                "realtime": "PT1M5S",
+                "realtime_t": 65,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "48": {
+        "place": 1,
+        "run": {
+            "id": "y6xdrg0y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y6xdrg0y",
+            "game": "j1ne5891",
+            "level": "495z2p09",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=F5ix0OrTcsU"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-08-24T07:41:37Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-08-24",
+            "submitted": "2022-08-24T00:53:34Z",
+            "times": {
+                "primary": "PT24S",
+                "primary_t": 24,
+                "realtime": "PT24S",
+                "realtime_t": 24,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "49": {
+        "place": 1,
+        "run": {
+            "id": "y8xe2e1m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y8xe2e1m",
+            "game": "j1ne5891",
+            "level": "y9mg6659",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=PnliZWssxgQ"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-08-28T00:17:04Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-08-28",
+            "submitted": "2022-08-28T00:16:14Z",
+            "times": {
+                "primary": "PT14S",
+                "primary_t": 14,
+                "realtime": "PT14S",
+                "realtime_t": 14,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "50": {
+        "place": 1,
+        "run": {
+            "id": "zpd864vz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zpd864vz",
+            "game": "j1ne5891",
+            "level": "xd4e112w",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=5LMnOHys9UM"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "7j4qlzvx",
+                "verify-date": "2022-08-30T02:38:07Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-08-30",
+            "submitted": "2022-08-29T21:40:27Z",
+            "times": {
+                "primary": "PT30S",
+                "primary_t": 30,
+                "realtime": "PT30S",
+                "realtime_t": 30,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "51": {
+        "place": 1,
+        "run": {
+            "id": "z0lpo74z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z0lpo74z",
+            "game": "j1ne5891",
+            "level": "592rk6od",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=g9VWeXQGABE"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-09-06T12:51:19Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "48gl5z7x",
+                    "uri": "https://www.speedrun.com/api/v1/users/48gl5z7x"
+                }
+            ],
+            "date": "2022-09-06",
+            "submitted": "2022-09-06T12:50:56Z",
+            "times": {
+                "primary": "PT55S",
+                "primary_t": 55,
+                "realtime": "PT55S",
+                "realtime_t": 55,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "52": {
+        "place": 1,
+        "run": {
+            "id": "y6x0n91y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y6x0n91y",
+            "game": "j1ne5891",
+            "level": "592rk6od",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=g9VWeXQGABE"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-09-06T12:51:18Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "48gl5z7x",
+                    "uri": "https://www.speedrun.com/api/v1/users/48gl5z7x"
+                }
+            ],
+            "date": "2022-09-06",
+            "submitted": "2022-09-06T12:50:58Z",
+            "times": {
+                "primary": "PT55S",
+                "primary_t": 55,
+                "realtime": "PT55S",
+                "realtime_t": 55,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "53": {
+        "place": 1,
+        "run": {
+            "id": "y4xq863z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y4xq863z",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "zd3oqzrd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=pFpfKChho-E"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=28&c1=Paris&t2=58&c2=Sapienza&t3=26&c3=Marrakesh&t4=27&c4=Bangkok&t5=45&c5=Colorado&t6=33&c6=Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-14T05:16:39Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-09-06",
+            "submitted": "2022-09-06T14:20:17Z",
+            "times": {
+                "primary": "PT3M37S",
+                "primary_t": 217,
+                "realtime": "PT7M15S",
+                "realtime_t": 435,
+                "realtime_noloads": "PT3M37S",
+                "realtime_noloads_t": 217,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": {
+                "rel": "splits.io",
+                "uri": "https://splits.io/api/v3/runs/4yuwpr8f"
+            },
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "z19w45kq"
+            }
+        },
+        "isTied": false
+    },
+    "54": {
+        "place": 1,
+        "run": {
+            "id": "m3x3eo4m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/m3x3eo4m",
+            "game": "j1ne5891",
+            "level": "ewpnpkk9",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=u2UYKopYmQ8"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-09-08T20:52:39Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-09-08",
+            "submitted": "2022-09-08T20:49:33Z",
+            "times": {
+                "primary": "PT7S",
+                "primary_t": 7,
+                "realtime": "PT7S",
+                "realtime_t": 7,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "55": {
+        "place": 1,
+        "run": {
+            "id": "yjdd6pdy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yjdd6pdy",
+            "game": "j1ne5891",
+            "level": "5wkvoepd",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.bilibili.com/video/BV1d14y1e7P5"
+                    }
+                ]
+            },
+            "comment": "Mod Note: As of October 2022, SA indicator will turn yellow when running through camera in the cave.\r\n\r\nHowever, the player erases the footage at the end anyways, so it's also viable on current patch. [See translated XP text](https://translate.google.com/?sl=zh-CN&tl=en&text=%E8%AE%B0%E5%BD%95%E5%B7%B2%E6%8A%B9%E9%99%A4%20%2B50%20%E7%BB%8F%E9%AA%8C%E7%82%B9%E6%95%B0%0A%0A%E7%9B%91%E8%A7%86%E7%B3%BB%E7%BB%9F%E5%B7%B2%E5%85%B3%E9%97%AD&op=translate)",
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-09-10T09:59:37Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8e667noj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8e667noj"
+                }
+            ],
+            "date": "2022-09-10",
+            "submitted": "2022-09-10T08:02:52Z",
+            "times": {
+                "primary": "PT50S",
+                "primary_t": 50,
+                "realtime": "PT50S",
+                "realtime_t": 50,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "56": {
+        "place": 1,
+        "run": {
+            "id": "yl1np6km",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yl1np6km",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "jdz6jpr2",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.twitch.tv/videos/1593343924"
+                    },
+                    {
+                        "uri": "https://www.youtube.com/watch?v=iJ9_9QoZZnE"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:13&c1=Source&t2=0:51&c2=Author&t3=0:28&c3=Vector&t4=0:45&c4=Patient%20Zero%20Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nTwitch Highlight Backup:\r\nhttps://www.twitch.tv/videos/1593343924",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-11-05T05:37:08Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "y8deml9j",
+                    "uri": "https://www.speedrun.com/api/v1/users/y8deml9j"
+                }
+            ],
+            "date": "2022-09-17",
+            "submitted": "2022-09-18T01:56:10Z",
+            "times": {
+                "primary": "PT3M17S",
+                "primary_t": 197,
+                "realtime": "PT6M23S",
+                "realtime_t": 383,
+                "realtime_noloads": "PT3M17S",
+                "realtime_noloads_t": 197,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "z19w45kq"
+            }
+        },
+        "isTied": false
+    },
+    "57": {
+        "place": 1,
+        "run": {
+            "id": "y9x6p8vy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y9x6p8vy",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "jdz6jpr2",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.twitch.tv/videos/1593343924"
+                    },
+                    {
+                        "uri": "https://www.youtube.com/watch?v=iJ9_9QoZZnE"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:13&c1=Source&t2=0:51&c2=Author&t3=0:28&c3=Vector&t4=0:45&c4=Patient%20Zero%20Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nTwitch Highlight Backup:\r\nhttps://www.twitch.tv/videos/1593343924",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-11-05T05:36:48Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "y8deml9j",
+                    "uri": "https://www.speedrun.com/api/v1/users/y8deml9j"
+                }
+            ],
+            "date": "2022-09-17",
+            "submitted": "2022-09-18T01:57:23Z",
+            "times": {
+                "primary": "PT3M17S",
+                "primary_t": 197,
+                "realtime": "PT6M23S",
+                "realtime_t": 383,
+                "realtime_noloads": "PT3M17S",
+                "realtime_noloads_t": 197,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "z19w45kq"
+            }
+        },
+        "isTied": false
+    },
+    "58": {
+        "place": 1,
+        "run": {
+            "id": "z5xewnny",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z5xewnny",
+            "game": "j1ne5891",
+            "level": "5wkexx2w",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=yH-ez4hJnV4"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "v8lv1p2j",
+                "verify-date": "2022-09-18T11:26:20Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "y8deml9j",
+                    "uri": "https://www.speedrun.com/api/v1/users/y8deml9j"
+                }
+            ],
+            "date": "2022-09-18",
+            "submitted": "2022-09-18T09:03:49Z",
+            "times": {
+                "primary": "PT40S",
+                "primary_t": 40,
+                "realtime": "PT40S",
+                "realtime_t": 40,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "59": {
+        "place": 1,
+        "run": {
+            "id": "z0ljdjez",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z0ljdjez",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "jdz6jpr2",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=CzeslYQiKxA"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=43&c1=Source&t2=33&c2=Author&t3=17&c3=Vector&t4=37&c4=Patient%20Zero%20Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "v8lv1p2j",
+                "verify-date": "2022-09-23T07:19:50Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "y8deml9j",
+                    "uri": "https://www.speedrun.com/api/v1/users/y8deml9j"
+                }
+            ],
+            "date": "2022-09-22",
+            "submitted": "2022-09-22T21:41:38Z",
+            "times": {
+                "primary": "PT2M10S",
+                "primary_t": 130,
+                "realtime": "PT4M5S",
+                "realtime_t": 245,
+                "realtime_noloads": "PT2M10S",
+                "realtime_noloads_t": 130,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "60": {
+        "place": 1,
+        "run": {
+            "id": "y6x21p6y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y6x21p6y",
+            "game": "j1ne5891",
+            "level": "kwj6ggnd",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=0NsOqvHN4KU"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-09-24T12:07:09Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-09-24",
+            "submitted": "2022-09-24T12:06:33Z",
+            "times": {
+                "primary": "PT6S",
+                "primary_t": 6,
+                "realtime": "PT6S",
+                "realtime_t": 6,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "61": {
+        "place": 1,
+        "run": {
+            "id": "y8x679dm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y8x679dm",
+            "game": "j1ne5891",
+            "level": "kwj6ggnd",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=0NsOqvHN4KU"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-09-24T12:07:17Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-09-24",
+            "submitted": "2022-09-24T12:06:34Z",
+            "times": {
+                "primary": "PT6S",
+                "primary_t": 6,
+                "realtime": "PT6S",
+                "realtime_t": 6,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "62": {
+        "place": 1,
+        "run": {
+            "id": "yv0pdjoz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yv0pdjoz",
+            "game": "j1ne5891",
+            "level": "kwj6ggnd",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=0NsOqvHN4KU"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-09-24T12:07:12Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-09-24",
+            "submitted": "2022-09-24T12:06:36Z",
+            "times": {
+                "primary": "PT6S",
+                "primary_t": 6,
+                "realtime": "PT6S",
+                "realtime_t": 6,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "63": {
+        "place": 1,
+        "run": {
+            "id": "yw6rl0nm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yw6rl0nm",
+            "game": "j1ne5891",
+            "level": "495z2p09",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=I7b9BjS2SbY"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "v8lv1p2j",
+                "verify-date": "2022-09-24T18:13:37Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jmolz3y8",
+                    "uri": "https://www.speedrun.com/api/v1/users/jmolz3y8"
+                }
+            ],
+            "date": "2022-09-24",
+            "submitted": "2022-09-24T17:12:10Z",
+            "times": {
+                "primary": "PT29S",
+                "primary_t": 29,
+                "realtime": "PT29S",
+                "realtime_t": 29,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "64": {
+        "place": 1,
+        "run": {
+            "id": "yl16goxm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yl16goxm",
+            "game": "j1ne5891",
+            "level": "495z2p09",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=I7b9BjS2SbY"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "v8lv1p2j",
+                "verify-date": "2022-09-24T18:13:41Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jmolz3y8",
+                    "uri": "https://www.speedrun.com/api/v1/users/jmolz3y8"
+                }
+            ],
+            "date": "2022-09-24",
+            "submitted": "2022-09-24T17:12:38Z",
+            "times": {
+                "primary": "PT29S",
+                "primary_t": 29,
+                "realtime": "PT29S",
+                "realtime_t": 29,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "65": {
+        "place": 1,
+        "run": {
+            "id": "y8xk2edm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y8xk2edm",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndxey65k",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/GOKyW7CAZmU"
+                    }
+                ]
+            },
+            "comment": "[Time Calc](https://solderq35.github.io/fg-time-calc/?t1=1:14&c1=Hawke's%20Bay&t2=17&c2=Miami&t3=1:21&c3=Santa%20Fortuna&t4=1:11&c4=Mumbai&t5=1:09&c5=Whittleon%20Creek&t6=58&c6=Sgail&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "x7qpml08",
+                "verify-date": "2022-09-26T09:44:33Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "xkmmg69j",
+                    "uri": "https://www.speedrun.com/api/v1/users/xkmmg69j"
+                }
+            ],
+            "date": "2022-09-25",
+            "submitted": "2022-09-25T16:44:08Z",
+            "times": {
+                "primary": "PT6M10S",
+                "primary_t": 370,
+                "realtime": "PT12M14S",
+                "realtime_t": 734,
+                "realtime_noloads": "PT6M10S",
+                "realtime_noloads_t": 370,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "66": {
+        "place": 1,
+        "run": {
+            "id": "yw6n8k3m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yw6n8k3m",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndxey65k",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/GOKyW7CAZmU"
+                    }
+                ]
+            },
+            "comment": "[Time Calc](https://solderq35.github.io/fg-time-calc/?t1=1:14&c1=Hawke's%20Bay&t2=17&c2=Miami&t3=1:21&c3=Santa%20Fortuna&t4=1:11&c4=Mumbai&t5=1:09&c5=Whittleon%20Creek&t6=58&c6=Sgail&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "x7qpml08",
+                "verify-date": "2022-09-26T09:44:29Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "xkmmg69j",
+                    "uri": "https://www.speedrun.com/api/v1/users/xkmmg69j"
+                }
+            ],
+            "date": "2022-09-25",
+            "submitted": "2022-09-25T16:45:27Z",
+            "times": {
+                "primary": "PT6M10S",
+                "primary_t": 370,
+                "realtime": "PT12M14S",
+                "realtime_t": 734,
+                "realtime_noloads": "PT6M10S",
+                "realtime_noloads_t": 370,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "67": {
+        "place": 1,
+        "run": {
+            "id": "m3x04lqm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/m3x04lqm",
+            "game": "j1ne5891",
+            "level": "ewpo32kd",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/tmcCES8DFuk"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-10-04T21:51:45Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "xkmmg69j",
+                    "uri": "https://www.speedrun.com/api/v1/users/xkmmg69j"
+                }
+            ],
+            "date": "2022-10-04",
+            "submitted": "2022-10-04T21:21:12Z",
+            "times": {
+                "primary": "PT52S",
+                "primary_t": 52,
+                "realtime": "PT52S",
+                "realtime_t": 52,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "68": {
+        "place": 1,
+        "run": {
+            "id": "zpdxv6gz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zpdxv6gz",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "9kv6n132",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/EBqR-2QEAYU"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:15&c1=Hawkes%20Bay&t2=25&c2=Miami&t3=1:22&c3=Santa%20Fortuna&t4=1:14&c4=Mumbai&t5=1:13&c5=Whittleton%20Creek&t6=1:04&c6=Isle%20of%20Sgail&t7=1:40&c7=New%20York&t8=1:24&c8=Haven%20island&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-10-12T19:03:00Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8e6e6kpj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8e6e6kpj"
+                }
+            ],
+            "date": "2022-10-07",
+            "submitted": "2022-10-10T12:20:58Z",
+            "times": {
+                "primary": "PT9M37S",
+                "primary_t": 577,
+                "realtime": "PT18M10S",
+                "realtime_t": 1090,
+                "realtime_noloads": "PT9M37S",
+                "realtime_noloads_t": 577,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "p12nrzv1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "69": {
+        "place": 1,
+        "run": {
+            "id": "yd1lpnjy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yd1lpnjy",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "9kv6n132",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/EBqR-2QEAYU"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:15&c1=Hawkes%20Bay&t2=25&c2=Miami&t3=1:22&c3=Santa%20Fortuna&t4=1:14&c4=Mumbai&t5=1:13&c5=Whittleton%20Creek&t6=1:04&c6=Isle%20of%20Sgail&t7=1:40&c7=New%20York&t8=1:24&c8=Haven%20island&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-10-12T19:03:47Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8e6e6kpj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8e6e6kpj"
+                }
+            ],
+            "date": "2022-10-07",
+            "submitted": "2022-10-10T12:21:59Z",
+            "times": {
+                "primary": "PT9M37S",
+                "primary_t": 577,
+                "realtime": "PT18M10S",
+                "realtime_t": 1090,
+                "realtime_noloads": "PT9M37S",
+                "realtime_noloads_t": 577,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "p12nrzv1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "70": {
+        "place": 1,
+        "run": {
+            "id": "z5xgqkgy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z5xgqkgy",
+            "game": "j1ne5891",
+            "level": "5wkvoepd",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.bilibili.com/video/BV1d14y1e7P5"
+                    }
+                ]
+            },
+            "comment": "Mod Note: As of October 2022, SA indicator will turn yellow when running through camera in the cave.\r\n\r\nHowever, the player erases the footage at the end anyways, so it's also viable on current patch. [See translated XP text](https://translate.google.com/?sl=zh-CN&tl=en&text=%E8%AE%B0%E5%BD%95%E5%B7%B2%E6%8A%B9%E9%99%A4%20%2B50%20%E7%BB%8F%E9%AA%8C%E7%82%B9%E6%95%B0%0A%0A%E7%9B%91%E8%A7%86%E7%B3%BB%E7%BB%9F%E5%B7%B2%E5%85%B3%E9%97%AD&op=translate)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-10T21:41:57Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8e667noj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8e667noj"
+                }
+            ],
+            "date": "2022-09-10",
+            "submitted": "2022-10-10T21:41:57Z",
+            "times": {
+                "primary": "PT50S",
+                "primary_t": 50,
+                "realtime": "PT50S",
+                "realtime_t": 50,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "71": {
+        "place": 1,
+        "run": {
+            "id": "y8xoe8xm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y8xoe8xm",
+            "game": "j1ne5891",
+            "level": "rw6g11r9",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=RiV5Uef2l2M"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-10-13T17:09:01Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jmolz3y8",
+                    "uri": "https://www.speedrun.com/api/v1/users/jmolz3y8"
+                }
+            ],
+            "date": "2022-10-13",
+            "submitted": "2022-10-13T16:58:49Z",
+            "times": {
+                "primary": "PT34S",
+                "primary_t": 34,
+                "realtime": "PT34S",
+                "realtime_t": 34,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "72": {
+        "place": 1,
+        "run": {
+            "id": "znq90pvz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/znq90pvz",
+            "game": "j1ne5891",
+            "level": "rw6g11r9",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=RiV5Uef2l2M"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-10-13T17:09:04Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jmolz3y8",
+                    "uri": "https://www.speedrun.com/api/v1/users/jmolz3y8"
+                }
+            ],
+            "date": "2022-10-13",
+            "submitted": "2022-10-13T16:59:06Z",
+            "times": {
+                "primary": "PT34S",
+                "primary_t": 34,
+                "realtime": "PT34S",
+                "realtime_t": 34,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "73": {
+        "place": 1,
+        "run": {
+            "id": "mrr0nr8m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/mrr0nr8m",
+            "game": "j1ne5891",
+            "level": "592rk13d",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/HCLc5_dY1yE"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-10-13T17:09:26Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8d3yn7ox",
+                    "uri": "https://www.speedrun.com/api/v1/users/8d3yn7ox"
+                }
+            ],
+            "date": "2022-10-13",
+            "submitted": "2022-10-13T17:07:10Z",
+            "times": {
+                "primary": "PT1M58S",
+                "primary_t": 118,
+                "realtime": "PT1M58S",
+                "realtime_t": 118,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "74": {
+        "place": 1,
+        "run": {
+            "id": "zx8jo8km",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zx8jo8km",
+            "game": "j1ne5891",
+            "level": "592rk13d",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/HCLc5_dY1yE"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-10-13T17:09:26Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8d3yn7ox",
+                    "uri": "https://www.speedrun.com/api/v1/users/8d3yn7ox"
+                }
+            ],
+            "date": "2022-10-13",
+            "submitted": "2022-10-13T17:07:31Z",
+            "times": {
+                "primary": "PT1M58S",
+                "primary_t": 118,
+                "realtime": "PT1M58S",
+                "realtime_t": 118,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "75": {
+        "place": 1,
+        "run": {
+            "id": "z5xldpjy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z5xldpjy",
+            "game": "j1ne5891",
+            "level": "ewpo32kd",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=51kfQvVoNJE"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "v8lv1p2j",
+                "verify-date": "2022-10-13T17:43:28Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8v5o5eyj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8v5o5eyj"
+                }
+            ],
+            "date": "2022-10-08",
+            "submitted": "2022-10-13T17:42:54Z",
+            "times": {
+                "primary": "PT50S",
+                "primary_t": 50,
+                "realtime": "PT50S",
+                "realtime_t": 50,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "76": {
+        "place": 1,
+        "run": {
+            "id": "zpdk99xz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zpdk99xz",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndx5nvvk",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/QziDV7Cz4yY"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=31&c1=Paris&t2=1:04&c2=Sapienza&t3=26&c3=Marrakesh&t4=29&c4=Bangkok&t5=51&c5=Colorado&t6=39&c6=Hokkaido&t7=1:15&c7=Hawke's%20Bay&t8=23&c8=Miami&t9=1:22&c9=Santa%20Fortuna&t10=1:16&c10=Mumbai&t11=1:10&c11=Whittleton&t12=1:01&c12=Sgail&t13=1:32&c13=New%20York&t14=1:19&c14=Haven&t15=21&c15=Dubai%20reset&t16=24&c16=Dubai&t17=59&c17=Dartmoor%20reset&t18=59&c18=Dartmoor&t19=55&c19=Berlin&t20=57&c20=Chongqing&t21=1:00&c21=Mendoza&t22=29&c22=Romania%20reset&t23=2:10&c23=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nObsolete due to October patch and molotov removal. Some strats still relevant without molotov.",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-14T05:10:31Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-09-01",
+            "submitted": "2022-10-14T05:10:31Z",
+            "times": {
+                "primary": "PT21M32S",
+                "primary_t": 1292,
+                "realtime": "PT37M48S",
+                "realtime_t": 2268,
+                "realtime_noloads": "PT21M32S",
+                "realtime_noloads_t": 1292,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "z19w45kq"
+            }
+        },
+        "isTied": false
+    },
+    "77": {
+        "place": 1,
+        "run": {
+            "id": "yd1vddvy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yd1vddvy",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndx5nvvk",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/QziDV7Cz4yY"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=31&c1=Paris&t2=1:04&c2=Sapienza&t3=26&c3=Marrakesh&t4=29&c4=Bangkok&t5=51&c5=Colorado&t6=39&c6=Hokkaido&t7=1:15&c7=Hawke's%20Bay&t8=23&c8=Miami&t9=1:22&c9=Santa%20Fortuna&t10=1:16&c10=Mumbai&t11=1:10&c11=Whittleton&t12=1:01&c12=Sgail&t13=1:32&c13=New%20York&t14=1:19&c14=Haven&t15=21&c15=Dubai%20reset&t16=24&c16=Dubai&t17=59&c17=Dartmoor%20reset&t18=59&c18=Dartmoor&t19=55&c19=Berlin&t20=57&c20=Chongqing&t21=1:00&c21=Mendoza&t22=29&c22=Romania%20reset&t23=2:10&c23=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nObsolete due to October patch and molotov removal. Some strats still relevant without molotov.",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-14T05:11:34Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-09-01",
+            "submitted": "2022-10-14T05:11:34Z",
+            "times": {
+                "primary": "PT21M32S",
+                "primary_t": 1292,
+                "realtime": "PT37M48S",
+                "realtime_t": 2268,
+                "realtime_noloads": "PT21M32S",
+                "realtime_noloads_t": 1292,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "z19w45kq"
+            }
+        },
+        "isTied": false
+    },
+    "78": {
+        "place": 1,
+        "run": {
+            "id": "y8xood5m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y8xood5m",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "zd3oqzrd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/TKODY-B2WMs"
+                    }
+                ]
+            },
+            "comment": "patched run archive\r\n\r\nGo to https://cutt.ly/h3_patched_runs for more info",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-15T22:33:22Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "kjp9n58q",
+                    "uri": "https://www.speedrun.com/api/v1/users/kjp9n58q"
+                }
+            ],
+            "date": "2021-02-20",
+            "submitted": "2022-10-15T22:33:22Z",
+            "times": {
+                "primary": "PT58S",
+                "primary_t": 58,
+                "realtime": "PT3M19S",
+                "realtime_t": 199,
+                "realtime_noloads": "PT58S",
+                "realtime_noloads_t": 58,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "z19w45kq"
+            }
+        },
+        "isTied": false
+    },
+    "79": {
+        "place": 1,
+        "run": {
+            "id": "y6xjpvjy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y6xjpvjy",
+            "game": "j1ne5891",
+            "level": "xd1ymmed",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/YlF9Z0apKaw"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-10-18T15:33:55Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-10-18",
+            "submitted": "2022-10-18T15:23:23Z",
+            "times": {
+                "primary": "PT11S",
+                "primary_t": 11,
+                "realtime": "PT11S",
+                "realtime_t": 11,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "80": {
+        "place": 1,
+        "run": {
+            "id": "y8xg9wnm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y8xg9wnm",
+            "game": "j1ne5891",
+            "level": "xd1ymmed",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/YlF9Z0apKaw"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-10-18T15:33:57Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-10-18",
+            "submitted": "2022-10-18T15:23:24Z",
+            "times": {
+                "primary": "PT11S",
+                "primary_t": 11,
+                "realtime": "PT11S",
+                "realtime_t": 11,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "81": {
+        "place": 1,
+        "run": {
+            "id": "zgq6lrdy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zgq6lrdy",
+            "game": "j1ne5891",
+            "level": "ewpo32kd",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=GnYohhuvya4"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-10-22T11:48:04Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-10-22",
+            "submitted": "2022-10-22T11:46:32Z",
+            "times": {
+                "primary": "PT37S",
+                "primary_t": 37,
+                "realtime": "PT37S",
+                "realtime_t": 37,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "82": {
+        "place": 1,
+        "run": {
+            "id": "yw6279nm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yw6279nm",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "rkl3no8k",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=WUe40w3mHW0"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=6&c1=Dubai&t2=38&c2=Dartmoor&t3=32&c3=Berlin&t4=33&c4=Chongqing&t5=41&c5=Mendoza&t6=1:59&c6=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "jmolz3y8",
+                "verify-date": "2022-10-27T18:36:29Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "y8deml9j",
+                    "uri": "https://www.speedrun.com/api/v1/users/y8deml9j"
+                }
+            ],
+            "date": "2022-10-14",
+            "submitted": "2022-10-24T02:26:21Z",
+            "times": {
+                "primary": "PT4M29S",
+                "primary_t": 269,
+                "realtime": "PT7M10S",
+                "realtime_t": 430,
+                "realtime_noloads": "PT4M29S",
+                "realtime_noloads_t": 269,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "p12nrzv1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "83": {
+        "place": 1,
+        "run": {
+            "id": "yd1orpwy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yd1orpwy",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "rkl3no8k",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=UiMeFppc8RU"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=18&c1=Dubai&t2=49&c2=Dartmoor&t3=42&c3=Berlin&t4=57&c4=Chongqing&t5=40&c5=Mendoza&t6=2:09&c6=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "jmolz3y8",
+                "verify-date": "2022-10-27T18:55:27Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-10-26",
+            "submitted": "2022-10-27T00:28:55Z",
+            "times": {
+                "primary": "PT5M35S",
+                "primary_t": 335,
+                "realtime": "PT8M54S",
+                "realtime_t": 534,
+                "realtime_noloads": "PT5M35S",
+                "realtime_noloads_t": 335,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "84": {
+        "place": 1,
+        "run": {
+            "id": "me1plj0y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/me1plj0y",
+            "game": "j1ne5891",
+            "level": "xd1ymo5d",
+            "category": "jdz6nx62",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=sRp4u_QTlZw"
+                    }
+                ]
+            },
+            "comment": "34 doable with super ultra mega rebecca lure",
+            "status": {
+                "status": "verified",
+                "examiner": "jmolz3y8",
+                "verify-date": "2022-10-30T09:04:51Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "18vr01nx",
+                    "uri": "https://www.speedrun.com/api/v1/users/18vr01nx"
+                }
+            ],
+            "date": "2022-10-28",
+            "submitted": "2022-10-28T19:45:59Z",
+            "times": {
+                "primary": "PT35S",
+                "primary_t": 35,
+                "realtime": "PT35S",
+                "realtime_t": 35,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "p12nrzv1"
+            }
+        },
+        "isTied": false
+    },
+    "85": {
+        "place": 1,
+        "run": {
+            "id": "z0l2w6jz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z0l2w6jz",
+            "game": "j1ne5891",
+            "level": "ywe3y0y9",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/RVFVZ89uxtc"
+                    }
+                ]
+            },
+            "comment": " ",
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-10-31T20:13:05Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2022-10-31",
+            "submitted": "2022-10-31T18:45:20Z",
+            "times": {
+                "primary": "PT31S",
+                "primary_t": 31,
+                "realtime": "PT31S",
+                "realtime_t": 31,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "86": {
+        "place": 1,
+        "run": {
+            "id": "mrrw864m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/mrrw864m",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "zd3oqzrd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=W6J6bYEJl8s"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=24&c1=Paris&t2=36&c2=Sapienza&t3=25&c3=Marrakesh&t4=26&c4=Bangkok&t5=54&c5=Colorado&t6=32&c6=Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "jmolz3y8",
+                "verify-date": "2022-11-02T15:41:04Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-11-01",
+            "submitted": "2022-11-01T11:50:11Z",
+            "times": {
+                "primary": "PT3M17S",
+                "primary_t": 197,
+                "realtime": "PT7M4S",
+                "realtime_t": 424,
+                "realtime_noloads": "PT3M17S",
+                "realtime_noloads_t": 197,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "87": {
+        "place": 1,
+        "run": {
+            "id": "zx8rokem",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zx8rokem",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "rkl3no8k",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=D3fyQY13W6s"
+                    }
+                ]
+            },
+            "comment": "Time calculation: https://tinyurl.com/2jatep6z\r\n\r\nInsane start, slow endgame.\r\n\r\nLow 5:4x realistically achievable.",
+            "status": {
+                "status": "verified",
+                "examiner": "v8lv1p2j",
+                "verify-date": "2022-11-10T19:44:28Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "18vr01nx",
+                    "uri": "https://www.speedrun.com/api/v1/users/18vr01nx"
+                }
+            ],
+            "date": "2022-11-09",
+            "submitted": "2022-11-09T18:02:50Z",
+            "times": {
+                "primary": "PT5M47S",
+                "primary_t": 347,
+                "realtime": "PT8M55S",
+                "realtime_t": 535,
+                "realtime_noloads": "PT5M47S",
+                "realtime_noloads_t": 347,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "p12nrzv1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "88": {
+        "place": 1,
+        "run": {
+            "id": "y9xqgxky",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y9xqgxky",
+            "game": "j1ne5891",
+            "level": "592rkkod",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/K7NUTRejUMw"
+                    }
+                ]
+            },
+            "comment": "for Pan Man my beloved",
+            "status": {
+                "status": "verified",
+                "examiner": "8d3yn7ox",
+                "verify-date": "2022-11-13T12:28:33Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "j42pom5x",
+                    "uri": "https://www.speedrun.com/api/v1/users/j42pom5x"
+                }
+            ],
+            "date": "2022-11-13",
+            "submitted": "2022-11-13T00:41:43Z",
+            "times": {
+                "primary": "PT34S",
+                "primary_t": 34,
+                "realtime": "PT34S",
+                "realtime_t": 34,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "89": {
+        "place": 1,
+        "run": {
+            "id": "yod16d1m",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yod16d1m",
+            "game": "j1ne5891",
+            "level": "owo5jjod",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/nspmn8zioWQ"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-11-22T15:47:45Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "xk4ldo6j",
+                    "uri": "https://www.speedrun.com/api/v1/users/xk4ldo6j"
+                }
+            ],
+            "date": "2022-11-22",
+            "submitted": "2022-11-22T14:03:48Z",
+            "times": {
+                "primary": "PT59S",
+                "primary_t": 59,
+                "realtime": "PT59S",
+                "realtime_t": 59,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "p12nrzv1"
+            }
+        },
+        "isTied": false
+    },
+    "90": {
+        "place": 1,
+        "run": {
+            "id": "yolv9o7y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yolv9o7y",
+            "game": "j1ne5891",
+            "level": "ewpo3vjd",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/AXHlnb2hK5c"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-11-27T18:26:46Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "xkmmg69j",
+                    "uri": "https://www.speedrun.com/api/v1/users/xkmmg69j"
+                }
+            ],
+            "date": "2022-11-27",
+            "submitted": "2022-11-27T16:41:41Z",
+            "times": {
+                "primary": "PT45S",
+                "primary_t": 45,
+                "realtime": "PT45S",
+                "realtime_t": 45,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "z1936rj1"
+            }
+        },
+        "isTied": false
+    },
+    "91": {
+        "place": 1,
+        "run": {
+            "id": "ydgqqwwy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/ydgqqwwy",
+            "game": "j1ne5891",
+            "level": "29v0683w",
+            "category": "jdronyld",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/EBX59ON83rc"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-12-02T23:27:23Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jo2eg9n8",
+                    "uri": "https://www.speedrun.com/api/v1/users/jo2eg9n8"
+                }
+            ],
+            "date": "2022-12-02",
+            "submitted": "2022-12-02T20:15:47Z",
+            "times": {
+                "primary": "PT15S",
+                "primary_t": 15,
+                "realtime": "PT15S",
+                "realtime_t": 15,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "r8r1dv7n": "21dz5xpl",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "p12nrzv1"
+            }
+        },
+        "isTied": false
+    },
+    "92": {
+        "place": 1,
+        "run": {
+            "id": "z1q332gy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z1q332gy",
+            "game": "j1ne5891",
+            "level": "29v0683w",
+            "category": "7kj890zd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/EBX59ON83rc"
+                    }
+                ]
+            },
+            "comment": null,
+            "status": {
+                "status": "verified",
+                "examiner": "8l46eg2j",
+                "verify-date": "2022-12-02T23:27:28Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "jo2eg9n8",
+                    "uri": "https://www.speedrun.com/api/v1/users/jo2eg9n8"
+                }
+            ],
+            "date": "2022-12-02",
+            "submitted": "2022-12-02T20:16:22Z",
+            "times": {
+                "primary": "PT15S",
+                "primary_t": 15,
+                "realtime": "PT15S",
+                "realtime_t": 15,
+                "realtime_noloads": null,
+                "realtime_noloads_t": 0,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "p854xo3l": "gq7jpmpq",
+                "ylpe1pv8": "klrpdvwq",
+                "ylq6d1m8": "p12nrzv1"
+            }
+        },
+        "isTied": false
+    }
+}
