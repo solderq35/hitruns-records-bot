@@ -2,7 +2,7 @@
 
 Bot that tracks new speedrun world records in Hitman 3 as well as creating theoretical sum of bests based on best individual level times. 
 
-Based on Julien's work. I just moved this bot onto [Railway](https://railway.app/) for cloud based hosting.
+Based on Juliend10's work. I just moved this bot onto [Railway](https://railway.app/) for cloud based hosting.
 
 ### Setup Instructions
 Run `pip3 install discord.py` (and do pip3 install for any other libraries as well you don't have). 
@@ -18,9 +18,9 @@ Commands:
 - `!updateRecords`
   - Updates the database of records by going through speedrun.com's API
 - `!records untied <amount>`
-  - Returns <amount> of untied records
+  - Returns `<amount>` of untied records
 - `!records all <amount>`
-  - Returns <amount> of records, tied or not
+  - Returns `<amount>` of records, tied or not
 - `!sobs`
   - Returns theoretical sum of bests based on individual level times
 
