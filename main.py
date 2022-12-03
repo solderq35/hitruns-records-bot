@@ -1,6 +1,6 @@
 from ctypes import alignment
 import os
-from tkinter import CENTER
+#from tkinter import CENTER
 
 import discord
 from dotenv import load_dotenv
