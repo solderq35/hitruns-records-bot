@@ -5,6 +5,7 @@ import requests
 dateFormat = "%Y-%m-%dT%H:%M:%SZ"
 secondFormat = "PT%SS"
 minuteFormat ="PT%MM%SS"
+hourFormat ="PT%HH%MM%SS"
 noSecondFormat = "PT%MM"
 millisecondFormat = "PT%MM%S.%fS"
 noMinutemillisecondFormat = "PT%S.%fS"
@@ -50,7 +51,11 @@ def getTimeFormat(time):
                         res = bool(datetime.datetime.strptime(time, noSecondFormat))
                         return noSecondFormat
                     except ValueError:
-                        res = False
+                        try:
+                            res = bool(datetime.datetime.strptime(time, hourFormat))
+                            return hourFormat                       
+                        except ValueError:
+                                res = False
 
 def orderDict(records_dict):
     unorderedRecords = getDictFromFile(records_dict)

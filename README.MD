@@ -23,6 +23,10 @@ Commands:
   - Returns `<amount>` of untied records
 - `!records all <amount>`
   - Returns `<amount>` of records, tied or not
+- `!records <map> <rating>
+  - Returns all records for a given map and rating, sorted fastest to slowest. 
+  - Rating values: SA and SA/SO. 
+  - Map names: Destination (ex: `records dubai sa`. Note "haven", "ambrose", "romania" as arguably minor exceptions). You can also give the map name as the campaign mission title (ex: "Showstopper". Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
 - `!sobs`
   - Returns theoretical sum of bests based on individual level times
 
@@ -32,5 +36,9 @@ Note: `!updateRecords` might be sluggish to respond as it involves going through
 ![updateRecords](https://media.discordapp.net/attachments/1018323831468851202/1048705618078351380/image.png)
 
 ![recordsuntied](https://media.discordapp.net/attachments/1018323831468851202/1048705812383682630/image.png)
+
+![recordsall](https://media.discordapp.net/attachments/1018323831468851202/1049016192003739648/image.png)
+
+![recordsMap](https://media.discordapp.net/attachments/1018323831468851202/1049015923132084335/image.png)
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)

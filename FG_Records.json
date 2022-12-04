@@ -2,23 +2,23 @@
     "0": {
         "place": 1,
         "run": {
-            "id": "yd1orpwy",
-            "weblink": "https://www.speedrun.com/hitman_3/run/yd1orpwy",
+            "id": "yln3wrrz",
+            "weblink": "https://www.speedrun.com/hitman_3/run/yln3wrrz",
             "game": "j1ne5891",
             "level": null,
             "category": "rkl3no8k",
             "videos": {
                 "links": [
                     {
-                        "uri": "https://www.youtube.com/watch?v=UiMeFppc8RU"
+                        "uri": "https://www.youtube.com/watch?v=6ljaNE4axyk"
                     }
                 ]
             },
-            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=18&c1=Dubai&t2=49&c2=Dartmoor&t3=42&c3=Berlin&t4=57&c4=Chongqing&t5=40&c5=Mendoza&t6=2:09&c6=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=16&c1=Dubai&t2=43&c2=Dartmoor&t3=40&c3=Berlin&t4=55&c4=Chongqing&t5=40&c5=Mendoza&t6=2:01&c6=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
             "status": {
                 "status": "verified",
-                "examiner": "jmolz3y8",
-                "verify-date": "2022-10-27T18:55:27Z"
+                "examiner": "zxz7lv0j",
+                "verify-date": "2022-12-04T09:34:44Z"
             },
             "players": [
                 {
@@ -27,15 +27,15 @@
                     "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
                 }
             ],
-            "date": "2022-10-26",
-            "submitted": "2022-10-27T00:28:55Z",
+            "date": "2022-12-01",
+            "submitted": "2022-12-01T09:03:40Z",
             "times": {
-                "primary": "PT5M35S",
-                "primary_t": 335,
-                "realtime": "PT8M54S",
-                "realtime_t": 534,
-                "realtime_noloads": "PT5M35S",
-                "realtime_noloads_t": 335,
+                "primary": "PT5M15S",
+                "primary_t": 315,
+                "realtime": "PT8M34S",
+                "realtime_t": 514,
+                "realtime_noloads": "PT5M15S",
+                "realtime_noloads_t": 315,
                 "ingame": null,
                 "ingame_t": 0
             },

@@ -5,6 +5,7 @@ import json
 import datetime
 import requests
 import math
+import re
 from basicFunctions import *
 
 GAME = 'j1ne5891'
@@ -35,7 +36,9 @@ def getRecordData(runs, counter, typeOfData):
     # getting time in correct format
     timeObject = datetime.datetime.strptime(runs[counter].get('run', {}).get('times', {}).get('primary'), \
         getTimeFormat(runs[counter].get('run', {}).get('times', {}).get('primary')))
-    if timeObject.minute == 0:
+    if timeObject.hour == 1:
+        time = timeObject.strftime("%Hh%Mm%Ss")
+    elif (timeObject.hour == 0) and (timeObject.minute == 0):
         if timeObject.microsecond == 0:
             time = timeObject.strftime("%Ss")
         else:
@@ -55,7 +58,14 @@ def getRecordData(runs, counter, typeOfData):
     
     date = runs[counter].get('run', {}).get('date')
 
-    value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date)
+    video = runs[counter].get('run', {}).get('videos').get('links')[0].get('uri')
+    
+    # grun link stuff to possibly implement later
+    #url_pattern = "/\bhttps?:\/\/\S+/gi"
+    #grun = runs[counter].get('run', {}).get('comment')
+    #grun2 = re.search("(?P<url>https?://[^\s]+)", grun).group("url")
+
+    value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date) + "\n" + str(video)
     
     return value
         
