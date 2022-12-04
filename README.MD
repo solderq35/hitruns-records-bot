@@ -23,7 +23,7 @@ Add the bot to your own Discord server with [this URL](https://discord.com/api/o
 Commands:
 - `!updateRecords`
   - Updates the database of records by going through speedrun.com's API
-- `!records `<map>` `<rating>`
+- `!records <map> <rating>`
   - Returns all records for a given map and rating, sorted fastest to slowest. 
   - Rating values: SA and SA/SO. 
   - Map names: Destination (ex: `records dubai sa`. Note "haven", "ambrose", "romania" as arguably minor exceptions). You can also give the map name as the campaign mission title (ex: "Showstopper". Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
