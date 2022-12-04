@@ -5,6 +5,7 @@ Includes:
 - Leaderboards for any given map / category (faster than going through speedrun.com itself)
 - List of all records from oldest to newest for historical tracking
 - Full game theoretical Sum of Bests based on individual level best times
+- Video links included for all runs, and also a [Time Calc](https://solderq35.github.io/fg-time-calc/) link is included for full game runs
 
 Based on Juliend10's work. I just moved this bot onto [Railway](https://railway.app/) for cloud based hosting.
 
@@ -39,10 +40,12 @@ Note: `!updateRecords` might be sluggish to respond as it involves going through
 ### Screenshots
 ![updateRecords](https://media.discordapp.net/attachments/1018323831468851202/1048705618078351380/image.png)
 
-![recordsuntied](https://media.discordapp.net/attachments/1018323831468851202/1048705812383682630/image.png)
+![recordsfg](https://media.discordapp.net/attachments/1018323831468851202/1049091135022317589/image.png)
 
-![recordsall](https://media.discordapp.net/attachments/1018323831468851202/1049016192003739648/image.png)
+![recordsil](https://media.discordapp.net/attachments/1018323831468851202/1049091366594019438/image.png)
 
-![recordsMap](https://media.discordapp.net/attachments/1018323831468851202/1049015923132084335/image.png)
+![recordsuntied](https://media.discordapp.net/attachments/1018323831468851202/1049090686437294242/image.png)
+
+![recordsall](https://media.discordapp.net/attachments/1018323831468851202/1049090785984909362/image.png)
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
