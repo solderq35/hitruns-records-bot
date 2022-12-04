@@ -18,6 +18,7 @@ DIFFICULTY_FG_PRO = '5lypzk9l=4qyp9g6q'
 
 # translating ids to useable data for embed
 #TODO: making it work for data from file and requests
+
 def getRecordData(runs, counter, typeOfData):
     if typeOfData == 'dict':
         counter = str(counter)
@@ -28,10 +29,17 @@ def getRecordData(runs, counter, typeOfData):
         level = getNameOfBoard('campaignDict.json', levelID)
         ratingID = runs[counter].get('run', {}).get('values', {}).get('j84eq0wn')
         rating = getNameOfBoard('Ratings_FG.json', ratingID) 
+        url_pattern = "/\bhttps?:\/\/\S+/gi"
+        grun = runs[counter].get('run', {}).get('comment')
+        grun2 = re.search("(?P<url>https?://[^\s]+)", grun).group("url")
+        #print(grun2)
+        if (grun2[-1]==")"):
+            grun2 = grun2[:-1]
     else:
         level = getNameOfBoard('levelDict.json', levelID)
         ratingID = runs[counter].get('run', {}).get('category')
         rating = getNameOfBoard('Ratings_IL.json', ratingID)
+        grun2 = " "
   
     # getting time in correct format
     timeObject = datetime.datetime.strptime(runs[counter].get('run', {}).get('times', {}).get('primary'), \
@@ -60,12 +68,10 @@ def getRecordData(runs, counter, typeOfData):
 
     video = runs[counter].get('run', {}).get('videos').get('links')[0].get('uri')
     
-    # grun link stuff to possibly implement later
-    #url_pattern = "/\bhttps?:\/\/\S+/gi"
-    #grun = runs[counter].get('run', {}).get('comment')
-    #grun2 = re.search("(?P<url>https?://[^\s]+)", grun).group("url")
-
-    value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date) + "\n" + str(video)
+    if (grun2 == " "):
+        value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date) + "\nVideo: " + str(video)
+    else:
+        value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date) + "\n" + str(video) + "\n[Time Calc]({})".format(grun2)
     
     return value
         
@@ -191,6 +197,9 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
     return length, file
 
 def getNumberOfPages(length, embedLimit):
+
+    # arbitrarily reduce embed limit
+    embedLimit = 10
     rest = length % embedLimit
     if rest != 0:
         pages = (length // embedLimit) + 1
@@ -214,6 +223,11 @@ def FGRequest(campaignID, ratingID):
 
 def discordEmbed(pages, rest, runData, embedLimit, counter, typeOfData):
     embed=discord.Embed(title="Hitman 3 Records (Page " + str(counter + 1) + ")", color=0xFF0000)
+    
+    # arbitrarily reduce embed limit
+    embedLimit = 10
+    #print(embedLimit)
+    #print(pages)
     if counter < (pages - 1):
         pageSize = embedLimit
     else:
@@ -221,8 +235,26 @@ def discordEmbed(pages, rest, runData, embedLimit, counter, typeOfData):
                 
     for runs in range(pageSize):
         data = getRecordData(runData, (runs + counter * embedLimit), typeOfData)
-        embed.add_field(name="Place " + str((runs + counter * embedLimit) + 1), \
+        embed.add_field(name="Place " + str((runs + counter * (embedLimit)) + 1), \
         value=data, inline=False)
+        
+    fields = [embed.title, embed.description, embed.footer.text, embed.author.name]
+
+    fields.extend([field.name for field in embed.fields])
+    fields.extend([field.value for field in embed.fields])
+
+    total = ""
+    
+    # testing total embed size
+    """
+    for item in fields:
+        # If we str(discord.Embed.Empty) we get 'Embed.Empty', when
+        # we just want an empty string...
+        total += str(item) if str(item) != 'Embed.Empty' else ''
+
+    #print(len(total))
+    """
+    
     return embed
 
 def calcSobs():
