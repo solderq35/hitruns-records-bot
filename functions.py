@@ -9,7 +9,7 @@ from basicFunctions import *
 
 GAME = 'j1ne5891'
 VERSION_IL = 'ylpe1pv8=klrpdvwq'
-VERSION_FG = '78962g08=p12dkr2q'
+VERSION_FG = '789d3g9n=814nxkjl'
 DIFFICULTY_IL_PRO = 'r8r1dv7n=21dz5xpl'
 # DIFFICULTY_IL_MASTER = 'p854xo3l=21g85z6l'
 DIFFICULTY_FG_PRO = '5lypzk9l=4qyp9g6q'

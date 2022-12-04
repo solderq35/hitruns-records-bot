@@ -55,61 +55,6 @@
     "1": {
         "place": 1,
         "run": {
-            "id": "zx6no58z",
-            "weblink": "https://www.speedrun.com/hitman_3/run/zx6no58z",
-            "game": "j1ne5891",
-            "level": null,
-            "category": "ndx5nvvk",
-            "videos": {
-                "links": [
-                    {
-                        "uri": "https://youtu.be/bo_vPd7cN80"
-                    }
-                ]
-            },
-            "comment": "Mod note: loaded save in Dartmoor, but only because menu glitched, and player went to replan screen right away.\r\n\r\nTime Calculation: https://is.gd/yOgG6J\r\n\r\nJust for the archives.",
-            "status": {
-                "status": "verified",
-                "examiner": "8e9k717j",
-                "verify-date": "2022-10-14T04:10:03Z"
-            },
-            "players": [
-                {
-                    "rel": "user",
-                    "id": "8dwnqw9j",
-                    "uri": "https://www.speedrun.com/api/v1/users/8dwnqw9j"
-                }
-            ],
-            "date": "2021-02-24",
-            "submitted": "2021-02-24T20:37:01Z",
-            "times": {
-                "primary": "PT13M5S",
-                "primary_t": 785,
-                "realtime": "PT25M9S",
-                "realtime_t": 1509,
-                "realtime_noloads": "PT13M5S",
-                "realtime_noloads_t": 785,
-                "ingame": null,
-                "ingame_t": 0
-            },
-            "system": {
-                "platform": "8gej2n93",
-                "emulated": false,
-                "region": null
-            },
-            "splits": null,
-            "values": {
-                "j84eq0wn": "jqzp9k4l",
-                "5lypzk9l": "4qyp9g6q",
-                "ylq6d1m8": "z1936rj1",
-                "789d3g9n": "z19w45kq"
-            }
-        },
-        "isTied": false
-    },
-    "2": {
-        "place": 1,
-        "run": {
             "id": "ylonn1ny",
             "weblink": "https://www.speedrun.com/hitman_3/run/ylonn1ny",
             "game": "j1ne5891",
@@ -161,7 +106,7 @@
         },
         "isTied": false
     },
-    "3": {
+    "2": {
         "place": 1,
         "run": {
             "id": "z18qq7jy",
@@ -215,7 +160,7 @@
         },
         "isTied": false
     },
-    "4": {
+    "3": {
         "place": 1,
         "run": {
             "id": "mr42dk7z",
@@ -269,7 +214,7 @@
         },
         "isTied": true
     },
-    "5": {
+    "4": {
         "place": 1,
         "run": {
             "id": "zx6w028z",
@@ -322,7 +267,7 @@
         },
         "isTied": true
     },
-    "6": {
+    "5": {
         "place": 1,
         "run": {
             "id": "ylo22vky",
@@ -375,7 +320,7 @@
         },
         "isTied": true
     },
-    "7": {
+    "6": {
         "place": 1,
         "run": {
             "id": "y9nrj1ez",
@@ -429,7 +374,7 @@
         },
         "isTied": false
     },
-    "8": {
+    "7": {
         "place": 1,
         "run": {
             "id": "y99o87ey",
@@ -483,7 +428,117 @@
         },
         "isTied": true
     },
+    "8": {
+        "place": 1,
+        "run": {
+            "id": "zxgdqkky",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zxgdqkky",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "jdz6jpr2",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=nMpVD-AfWsU"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:31&c1=Source&t2=52&c2=Author&t3=22&c3=Vector&t4=42&c4=Patient%20Zero%20Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2021-05-03T18:12:08Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8wk490v8",
+                    "uri": "https://www.speedrun.com/api/v1/users/8wk490v8"
+                }
+            ],
+            "date": "2021-05-03",
+            "submitted": "2021-05-03T17:56:03Z",
+            "times": {
+                "primary": "PT3M27S",
+                "primary_t": 207,
+                "realtime": "PT5M59S",
+                "realtime_t": 359,
+                "realtime_noloads": "PT3M27S",
+                "realtime_noloads_t": 207,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
     "9": {
+        "place": 1,
+        "run": {
+            "id": "m3rg01gm",
+            "weblink": "https://www.speedrun.com/hitman_3/run/m3rg01gm",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "jdz6jpr2",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=nMpVD-AfWsU"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:31&c1=Source&t2=52&c2=Author&t3=22&c3=Vector&t4=42&c4=Patient%20Zero%20Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2021-05-03T18:12:03Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8wk490v8",
+                    "uri": "https://www.speedrun.com/api/v1/users/8wk490v8"
+                }
+            ],
+            "date": "2021-05-03",
+            "submitted": "2021-05-03T17:56:29Z",
+            "times": {
+                "primary": "PT3M27S",
+                "primary_t": 207,
+                "realtime": "PT5M59S",
+                "realtime_t": 359,
+                "realtime_noloads": "PT3M27S",
+                "realtime_noloads_t": 207,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "10": {
         "place": 1,
         "run": {
             "id": "y6d4dxjm",
@@ -537,7 +592,7 @@
         },
         "isTied": false
     },
-    "10": {
+    "11": {
         "place": 1,
         "run": {
             "id": "z071qgey",
@@ -594,7 +649,7 @@
         },
         "isTied": false
     },
-    "11": {
+    "12": {
         "place": 1,
         "run": {
             "id": "zgrw3qem",
@@ -647,7 +702,7 @@
         },
         "isTied": false
     },
-    "12": {
+    "13": {
         "place": 1,
         "run": {
             "id": "ylreg2ky",
@@ -701,7 +756,62 @@
         },
         "isTied": false
     },
-    "13": {
+    "14": {
+        "place": 1,
+        "run": {
+            "id": "z07p70oy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/z07p70oy",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "zd3oqzrd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=hXXnOCY-MbI"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=25&c1=Paris%20&t2=31&c2=Sapienza&t3=23&c3=Marrakesh&t4=23&c4=Bangkok&t5=23&c5=Colorado%20&t6=29&c6=Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "x7qe61r8",
+                "verify-date": "2021-09-12T03:43:03Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8l46eg2j",
+                    "uri": "https://www.speedrun.com/api/v1/users/8l46eg2j"
+                }
+            ],
+            "date": "2021-09-11",
+            "submitted": "2021-09-11T18:17:28Z",
+            "times": {
+                "primary": "PT2M34S",
+                "primary_t": 154,
+                "realtime": "PT5M36S",
+                "realtime_t": 336,
+                "realtime_noloads": "PT2M34S",
+                "realtime_noloads_t": 154,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "15": {
         "place": 1,
         "run": {
             "id": "zxo8ejqz",
@@ -756,7 +866,7 @@
         },
         "isTied": false
     },
-    "14": {
+    "16": {
         "place": 1,
         "run": {
             "id": "z5dx9lgm",
@@ -811,7 +921,7 @@
         },
         "isTied": false
     },
-    "15": {
+    "17": {
         "place": 1,
         "run": {
             "id": "mrn26l8y",
@@ -865,7 +975,7 @@
         },
         "isTied": false
     },
-    "16": {
+    "18": {
         "place": 1,
         "run": {
             "id": "zqv8p9xm",
@@ -919,7 +1029,7 @@
         },
         "isTied": false
     },
-    "17": {
+    "19": {
         "place": 1,
         "run": {
             "id": "y2728j9z",
@@ -973,7 +1083,7 @@
         },
         "isTied": false
     },
-    "18": {
+    "20": {
         "place": 1,
         "run": {
             "id": "z07d0ney",
@@ -1026,7 +1136,7 @@
         },
         "isTied": false
     },
-    "19": {
+    "21": {
         "place": 1,
         "run": {
             "id": "z12o6ljy",
@@ -1080,7 +1190,7 @@
         },
         "isTied": false
     },
-    "20": {
+    "22": {
         "place": 1,
         "run": {
             "id": "y482grkm",
@@ -1134,7 +1244,7 @@
         },
         "isTied": true
     },
-    "21": {
+    "23": {
         "place": 1,
         "run": {
             "id": "zgdx4ndz",
@@ -1187,7 +1297,7 @@
         },
         "isTied": false
     },
-    "22": {
+    "24": {
         "place": 1,
         "run": {
             "id": "ywjqgnpz",
@@ -1240,7 +1350,7 @@
         },
         "isTied": true
     },
-    "23": {
+    "25": {
         "place": 1,
         "run": {
             "id": "ydwelqxm",
@@ -1293,7 +1403,7 @@
         },
         "isTied": false
     },
-    "24": {
+    "26": {
         "place": 1,
         "run": {
             "id": "zn706p9m",
@@ -1346,7 +1456,7 @@
         },
         "isTied": true
     },
-    "25": {
+    "27": {
         "place": 1,
         "run": {
             "id": "ywjjqgnz",
@@ -1400,7 +1510,7 @@
         },
         "isTied": false
     },
-    "26": {
+    "28": {
         "place": 1,
         "run": {
             "id": "mr66og8m",
@@ -1453,7 +1563,7 @@
         },
         "isTied": false
     },
-    "27": {
+    "29": {
         "place": 1,
         "run": {
             "id": "z12po27y",
@@ -1507,7 +1617,7 @@
         },
         "isTied": false
     },
-    "28": {
+    "30": {
         "place": 1,
         "run": {
             "id": "zxl7dlez",
@@ -1561,7 +1671,7 @@
         },
         "isTied": false
     },
-    "29": {
+    "31": {
         "place": 1,
         "run": {
             "id": "m7w6wl9z",
@@ -1614,7 +1724,7 @@
         },
         "isTied": false
     },
-    "30": {
+    "32": {
         "place": 1,
         "run": {
             "id": "y8j861wz",
@@ -1667,7 +1777,7 @@
         },
         "isTied": false
     },
-    "31": {
+    "33": {
         "place": 1,
         "run": {
             "id": "y48x5dnm",
@@ -1721,7 +1831,7 @@
         },
         "isTied": false
     },
-    "32": {
+    "34": {
         "place": 1,
         "run": {
             "id": "yle14onz",
@@ -1775,7 +1885,7 @@
         },
         "isTied": true
     },
-    "33": {
+    "35": {
         "place": 1,
         "run": {
             "id": "z5vpv8jm",
@@ -1828,7 +1938,7 @@
         },
         "isTied": true
     },
-    "34": {
+    "36": {
         "place": 1,
         "run": {
             "id": "zxl3pdgz",
@@ -1881,7 +1991,7 @@
         },
         "isTied": true
     },
-    "35": {
+    "37": {
         "place": 1,
         "run": {
             "id": "z5vpn3dm",
@@ -1935,7 +2045,7 @@
         },
         "isTied": true
     },
-    "36": {
+    "38": {
         "place": 1,
         "run": {
             "id": "m36q8g6m",
@@ -1989,7 +2099,7 @@
         },
         "isTied": true
     },
-    "37": {
+    "39": {
         "place": 1,
         "run": {
             "id": "zxl31qqz",
@@ -2043,7 +2153,7 @@
         },
         "isTied": false
     },
-    "38": {
+    "40": {
         "place": 1,
         "run": {
             "id": "z5vpq8gm",
@@ -2097,7 +2207,7 @@
         },
         "isTied": false
     },
-    "39": {
+    "41": {
         "place": 1,
         "run": {
             "id": "yvqn5o4m",
@@ -2151,7 +2261,7 @@
         },
         "isTied": false
     },
-    "40": {
+    "42": {
         "place": 1,
         "run": {
             "id": "y48jvrkm",
@@ -2204,7 +2314,7 @@
         },
         "isTied": false
     },
-    "41": {
+    "43": {
         "place": 1,
         "run": {
             "id": "ydw49xwm",
@@ -2257,7 +2367,7 @@
         },
         "isTied": true
     },
-    "42": {
+    "44": {
         "place": 1,
         "run": {
             "id": "m7wvd94z",
@@ -2310,7 +2420,7 @@
         },
         "isTied": false
     },
-    "43": {
+    "45": {
         "place": 1,
         "run": {
             "id": "ywj5rg2z",
@@ -2363,7 +2473,7 @@
         },
         "isTied": false
     },
-    "44": {
+    "46": {
         "place": 1,
         "run": {
             "id": "yjx72o7z",
@@ -2417,7 +2527,7 @@
         },
         "isTied": false
     },
-    "45": {
+    "47": {
         "place": 1,
         "run": {
             "id": "yle56d2z",
@@ -2471,7 +2581,7 @@
         },
         "isTied": false
     },
-    "46": {
+    "48": {
         "place": 1,
         "run": {
             "id": "yvq5elom",
@@ -2525,7 +2635,7 @@
         },
         "isTied": true
     },
-    "47": {
+    "49": {
         "place": 1,
         "run": {
             "id": "zn76ojlm",
@@ -2578,7 +2688,7 @@
         },
         "isTied": false
     },
-    "48": {
+    "50": {
         "place": 1,
         "run": {
             "id": "mkex5l1m",
@@ -2632,7 +2742,7 @@
         },
         "isTied": true
     },
-    "49": {
+    "51": {
         "place": 1,
         "run": {
             "id": "zp2v8xry",
@@ -2686,7 +2796,7 @@
         },
         "isTied": false
     },
-    "50": {
+    "52": {
         "place": 1,
         "run": {
             "id": "ydwx02wm",
@@ -2740,7 +2850,7 @@
         },
         "isTied": false
     },
-    "51": {
+    "53": {
         "place": 1,
         "run": {
             "id": "zxl1on8z",
@@ -2793,7 +2903,7 @@
         },
         "isTied": false
     },
-    "52": {
+    "54": {
         "place": 1,
         "run": {
             "id": "ywj9j2pz",
@@ -2847,7 +2957,7 @@
         },
         "isTied": false
     },
-    "53": {
+    "55": {
         "place": 1,
         "run": {
             "id": "yjx0xq3z",
@@ -2901,7 +3011,7 @@
         },
         "isTied": false
     },
-    "54": {
+    "56": {
         "place": 1,
         "run": {
             "id": "ywj93p3z",
@@ -2955,7 +3065,7 @@
         },
         "isTied": true
     },
-    "55": {
+    "57": {
         "place": 1,
         "run": {
             "id": "yjx0p4dz",
@@ -3009,7 +3119,7 @@
         },
         "isTied": true
     },
-    "56": {
+    "58": {
         "place": 1,
         "run": {
             "id": "y48pxr2m",
@@ -3062,7 +3172,7 @@
         },
         "isTied": false
     },
-    "57": {
+    "59": {
         "place": 1,
         "run": {
             "id": "z525985z",
@@ -3115,7 +3225,62 @@
         },
         "isTied": false
     },
-    "58": {
+    "60": {
+        "place": 1,
+        "run": {
+            "id": "y2p1dk9z",
+            "weblink": "https://www.speedrun.com/hitman_3/run/y2p1dk9z",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndx5nvvk",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://youtu.be/SFkbE0_fr3c"
+                    }
+                ]
+            },
+            "comment": "poopy woopy\r\n\r\n[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=23&c1=Paris&t2=29&c2=Sapi&t3=28&c3=Marra&t4=22&c4=Bang&t5=26&c5=Colo&t6=29&c6=Hokk&t7=1:12&c7=Night&t8=40&c8=Miami&t9=1:06&c9=Santa&t10=51&c10=Mumbai&t11=49&c11=Creek&t12=28&c12=Sgail&t13=1:15&c13=NYC&t14=17&c14=Haven&t15=11&c15=Dubai&t16=40&c16=Dart&t17=27&c17=Berlin&t18=39&c18=Chong&t19=51&c19=Men&t20=1:58&c20=Train&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "jn934lwx",
+                "verify-date": "2022-04-21T20:40:49Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "j42pom5x",
+                    "uri": "https://www.speedrun.com/api/v1/users/j42pom5x"
+                }
+            ],
+            "date": "2022-04-21",
+            "submitted": "2022-04-21T20:08:50Z",
+            "times": {
+                "primary": "PT14M1S",
+                "primary_t": 841,
+                "realtime": "PT23M19S",
+                "realtime_t": 1399,
+                "realtime_noloads": "PT14M1S",
+                "realtime_noloads_t": 841,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "jqzp9k4l",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "61": {
         "place": 1,
         "run": {
             "id": "mr79k12z",
@@ -3169,7 +3334,7 @@
         },
         "isTied": false
     },
-    "59": {
+    "62": {
         "place": 1,
         "run": {
             "id": "zq7g0prm",
@@ -3223,7 +3388,7 @@
         },
         "isTied": false
     },
-    "60": {
+    "63": {
         "place": 1,
         "run": {
             "id": "y2pv085z",
@@ -3276,7 +3441,7 @@
         },
         "isTied": false
     },
-    "61": {
+    "64": {
         "place": 1,
         "run": {
             "id": "yvr05v4z",
@@ -3330,7 +3495,7 @@
         },
         "isTied": true
     },
-    "62": {
+    "65": {
         "place": 1,
         "run": {
             "id": "mkkvr1vm",
@@ -3383,7 +3548,7 @@
         },
         "isTied": true
     },
-    "63": {
+    "66": {
         "place": 1,
         "run": {
             "id": "y88w2gny",
@@ -3437,7 +3602,7 @@
         },
         "isTied": false
     },
-    "64": {
+    "67": {
         "place": 1,
         "run": {
             "id": "yvrl67ez",
@@ -3491,7 +3656,7 @@
         },
         "isTied": false
     },
-    "65": {
+    "68": {
         "place": 1,
         "run": {
             "id": "ydd4280y",
@@ -3544,7 +3709,7 @@
         },
         "isTied": true
     },
-    "66": {
+    "69": {
         "place": 1,
         "run": {
             "id": "y2e3kjjy",
@@ -3597,7 +3762,7 @@
         },
         "isTied": false
     },
-    "67": {
+    "70": {
         "place": 1,
         "run": {
             "id": "mrre557m",
@@ -3651,7 +3816,7 @@
         },
         "isTied": false
     },
-    "68": {
+    "71": {
         "place": 1,
         "run": {
             "id": "yd16pwvy",
@@ -3705,7 +3870,7 @@
         },
         "isTied": false
     },
-    "69": {
+    "72": {
         "place": 1,
         "run": {
             "id": "y6xdrg0y",
@@ -3758,7 +3923,7 @@
         },
         "isTied": false
     },
-    "70": {
+    "73": {
         "place": 1,
         "run": {
             "id": "y8xe2e1m",
@@ -3811,7 +3976,7 @@
         },
         "isTied": false
     },
-    "71": {
+    "74": {
         "place": 1,
         "run": {
             "id": "zpd864vz",
@@ -3865,7 +4030,7 @@
         },
         "isTied": false
     },
-    "72": {
+    "75": {
         "place": 1,
         "run": {
             "id": "z0lpo74z",
@@ -3919,7 +4084,7 @@
         },
         "isTied": false
     },
-    "73": {
+    "76": {
         "place": 1,
         "run": {
             "id": "y6x0n91y",
@@ -3973,65 +4138,7 @@
         },
         "isTied": false
     },
-    "74": {
-        "place": 1,
-        "run": {
-            "id": "y4xq863z",
-            "weblink": "https://www.speedrun.com/hitman_3/run/y4xq863z",
-            "game": "j1ne5891",
-            "level": null,
-            "category": "zd3oqzrd",
-            "videos": {
-                "links": [
-                    {
-                        "uri": "https://www.youtube.com/watch?v=pFpfKChho-E"
-                    }
-                ]
-            },
-            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=28&c1=Paris&t2=58&c2=Sapienza&t3=26&c3=Marrakesh&t4=27&c4=Bangkok&t5=45&c5=Colorado&t6=33&c6=Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
-            "status": {
-                "status": "verified",
-                "examiner": "8e9k717j",
-                "verify-date": "2022-10-14T05:16:39Z"
-            },
-            "players": [
-                {
-                    "rel": "user",
-                    "id": "8lp3ymvj",
-                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
-                }
-            ],
-            "date": "2022-09-06",
-            "submitted": "2022-09-06T14:20:17Z",
-            "times": {
-                "primary": "PT3M37S",
-                "primary_t": 217,
-                "realtime": "PT7M15S",
-                "realtime_t": 435,
-                "realtime_noloads": "PT3M37S",
-                "realtime_noloads_t": 217,
-                "ingame": null,
-                "ingame_t": 0
-            },
-            "system": {
-                "platform": "8gej2n93",
-                "emulated": false,
-                "region": null
-            },
-            "splits": {
-                "rel": "splits.io",
-                "uri": "https://splits.io/api/v3/runs/4yuwpr8f"
-            },
-            "values": {
-                "j84eq0wn": "21g85yxl",
-                "5lypzk9l": "4qyp9g6q",
-                "ylq6d1m8": "z1936rj1",
-                "789d3g9n": "z19w45kq"
-            }
-        },
-        "isTied": false
-    },
-    "75": {
+    "77": {
         "place": 1,
         "run": {
             "id": "m3x3eo4m",
@@ -4084,7 +4191,7 @@
         },
         "isTied": false
     },
-    "76": {
+    "78": {
         "place": 1,
         "run": {
             "id": "yjdd6pdy",
@@ -4134,122 +4241,6 @@
                 "r8r1dv7n": "21dz5xpl",
                 "ylpe1pv8": "klrpdvwq",
                 "ylq6d1m8": "z1936rj1"
-            }
-        },
-        "isTied": false
-    },
-    "77": {
-        "place": 1,
-        "run": {
-            "id": "yl1np6km",
-            "weblink": "https://www.speedrun.com/hitman_3/run/yl1np6km",
-            "game": "j1ne5891",
-            "level": null,
-            "category": "jdz6jpr2",
-            "videos": {
-                "links": [
-                    {
-                        "uri": "https://www.twitch.tv/videos/1593343924"
-                    },
-                    {
-                        "uri": "https://www.youtube.com/watch?v=iJ9_9QoZZnE"
-                    }
-                ]
-            },
-            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:13&c1=Source&t2=0:51&c2=Author&t3=0:28&c3=Vector&t4=0:45&c4=Patient%20Zero%20Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nTwitch Highlight Backup:\r\nhttps://www.twitch.tv/videos/1593343924",
-            "status": {
-                "status": "verified",
-                "examiner": "8e9k717j",
-                "verify-date": "2022-11-05T05:37:08Z"
-            },
-            "players": [
-                {
-                    "rel": "user",
-                    "id": "y8deml9j",
-                    "uri": "https://www.speedrun.com/api/v1/users/y8deml9j"
-                }
-            ],
-            "date": "2022-09-17",
-            "submitted": "2022-09-18T01:56:10Z",
-            "times": {
-                "primary": "PT3M17S",
-                "primary_t": 197,
-                "realtime": "PT6M23S",
-                "realtime_t": 383,
-                "realtime_noloads": "PT3M17S",
-                "realtime_noloads_t": 197,
-                "ingame": null,
-                "ingame_t": 0
-            },
-            "system": {
-                "platform": "8gej2n93",
-                "emulated": false,
-                "region": null
-            },
-            "splits": null,
-            "values": {
-                "j84eq0wn": "21g85yxl",
-                "5lypzk9l": "4qyp9g6q",
-                "ylq6d1m8": "z1936rj1",
-                "789d3g9n": "z19w45kq"
-            }
-        },
-        "isTied": false
-    },
-    "78": {
-        "place": 1,
-        "run": {
-            "id": "y9x6p8vy",
-            "weblink": "https://www.speedrun.com/hitman_3/run/y9x6p8vy",
-            "game": "j1ne5891",
-            "level": null,
-            "category": "jdz6jpr2",
-            "videos": {
-                "links": [
-                    {
-                        "uri": "https://www.twitch.tv/videos/1593343924"
-                    },
-                    {
-                        "uri": "https://www.youtube.com/watch?v=iJ9_9QoZZnE"
-                    }
-                ]
-            },
-            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=1:13&c1=Source&t2=0:51&c2=Author&t3=0:28&c3=Vector&t4=0:45&c4=Patient%20Zero%20Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nTwitch Highlight Backup:\r\nhttps://www.twitch.tv/videos/1593343924",
-            "status": {
-                "status": "verified",
-                "examiner": "8e9k717j",
-                "verify-date": "2022-11-05T05:36:48Z"
-            },
-            "players": [
-                {
-                    "rel": "user",
-                    "id": "y8deml9j",
-                    "uri": "https://www.speedrun.com/api/v1/users/y8deml9j"
-                }
-            ],
-            "date": "2022-09-17",
-            "submitted": "2022-09-18T01:57:23Z",
-            "times": {
-                "primary": "PT3M17S",
-                "primary_t": 197,
-                "realtime": "PT6M23S",
-                "realtime_t": 383,
-                "realtime_noloads": "PT3M17S",
-                "realtime_noloads_t": 197,
-                "ingame": null,
-                "ingame_t": 0
-            },
-            "system": {
-                "platform": "8gej2n93",
-                "emulated": false,
-                "region": null
-            },
-            "splits": null,
-            "values": {
-                "j84eq0wn": "gq7jpknq",
-                "5lypzk9l": "4qyp9g6q",
-                "ylq6d1m8": "z1936rj1",
-                "789d3g9n": "z19w45kq"
             }
         },
         "isTied": false
@@ -5662,171 +5653,6 @@
     "105": {
         "place": 1,
         "run": {
-            "id": "zpdk99xz",
-            "weblink": "https://www.speedrun.com/hitman_3/run/zpdk99xz",
-            "game": "j1ne5891",
-            "level": null,
-            "category": "ndx5nvvk",
-            "videos": {
-                "links": [
-                    {
-                        "uri": "https://youtu.be/QziDV7Cz4yY"
-                    }
-                ]
-            },
-            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=31&c1=Paris&t2=1:04&c2=Sapienza&t3=26&c3=Marrakesh&t4=29&c4=Bangkok&t5=51&c5=Colorado&t6=39&c6=Hokkaido&t7=1:15&c7=Hawke's%20Bay&t8=23&c8=Miami&t9=1:22&c9=Santa%20Fortuna&t10=1:16&c10=Mumbai&t11=1:10&c11=Whittleton&t12=1:01&c12=Sgail&t13=1:32&c13=New%20York&t14=1:19&c14=Haven&t15=21&c15=Dubai%20reset&t16=24&c16=Dubai&t17=59&c17=Dartmoor%20reset&t18=59&c18=Dartmoor&t19=55&c19=Berlin&t20=57&c20=Chongqing&t21=1:00&c21=Mendoza&t22=29&c22=Romania%20reset&t23=2:10&c23=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nObsolete due to October patch and molotov removal. Some strats still relevant without molotov.",
-            "status": {
-                "status": "verified",
-                "examiner": "8e9k717j",
-                "verify-date": "2022-10-14T05:10:31Z"
-            },
-            "players": [
-                {
-                    "rel": "user",
-                    "id": "8lp3ymvj",
-                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
-                }
-            ],
-            "date": "2022-09-01",
-            "submitted": "2022-10-14T05:10:31Z",
-            "times": {
-                "primary": "PT21M32S",
-                "primary_t": 1292,
-                "realtime": "PT37M48S",
-                "realtime_t": 2268,
-                "realtime_noloads": "PT21M32S",
-                "realtime_noloads_t": 1292,
-                "ingame": null,
-                "ingame_t": 0
-            },
-            "system": {
-                "platform": "8gej2n93",
-                "emulated": false,
-                "region": null
-            },
-            "splits": null,
-            "values": {
-                "j84eq0wn": "21g85yxl",
-                "5lypzk9l": "4qyp9g6q",
-                "ylq6d1m8": "z1936rj1",
-                "789d3g9n": "z19w45kq"
-            }
-        },
-        "isTied": false
-    },
-    "106": {
-        "place": 1,
-        "run": {
-            "id": "yd1vddvy",
-            "weblink": "https://www.speedrun.com/hitman_3/run/yd1vddvy",
-            "game": "j1ne5891",
-            "level": null,
-            "category": "ndx5nvvk",
-            "videos": {
-                "links": [
-                    {
-                        "uri": "https://youtu.be/QziDV7Cz4yY"
-                    }
-                ]
-            },
-            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=31&c1=Paris&t2=1:04&c2=Sapienza&t3=26&c3=Marrakesh&t4=29&c4=Bangkok&t5=51&c5=Colorado&t6=39&c6=Hokkaido&t7=1:15&c7=Hawke's%20Bay&t8=23&c8=Miami&t9=1:22&c9=Santa%20Fortuna&t10=1:16&c10=Mumbai&t11=1:10&c11=Whittleton&t12=1:01&c12=Sgail&t13=1:32&c13=New%20York&t14=1:19&c14=Haven&t15=21&c15=Dubai%20reset&t16=24&c16=Dubai&t17=59&c17=Dartmoor%20reset&t18=59&c18=Dartmoor&t19=55&c19=Berlin&t20=57&c20=Chongqing&t21=1:00&c21=Mendoza&t22=29&c22=Romania%20reset&t23=2:10&c23=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)\r\n\r\nObsolete due to October patch and molotov removal. Some strats still relevant without molotov.",
-            "status": {
-                "status": "verified",
-                "examiner": "8e9k717j",
-                "verify-date": "2022-10-14T05:11:34Z"
-            },
-            "players": [
-                {
-                    "rel": "user",
-                    "id": "8lp3ymvj",
-                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
-                }
-            ],
-            "date": "2022-09-01",
-            "submitted": "2022-10-14T05:11:34Z",
-            "times": {
-                "primary": "PT21M32S",
-                "primary_t": 1292,
-                "realtime": "PT37M48S",
-                "realtime_t": 2268,
-                "realtime_noloads": "PT21M32S",
-                "realtime_noloads_t": 1292,
-                "ingame": null,
-                "ingame_t": 0
-            },
-            "system": {
-                "platform": "8gej2n93",
-                "emulated": false,
-                "region": null
-            },
-            "splits": null,
-            "values": {
-                "j84eq0wn": "gq7jpknq",
-                "5lypzk9l": "4qyp9g6q",
-                "ylq6d1m8": "z1936rj1",
-                "789d3g9n": "z19w45kq"
-            }
-        },
-        "isTied": false
-    },
-    "107": {
-        "place": 1,
-        "run": {
-            "id": "y8xood5m",
-            "weblink": "https://www.speedrun.com/hitman_3/run/y8xood5m",
-            "game": "j1ne5891",
-            "level": null,
-            "category": "zd3oqzrd",
-            "videos": {
-                "links": [
-                    {
-                        "uri": "https://youtu.be/TKODY-B2WMs"
-                    }
-                ]
-            },
-            "comment": "patched run archive\r\n\r\nGo to https://cutt.ly/h3_patched_runs for more info",
-            "status": {
-                "status": "verified",
-                "examiner": "8e9k717j",
-                "verify-date": "2022-10-15T22:33:22Z"
-            },
-            "players": [
-                {
-                    "rel": "user",
-                    "id": "kjp9n58q",
-                    "uri": "https://www.speedrun.com/api/v1/users/kjp9n58q"
-                }
-            ],
-            "date": "2021-02-20",
-            "submitted": "2022-10-15T22:33:22Z",
-            "times": {
-                "primary": "PT58S",
-                "primary_t": 58,
-                "realtime": "PT3M19S",
-                "realtime_t": 199,
-                "realtime_noloads": "PT58S",
-                "realtime_noloads_t": 58,
-                "ingame": null,
-                "ingame_t": 0
-            },
-            "system": {
-                "platform": "8gej2n93",
-                "emulated": false,
-                "region": null
-            },
-            "splits": null,
-            "values": {
-                "j84eq0wn": "jqzp9k4l",
-                "5lypzk9l": "4qyp9g6q",
-                "ylq6d1m8": "z1936rj1",
-                "789d3g9n": "z19w45kq"
-            }
-        },
-        "isTied": false
-    },
-    "108": {
-        "place": 1,
-        "run": {
             "id": "y6xjpvjy",
             "weblink": "https://www.speedrun.com/hitman_3/run/y6xjpvjy",
             "game": "j1ne5891",
@@ -5878,7 +5704,7 @@
         },
         "isTied": false
     },
-    "109": {
+    "106": {
         "place": 1,
         "run": {
             "id": "y8xg9wnm",
@@ -5932,7 +5758,7 @@
         },
         "isTied": false
     },
-    "110": {
+    "107": {
         "place": 1,
         "run": {
             "id": "zgq6lrdy",
@@ -5985,7 +5811,62 @@
         },
         "isTied": false
     },
-    "111": {
+    "108": {
+        "place": 1,
+        "run": {
+            "id": "zq9p2r8y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zq9p2r8y",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndx5nvvk",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=yVCP9MJWaUs"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=32&c1=Paris&t2=1:20&c2=Sapienza&t3=27&c3=Marrakesh&t4=28&c4=Bangkok&t5=53&c5=Colorado&t6=39&c6=Hokkaido&t7=1:14&c7=Hawke%27s%20Bay&t8=23&c8=Miami&t9=1:21&c9=Santa%20Fortuna&t10=1:15&c10=Mumbai&t11=1:10&c11=Whittleton%20Creek&t12=1:08&c12=Isle%20of%20Sgail%20Reset&t13=1:01&c13=Isle%20of%20Sgail&t14=1:32&c14=New%20York&t15=1:20&c15=Haven&t16=25&c16=Dubai&t17=58&c17=Dartmoor&t18=53&c18=Berlin&t19=1:04&c19=Chongqing&t20=40&c20=Mendoza&t21=40&c21=Romania%20Reset&t22=2:09&c22=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-24T04:28:13Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-10-22",
+            "submitted": "2022-10-22T22:03:20Z",
+            "times": {
+                "primary": "PT21M32S",
+                "primary_t": 1292,
+                "realtime": "PT39M28S",
+                "realtime_t": 2368,
+                "realtime_noloads": "PT21M32S",
+                "realtime_noloads_t": 1292,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "109": {
         "place": 1,
         "run": {
             "id": "y9xeqpky",
@@ -6038,7 +5919,7 @@
         },
         "isTied": true
     },
-    "112": {
+    "110": {
         "place": 1,
         "run": {
             "id": "yw6279nm",
@@ -6093,7 +5974,62 @@
         },
         "isTied": false
     },
-    "113": {
+    "111": {
+        "place": 1,
+        "run": {
+            "id": "zgq65v0y",
+            "weblink": "https://www.speedrun.com/hitman_3/run/zgq65v0y",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "ndx5nvvk",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=yVCP9MJWaUs"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=32&c1=Paris&t2=1:20&c2=Sapienza&t3=27&c3=Marrakesh&t4=28&c4=Bangkok&t5=53&c5=Colorado&t6=39&c6=Hokkaido&t7=1:14&c7=Hawke%27s%20Bay&t8=23&c8=Miami&t9=1:21&c9=Santa%20Fortuna&t10=1:15&c10=Mumbai&t11=1:10&c11=Whittleton%20Creek&t12=1:08&c12=Isle%20of%20Sgail%20Reset&t13=1:01&c13=Isle%20of%20Sgail&t14=1:32&c14=New%20York&t15=1:20&c15=Haven&t16=25&c16=Dubai&t17=58&c17=Dartmoor&t18=53&c18=Berlin&t19=1:04&c19=Chongqing&t20=40&c20=Mendoza&t21=40&c21=Romania%20Reset&t22=2:09&c22=Romania&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "8e9k717j",
+                "verify-date": "2022-10-24T04:34:39Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-10-22",
+            "submitted": "2022-10-24T04:34:39Z",
+            "times": {
+                "primary": "PT21M32S",
+                "primary_t": 1292,
+                "realtime": "PT39M28S",
+                "realtime_t": 2368,
+                "realtime_noloads": "PT21M32S",
+                "realtime_noloads_t": 1292,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "gq7jpknq",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
+            }
+        },
+        "isTied": false
+    },
+    "112": {
         "place": 1,
         "run": {
             "id": "yd1orpwy",
@@ -6148,7 +6084,7 @@
         },
         "isTied": false
     },
-    "114": {
+    "113": {
         "place": 1,
         "run": {
             "id": "me1plj0y",
@@ -6201,7 +6137,7 @@
         },
         "isTied": false
     },
-    "115": {
+    "114": {
         "place": 1,
         "run": {
             "id": "z0l2w6jz",
@@ -6255,7 +6191,7 @@
         },
         "isTied": false
     },
-    "116": {
+    "115": {
         "place": 1,
         "run": {
             "id": "mrrw864m",
@@ -6310,7 +6246,7 @@
         },
         "isTied": false
     },
-    "117": {
+    "116": {
         "place": 1,
         "run": {
             "id": "zx8rokem",
@@ -6365,7 +6301,7 @@
         },
         "isTied": false
     },
-    "118": {
+    "117": {
         "place": 1,
         "run": {
             "id": "y9xqgxky",
@@ -6419,7 +6355,7 @@
         },
         "isTied": false
     },
-    "119": {
+    "118": {
         "place": 1,
         "run": {
             "id": "znqn92vz",
@@ -6473,7 +6409,7 @@
         },
         "isTied": true
     },
-    "120": {
+    "119": {
         "place": 1,
         "run": {
             "id": "yw69wgnm",
@@ -6527,7 +6463,7 @@
         },
         "isTied": true
     },
-    "121": {
+    "120": {
         "place": 1,
         "run": {
             "id": "z1geen7z",
@@ -6581,7 +6517,7 @@
         },
         "isTied": true
     },
-    "122": {
+    "121": {
         "place": 1,
         "run": {
             "id": "yod16d1m",
@@ -6631,6 +6567,61 @@
                 "r8r1dv7n": "21dz5xpl",
                 "ylpe1pv8": "klrpdvwq",
                 "ylq6d1m8": "p12nrzv1"
+            }
+        },
+        "isTied": false
+    },
+    "122": {
+        "place": 1,
+        "run": {
+            "id": "m7xrnrwy",
+            "weblink": "https://www.speedrun.com/hitman_3/run/m7xrnrwy",
+            "game": "j1ne5891",
+            "level": null,
+            "category": "zd3oqzrd",
+            "videos": {
+                "links": [
+                    {
+                        "uri": "https://www.youtube.com/watch?v=Qp5jjyeiK3o"
+                    }
+                ]
+            },
+            "comment": "[Time Calculation](https://solderq35.github.io/fg-time-calc/?t1=29&c1=Paris&t2=57&c2=Sapienza&t3=27&c3=Marrakesh&t4=28&c4=Bangkok&t5=53&c5=Colorado&t6=33&c6=Hokkaido&mode=0&fs3=1&ft2=1&f3t1=1&f4t0=1&d=:&o1=1&fps=)",
+            "status": {
+                "status": "verified",
+                "examiner": "v8lv1p2j",
+                "verify-date": "2022-11-25T18:48:01Z"
+            },
+            "players": [
+                {
+                    "rel": "user",
+                    "id": "8lp3ymvj",
+                    "uri": "https://www.speedrun.com/api/v1/users/8lp3ymvj"
+                }
+            ],
+            "date": "2022-11-24",
+            "submitted": "2022-11-24T10:31:04Z",
+            "times": {
+                "primary": "PT3M47S",
+                "primary_t": 227,
+                "realtime": "PT7M8S",
+                "realtime_t": 428,
+                "realtime_noloads": "PT3M47S",
+                "realtime_noloads_t": 227,
+                "ingame": null,
+                "ingame_t": 0
+            },
+            "system": {
+                "platform": "8gej2n93",
+                "emulated": false,
+                "region": null
+            },
+            "splits": null,
+            "values": {
+                "j84eq0wn": "21g85yxl",
+                "5lypzk9l": "4qyp9g6q",
+                "ylq6d1m8": "z1936rj1",
+                "789d3g9n": "814nxkjl"
             }
         },
         "isTied": false
