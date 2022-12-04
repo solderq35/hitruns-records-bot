@@ -1,6 +1,10 @@
 ## Hitruns Records Bot
+Discord bot that provides an alternative (read-only) interface to the Hitman 3 leaderboard on speedrun.com as well as additional functionality.
 
-Bot that tracks new speedrun world records in Hitman 3 as well as creating theoretical sum of bests based on best individual level times. 
+Includes:
+- Leaderboards for any given map / category (faster than going through speedrun.com itself)
+- List of all records from oldest to newest for historical tracking
+- Full game theoretical Sum of Bests based on individual level best times
 
 Based on Juliend10's work. I just moved this bot onto [Railway](https://railway.app/) for cloud based hosting.
 
@@ -19,14 +23,14 @@ Add the bot to your own Discord server with [this URL](https://discord.com/api/o
 Commands:
 - `!updateRecords`
   - Updates the database of records by going through speedrun.com's API
+- `!records `<map>` `<rating>`
+  - Returns all records for a given map and rating, sorted fastest to slowest. 
+  - Rating values: SA and SA/SO. 
+  - Map names: Destination (ex: `records dubai sa`. Note "haven", "ambrose", "romania" as arguably minor exceptions). You can also give the map name as the campaign mission title (ex: "Showstopper". Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
 - `!records untied <amount>`
   - Returns `<amount>` of untied records
 - `!records all <amount>`
   - Returns `<amount>` of records, tied or not
-- `!records <map> <rating>
-  - Returns all records for a given map and rating, sorted fastest to slowest. 
-  - Rating values: SA and SA/SO. 
-  - Map names: Destination (ex: `records dubai sa`. Note "haven", "ambrose", "romania" as arguably minor exceptions). You can also give the map name as the campaign mission title (ex: "Showstopper". Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
 - `!sobs`
   - Returns theoretical sum of bests based on individual level times
 
