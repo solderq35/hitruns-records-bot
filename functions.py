@@ -71,7 +71,7 @@ def getRecordData(runs, counter, typeOfData):
     if (grun2 == " "):
         value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date) + "\nVideo: " + str(video)
     else:
-        value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date) + "\n" + str(video) + "\n[Time Calc]({})".format(grun2)
+        value = str(level) + " " + str(rating) + " in " + str(time) + " by " + str(player) + " on " + str(date) + "\nVideo: " + str(video) + "\n[Time Calc]({})".format(grun2)
     
     return value
         
