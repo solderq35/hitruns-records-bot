@@ -187,6 +187,8 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
             length = getNumberOfRuns('Ordered_Records.json')
         file = 'Ordered_Records.json'
     elif tieStatus == 'untied':
+        if lengthInput == 'all':
+            lengthInput = 300;
         if lengthInput == 'empty':
             length = (int)(str(embedLimit))
         elif int(lengthInput) <= getNumberOfRuns('Ordered_Untied_Records.json'):
