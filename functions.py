@@ -180,7 +180,9 @@ def getBoardData(boardType, boardID, ratingID):
 def setOutputLength(tieStatus, lengthInput, embedLimit):
     if tieStatus == 'all':
         if lengthInput == 'empty':
-            length = (int)(str(embedLimit))
+            #length = (int)(str(embedLimit))
+            lengthInput = 300;
+            length = getNumberOfRuns('Ordered_Records.json')
         elif int(lengthInput) <= getNumberOfRuns('Ordered_Records.json'):
             length = (int)(str(lengthInput))
         else:
@@ -189,8 +191,10 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
     elif tieStatus == 'untied':
         if lengthInput == 'all':
             lengthInput = 300;
+            length = getNumberOfRuns('Ordered_Untied_Records.json')
         if lengthInput == 'empty':
-            length = (int)(str(embedLimit))
+            lengthInput = 300;
+            length = getNumberOfRuns('Ordered_Untied_Records.json')
         elif int(lengthInput) <= getNumberOfRuns('Ordered_Untied_Records.json'):
             length = (int)(str(lengthInput))
         else:
