@@ -30,8 +30,10 @@ Commands:
   - Map names: Destination (ex: `records dubai sa`. Note "haven", "ambrose", "romania" as arguably minor exceptions). You can also give the map name as the campaign mission title (ex: "Showstopper". Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
 - `!records untied <amount>`
   - Returns `<amount>` of untied records
+  - `records untied all` will return the maximum amount of untied records
 - `!records all <amount>`
   - Returns `<amount>` of records, tied or not
+  - `records all` (no amount specified will return the maximum amount of records
 - `!sobs`
   - Returns theoretical sum of bests based on individual level times
 
