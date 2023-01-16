@@ -2,8 +2,6 @@
 Discord bot that provides an alternative (read-only) interface to the Hitman 3 leaderboard on speedrun.com as well as additional functionality. 
 
 For a more lightweight version of this as a website, visit the Hitruns Top Times site here: https://github.com/solderq35/hitruns-top-times/
-- Hitruns Records bot has the ability to track untied records separately and also track a list of all runs per map, but otherwise Hitruns Top Times is easier to use / more accessible.
-- Consider Hitruns for a lightweight site showing runs of each Hitman 3 leaderboard: https://hitruns.vercel.app/
 
 Includes:
 - Leaderboards for any given map / category (faster than going through speedrun.com itself)
