@@ -24,6 +24,7 @@ Add the bot to your own Discord server with [this URL](https://discord.com/api/o
 Commands:
 - `!updateRecords`
   - Updates the database of records by going through speedrun.com's API
+  - Can take a few minutes, please be patient!
 - `!records <map> <rating>`
   - Returns all records for a given map and rating, sorted fastest to slowest. 
   - Rating values: SA and SA/SO. 
