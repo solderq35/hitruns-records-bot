@@ -16,9 +16,14 @@ Run `pip3 install discord.py` (and do pip3 install for any other libraries as we
 
 Run `pip3 freeze > requirements.txt` to save library dependencies for Railway.
 
-Add [Railway variable](https://docs.railway.app/develop/variables) for DISCORD_TOKEN ([See Discord Token Documentation](https://docs.discordbotstudio.org/setting-up-dbs/finding-your-bot-token))
+**Local Deployment**
+- Run `python main.py`
+- Make sure you have Python 3.9 (or 3.8 I think works) installed locally and in your PATH (for Windows)
 
-Other Info: https://nixpacks.com/docs/providers/python
+**Remote Deployment**
+- Deploy on [Railway](https://railway.app/)
+  - Add [Railway variable](https://docs.railway.app/develop/variables) for DISCORD_TOKEN ([See Discord Token Documentation](https://docs.discordbotstudio.org/setting-up-dbs/finding-your-bot-token))
+  - I believe the default Python version on Railway is 3.8. (See [this link](https://nixpacks.com/docs/providers/python) for more info)
 
 ### Usage Instructions
 Add the bot to your own Discord server with [this URL](https://discord.com/api/oauth2/authorize?client_id=1048593224735932508&permissions=2147486720&scope=bot%20applications.commands) or you can also DM it at `Hitruns Records Bot#1656`.
