@@ -26,9 +26,9 @@ def getRecordData(runs, counter, typeOfData):
     levelID = runs[counter].get('run', {}).get('level')
     if levelID == None:
         levelID = runs[counter].get('run', {}).get('category')
-        level = getNameOfBoard('campaignDict.json', levelID)
+        level = getNameOfBoard('data/' + 'campaignDict.json', levelID)
         ratingID = runs[counter].get('run', {}).get('values', {}).get('j84eq0wn')
-        rating = getNameOfBoard('Ratings_FG.json', ratingID) 
+        rating = getNameOfBoard('data/' + 'Ratings_FG.json', ratingID) 
         url_pattern = "/\bhttps?:\/\/\S+/gi"
         grun = runs[counter].get('run', {}).get('comment')
         grun2 = re.search("(?P<url>https?://[^\s]+)", grun).group("url")
@@ -36,9 +36,9 @@ def getRecordData(runs, counter, typeOfData):
         if (grun2[-1]==")"):
             grun2 = grun2[:-1]
     else:
-        level = getNameOfBoard('levelDict.json', levelID)
+        level = getNameOfBoard('data/' + 'levelDict.json', levelID)
         ratingID = runs[counter].get('run', {}).get('category')
-        rating = getNameOfBoard('Ratings_IL.json', ratingID)
+        rating = getNameOfBoard('data/' + 'Ratings_IL.json', ratingID)
         grun2 = " "
   
     # getting time in correct format
@@ -76,21 +76,21 @@ def getRecordData(runs, counter, typeOfData):
     return value
         
 def requestRecords(board):
-    if board == 'IL':
-        boardDict = getDictFromFile('levelDict.json')
-        ratingsDict = getDictFromFile('Ratings_IL.json')
-    elif board == 'FG':
-        boardDict = getDictFromFile('campaignDict.json')
-        ratingsDict = getDictFromFile('Ratings_FG.json')
+    if board == 'data/' + 'IL':
+        boardDict = getDictFromFile('data/' + 'levelDict.json')
+        ratingsDict = getDictFromFile('data/' + 'Ratings_IL.json')
+    elif board == 'data/' + 'FG':
+        boardDict = getDictFromFile('data/' + 'campaignDict.json')
+        ratingsDict = getDictFromFile('data/' + 'Ratings_FG.json')
     RecordsDict = {}
 
     for ratingName, ratingID in ratingsDict.items():
         for boardName, boardID in boardDict.items():
-            if board == 'IL':
+            if board == 'data/' + 'IL':
                 leaderboard = \
                 requests.get('https://www.speedrun.com/api/v1/leaderboards/' + GAME + '/level/' + boardID \
                 + '/' + ratingID + '?var-' + VERSION_IL  + '&var-' + DIFFICULTY_IL_PRO)
-            elif board == 'FG':
+            elif board == 'data/' + 'FG':
                 leaderboard = \
                 requests.get('https://www.speedrun.com/api/v1/leaderboards/' + GAME + '/category/' \
                 + boardID + '?var-' + DIFFICULTY_FG_PRO + '&var-' + 'j84eq0wn=' + ratingID + \
@@ -127,8 +127,8 @@ def format_time(time):
     return "{0}:{1}".format(start, result)
 
 def getBoardType(input):
-    levelDict = getDictFromFile('levelDict.json')
-    campaignDict = getDictFromFile('campaignDict.json')
+    levelDict = getDictFromFile('data/' + 'levelDict.json')
+    campaignDict = getDictFromFile('data/' + 'campaignDict.json')
     for levelName, levelID in levelDict.items():
         if input.lower() in levelName.lower():
             return 'IL'
@@ -138,8 +138,8 @@ def getBoardType(input):
     return False
 
 def getBoardID(boardType, input):
-    levelDict = getDictFromFile('levelDict.json')
-    campaignDict = getDictFromFile('campaignDict.json')
+    levelDict = getDictFromFile('data/' + 'levelDict.json')
+    campaignDict = getDictFromFile('data/' + 'campaignDict.json')
     i = 0
     boardID = ""
     if boardType == 'IL':
@@ -157,8 +157,8 @@ def getBoardID(boardType, input):
     return False
 
 def getRatingID(boardType, input):
-    ILRatingDict = getDictFromFile('Ratings_IL.json')
-    FGRatingDict = getDictFromFile('Ratings_FG.json')
+    ILRatingDict = getDictFromFile('data/' + 'Ratings_IL.json')
+    FGRatingDict = getDictFromFile('data/' + 'Ratings_FG.json')
     if boardType == 'IL':
         for ratingName, ratingID in ILRatingDict.items():
             if input.lower() in ratingName.lower():
@@ -181,24 +181,24 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
     if tieStatus == 'all':
         if lengthInput == 'empty':
             #length = (int)(str(embedLimit))
-            lengthInput = 300;
-            length = getNumberOfRuns('Ordered_Records.json')
-        elif int(lengthInput) <= getNumberOfRuns('Ordered_Records.json'):
+            lengthInput = 300
+            length = getNumberOfRuns('data/' + 'Ordered_Records.json')
+        elif int(lengthInput) <= getNumberOfRuns('data/' + 'Ordered_Records.json'):
             length = (int)(str(lengthInput))
         else:
-            length = getNumberOfRuns('Ordered_Records.json')
+            length = getNumberOfRuns('data/' + 'Ordered_Records.json')
         file = 'Ordered_Records.json'
     elif tieStatus == 'untied':
         if lengthInput == 'all':
-            lengthInput = 300;
-            length = getNumberOfRuns('Ordered_Untied_Records.json')
+            lengthInput = 300
+            length = getNumberOfRuns('data/' + 'Ordered_Untied_Records.json')
         if lengthInput == 'empty':
-            lengthInput = 300;
-            length = getNumberOfRuns('Ordered_Untied_Records.json')
-        elif int(lengthInput) <= getNumberOfRuns('Ordered_Untied_Records.json'):
+            lengthInput = 300
+            length = getNumberOfRuns('data/' + 'Ordered_Untied_Records.json')
+        elif int(lengthInput) <= getNumberOfRuns('data/' + 'Ordered_Untied_Records.json'):
             length = (int)(str(lengthInput))
         else:
-            length = getNumberOfRuns('Ordered_Untied_Records.json')
+            length = getNumberOfRuns('data/' + 'Ordered_Untied_Records.json')
         file = 'Ordered_Untied_Records.json'
     return length, file
 
@@ -264,29 +264,29 @@ def discordEmbed(pages, rest, runData, embedLimit, counter, typeOfData):
     return embed
 
 def calcSobs():
-    records = getDictFromFile("IL_Records.json")
+    records = getDictFromFile('data/' + 'IL_Records.json')
     SOBs = {}
     sas3 = sas1 = sas2 = sasos3 = sasos1 = sasos2 = anys3 = anys1 = anys2 = 0
     offset = 36
     for runs in range(len(records.items())):
         if(runs > -1 and runs < 6):
-            sas3 = sas3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            sas3 = math.floor(sas3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > 7 and runs < 14):
-            sas1 = sas1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            sas1 = math.floor(sas1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > 13 and runs < 22):
-            sas2 = sas2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            sas2 = math.floor(sas2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > -1 + offset and runs < 6 + offset):
-            sasos3 = sasos3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            sasos3 = math.floor(sasos3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > 7 + offset and runs < 14 + offset):
-            sasos1 = sasos1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            sasos1 = math.floor(sasos1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > 13 + offset and runs < 22 + offset):
-            sasos2 = sasos2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            sasos2 = math.floor(sasos2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > -1 + offset*2 and runs < 6 + offset*2):
-            anys3 = anys3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            anys3 = math.floor(anys3 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > 7 + offset*2 and runs < 14 + offset*2):
-            anys1 = anys1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            anys1 = math.floor(anys1 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
         elif(runs > 13 + offset*2 and runs < 22 + offset*2):
-            anys2 = anys2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t')
+            anys2 = math.floor(anys2 + records[str(runs)].get('run', {}).get('times', {}).get('primary_t'))
     SOBs['SA S3'] = inTimeFormat(sas3)
     SOBs['SA S1'] = inTimeFormat(sas1)
     SOBs['SA S2'] = inTimeFormat(sas2)
@@ -299,18 +299,18 @@ def calcSobs():
     SOBs['SA Trilogy'] = inTimeFormat(sas3 + sas1 + sas2)
     SOBs['SA/SO Trilogy'] = inTimeFormat(sasos3 + sasos1 + sasos2)
     SOBs['Any% Trilogy'] = inTimeFormat(anys3 + anys1 + anys2)
-    with open('SOBs.json', 'w') as write_file:
+    with open('data/' + 'SOBs.json', 'w') as write_file:
         json.dump(SOBs, write_file, indent=4)
     return SOBs
 
 def update():
-    requestBoards('level')
-    ILRequestResult = requestRecords('IL')
+    ILBoardRequestResult = requestBoards('data/' + 'level')
+    ILRequestResult = requestRecords('data/' + 'IL')
     orderDict('IL_Records.json')
     untiedRecords('Ordered_IL_Records.json')
-    requestBoards('campaign')
-    FGRequestResult = requestRecords('FG')
+    FGBoardRequestResult = requestBoards('data/' + 'campaign')
+    FGRequestResult = requestRecords('data/' + 'FG')
     orderDict('FG_Records.json')
-    combineDicts('Untied_Ordered_IL_Records.json', 'Ordered_FG_Records.json', 'Ordered_Untied_Records.json')
-    combineDicts('Ordered_IL_Records.json', 'Ordered_FG_Records.json', 'Ordered_Records.json')
-    return ILRequestResult, FGRequestResult
+    combineDicts('data/' + 'Untied_Ordered_IL_Records.json', 'data/' + 'Ordered_FG_Records.json', 'data/' + 'Ordered_Untied_Records.json')
+    combineDicts('data/' + 'Ordered_IL_Records.json', 'data/' + 'Ordered_FG_Records.json', 'data/' + 'Ordered_Records.json')
+    return ILBoardRequestResult, ILRequestResult, FGBoardRequestResult, FGRequestResult

@@ -58,7 +58,7 @@ def getTimeFormat(time):
                                 res = False
 
 def orderDict(records_dict):
-    unorderedRecords = getDictFromFile(records_dict)
+    unorderedRecords = getDictFromFile('data/' + records_dict)
     Dict_Ordered = {}
 
     for i in range (len(unorderedRecords.items())):
@@ -72,7 +72,7 @@ def orderDict(records_dict):
         Dict_Ordered[i] = unorderedRecords[str(lowDateKey)]
         del unorderedRecords[str(lowDateKey)]
 
-    with open('Ordered_' + records_dict, 'w') as write_file:
+    with open('data/' + 'Ordered_' + records_dict, 'w') as write_file:
         json.dump(Dict_Ordered, write_file, indent=4)
 
 
@@ -110,20 +110,24 @@ def requestBoards(boardType):
     boardDict = {}
     x = 0
     
-    if boardType == 'campaign':
+    if boardType == 'data/' + 'campaign':
         x = 3
         boardRequest = requests.get('https://www.speedrun.com/api/v1/games/j1ne5891/categories')
-    elif boardType == 'level':
+    elif boardType == 'data/' + 'level':
         boardRequest = requests.get('https://www.speedrun.com/api/v1/games/j1ne5891/levels')
 
     boardObjects = boardRequest.json().get('data')
-    for board in range(len(boardObjects) - x):
-        boardDict[boardObjects[board + x].get('name')] = boardObjects[board + x].get('id')
+    try:
+        for board in range(x, len(boardObjects)):
+            boardDict[boardObjects[board].get('name')] = boardObjects[board].get('id')
+    except TypeError:
+        return True
     with open(boardType + 'Dict.json', 'w') as write_file:
         json.dump(boardDict, write_file, indent=4)
+    return False
         
 def untiedRecords(jsonFile):
-    recordsDict = getDictFromFile(jsonFile)
+    recordsDict = getDictFromFile('data/' + jsonFile)
     untiedRecordsDict = {}
     counter = 0
 
@@ -132,7 +136,7 @@ def untiedRecords(jsonFile):
             untiedRecordsDict[counter] = recordsDict[runs]
             counter = counter + 1
 
-    with open('Untied_' + jsonFile, 'w') as write_file:
+    with open('data/' + 'Untied_' + jsonFile, 'w') as write_file:
         json.dump(untiedRecordsDict, write_file, indent=4)
         
 def inTimeFormat(rawSeconds):

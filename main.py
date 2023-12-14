@@ -22,7 +22,7 @@ async def records(ctx, arg, arg2='empty'):
     # check if called for list of records
     if arg == "all" or arg == "untied":
         length, file = setOutputLength(arg, arg2, EMBED_LIMIT)
-        runData = getDictFromFile(file)
+        runData = getDictFromFile('data/' + file)
         pages, rest = getNumberOfPages(length, EMBED_LIMIT)
         for x in range(pages):
             await ctx.send(embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, 'dict'))
@@ -88,8 +88,8 @@ async def sobs(ctx):
     
 @bot.command()
 async def updateRecords(ctx):
-    ILError, FGError = update()
-    if (ILError or FGError):
+    ILBoardError, ILError, FGBoardError, FGError = update()
+    if (ILBoardError or ILError or FGBoardError or FGError):
         await updateRecords(ctx)
     else:
         await ctx.send("Recorddata successfully updated")
