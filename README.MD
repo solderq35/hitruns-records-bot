@@ -2,16 +2,20 @@
 
 Discord bot that provides an alternative (read-only) interface to the Hitman 3 leaderboard on speedrun.com as well as additional functionality.
 
-For a more lightweight version of this as a website, visit the Hitruns Top Times site here: https://github.com/solderq35/hitruns-top-times/
-
 Includes:
 
-- Leaderboards for any given map / category (faster than going through speedrun.com itself)
+- Leaderboards for any given level / full game category (faster than going through speedrun.com itself)
 - List of all records from oldest to newest for historical tracking
+- Filtering for untied vs tied runs
 - Full game theoretical Sum of Bests based on individual level best times
 - Video links included for all runs, and also a [Time Calc](https://solderq35.github.io/fg-time-calc/) link is included for full game runs
 
-Based on Juliend10's work. I just moved this bot onto [Railway](https://railway.app/) for cloud based hosting.
+Credits: Although I've made a lot of improvements to this bot since, and also improved its reliability by using [Railway](https://railway.app/) for cloud based hosting, [Juliend10](https://www.speedrun.com/users/juliend10) was a major collaborator early into the bot's development.
+
+For a more traditional leaderboard implementation, also check out:
+
+- [HitRuns](https://hitruns.vercel.app/)
+  - [GitHub Repo](https://github.com/solderq35/hitruns)
 
 **Local Environment**
 
@@ -37,6 +41,7 @@ Commands:
 - `!updateRecords`
   - Updates the database of records by going through speedrun.com's API
   - Can take a few minutes, please be patient!
+    - Usually will only take a minute to complete, but sometimes the command times out (a lot of GET requests are being made to speedrun.com API, increasing chances of error or getting rate limited). It should retry automatically, but this can delay command completion by a minute or two
   - **NOTE**: `!records <map> <rating>` and `!records <full game category> <rating>` (commands below) will still fetch the latest runs even if you haven't run `!updateRecords` in a while, but the other commands listed here will need `!updateRecords` to ensure the latest runs are fetched
   - Restarting container on Railway will retain whatever local `.json` files were in the container, but a redeploy will reset the `.json` files to what is in this Git Repo, until you run `!updateRecords` again
     - Potential future TODO: Look into migrating those `.json` files onto a cloud provider with Nonrelational database, like AWS DynamoDB or MongoDB
