@@ -178,7 +178,7 @@ def getBoardData(boardType, boardID, ratingID):
 
 # used for list of records in bot.py
 def setOutputLength(tieStatus, lengthInput, embedLimit):
-    if tieStatus == 'all':
+    if tieStatus == 'all' or tieStatus == 'all-new':
         if lengthInput == 'empty':
             #length = (int)(str(embedLimit))
             lengthInput = 300
@@ -188,7 +188,7 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
         else:
             length = getNumberOfRuns('data/' + 'Ordered_Records.json')
         file = 'Ordered_Records.json'
-    elif tieStatus == 'untied':
+    elif tieStatus == 'untied' or tieStatus == "untied-new":
         if lengthInput == 'all':
             lengthInput = 300
             length = getNumberOfRuns('data/' + 'Ordered_Untied_Records.json')

@@ -20,9 +20,13 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.command()
 async def records(ctx, arg, arg2='empty'):
     # check if called for list of records
-    if arg == "all" or arg == "untied":
+    if arg in ["all", "untied", "all-new", "untied-new"]:
         length, file = setOutputLength(arg, arg2, EMBED_LIMIT)
         runData = getDictFromFile('data/' + file)
+        if (arg == "all-new" or arg == "untied-new"):
+            # https://stackoverflow.com/a/67401755
+            reverseData = {key: value for key, value in zip(reversed(runData.keys()), runData.values())}
+            runData = reverseData
         pages, rest = getNumberOfPages(length, EMBED_LIMIT)
         for x in range(pages):
             await ctx.send(embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, 'dict'))
@@ -30,6 +34,8 @@ async def records(ctx, arg, arg2='empty'):
     elif (getBoardType(arg) != False):
         boardType = getBoardType(arg)
         if (getBoardID(boardType, arg) != False):
+            if (arg2.lower() == "saso"):
+                arg2 = "SA/SO"
             if (getRatingID(boardType, arg2) != False):
                 ratingID = getRatingID(boardType, arg2)
                 boardData = getBoardData(getBoardType(arg), getBoardID(boardType, arg), ratingID)
@@ -87,11 +93,23 @@ async def sobs(ctx):
     # await ctx.send('Not available yet')
     
 @bot.command()
-async def updateRecords(ctx):
+async def updateRecords(ctx,arg,arg2='empty'):
     ILBoardError, ILError, FGBoardError, FGError = update()
     if (ILBoardError or ILError or FGBoardError or FGError):
         await updateRecords(ctx)
     else:
         await ctx.send("Recorddata successfully updated")
+        if arg:
+            if arg in ["all", "untied", "all-new", "untied-new"]:
+                length, file = setOutputLength(arg, arg2, EMBED_LIMIT)
+                runData = getDictFromFile('data/' + file)
+                if (arg == "all-new" or arg == "untied-new"):
+                    reverseData = {key: value for key, value in zip(reversed(runData.keys()), runData.values())}
+                    runData = reverseData
+                pages, rest = getNumberOfPages(length, EMBED_LIMIT)
+                for x in range(pages):
+                    await ctx.send(embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, 'dict'))
+            else:
+                await ctx.send('Bad Input!')
 
 bot.run(TOKEN)
