@@ -118,4 +118,4 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
 
-![docs](https://media.discordapp.net/attachments/1113022395243036682/1203459146456764537/image.png?ex=65d12bab&is=65beb6ab&hm=bb80efaf06e852485a8758e3bedb66f63b39da811ea3befac29a67fec420b344)
+![docs](https://cdn.discordapp.com/attachments/1113022395243036682/1203463046706634843/IMG_3020.png)
