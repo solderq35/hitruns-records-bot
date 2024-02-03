@@ -59,12 +59,12 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - `!updateRecords sobs`
 
 ### Command General Info
-- `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category` and a `rating` is provided
+- `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category>` and a `<rating>` is provided
 - Otherwise, `!records` retrieves the first place runs of every category / rating, and then sorts the data chronologically or filters by tie status as explained in Argument section below
 - `!sobs` calculates theoretical best times for full game categories, by summing up individual level record times
 - `!updateRecords` sends batch requests to every Hitman 3 speedrun.com leaderboard endpoint and stores the data as JSON files in a Railway bucket in the cloud, ensuring good performance
   - However, not running `!updateRecords` beforehand can lead to data being out of date
-    - Exception: For a specific `<level name / fullgame category` and `rating` combination as mentioned above, data is retrieved directly from speedrun.com API, so updating the data beforehand is not needed
+    - Exception: For a specific `<level name / fullgame category>` and `<rating>` combination as mentioned above, data is retrieved directly from speedrun.com API, so updating the data beforehand is not needed
   - `!records` and `!sobs` can be queued with `!updateRecords` as long as the right arguments are provided, as shown in the command list above
     - This will streamline data retrieval if the data hasn't been updated in a while.
       - Something like `!updateRecords all-new 10` can be particularly useful to update the data and then get the 10 latest records afterwards, with just one command
