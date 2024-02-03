@@ -20,7 +20,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 
 @bot.command()
-async def records(ctx, arg1, arg2="empty", arg3 = "empty"):
+async def records(ctx, arg1, arg2="empty", arg3="empty"):
     # check if called for list of records
     if arg1 in ["all", "untied", "all-new", "untied-new"]:
         pages, rest, runData = await getPageData(arg1, arg2, EMBED_LIMIT)
@@ -39,7 +39,7 @@ async def records(ctx, arg1, arg2="empty", arg3 = "empty"):
                 boardData = getBoardData(
                     getBoardType(arg1), getBoardID(boardType, arg1), ratingID
                 )
-                if (arg3 != "empty"):
+                if arg3 != "empty":
                     length = int(arg3)
                 else:
                     length = len(boardData)
@@ -110,9 +110,14 @@ async def sobs(ctx):
         await ctx.send(sobName + ": " + str(sobValue)) """
 # await ctx.send('Not available yet')
 
+
 @bot.command()
 async def docs(ctx):
-    embed=discord.Embed(title="Command List / Help Doc", description="### [Click Here for Full Documentation if Needed](https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD0) \n- !records all <amount>\n- !records all\n- !records all-new <amount>\n- !records all-new\n- !records untied <amount>\n- !records untied\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !records <level name / fullgame category> <rating>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs", color=0xFF5733)
+    embed = discord.Embed(
+        title="Command List / Help Doc",
+        description="### [Click Here for Full Documentation if Needed](https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands) \n- !records all <amount>\n- !records all\n- !records all-new <amount>\n- !records all-new\n- !records untied <amount>\n- !records untied\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !records <level name / fullgame category> <rating>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs",
+        color=0xFF5733,
+    )
     await ctx.send(embed=embed)
 
 

@@ -106,14 +106,14 @@ def getRecordData(runs, counter, typeOfData):
 
     return value
 
+
 async def getPageData(tieStatus, lengthInput, embedlimit):
     length, file = setOutputLength(tieStatus, lengthInput, embedlimit)
     runData = getDictFromFile("data/" + file)
     if tieStatus == "all-new" or tieStatus == "untied-new":
         # https://stackoverflow.com/a/67401755
         reverseData = {
-            key: value
-            for key, value in zip(reversed(runData.keys()), runData.values())
+            key: value for key, value in zip(reversed(runData.keys()), runData.values())
         }
         runData = reverseData
     pages, rest = getNumberOfPages(length, embedlimit)
