@@ -136,6 +136,8 @@ async def updateRecords(ctx, arg1="empty", arg2="empty"):
                 )
         elif arg1 == "sobs" and arg1 != "empty":
             await sobs(ctx)
+        elif arg1 == "empty":
+            pass
         else:
             await ctx.send("Bad Input. For more help, type `!docs`")
 
