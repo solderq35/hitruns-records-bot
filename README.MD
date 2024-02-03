@@ -61,12 +61,12 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ### Command General Info
 
-- `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category` and a `rating` is provided
+- `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category>` and a `<rating>` is provided
 - Otherwise, `!records` retrieves the first place runs of every category / rating, and then sorts the data chronologically or filters by tie status as explained in Argument section below
 - `!sobs` calculates theoretical best times for full game categories, by summing up individual level record times
 - `!updateRecords` sends batch requests to every Hitman 3 speedrun.com leaderboard endpoint and stores the data as JSON files in a Railway bucket in the cloud, ensuring good performance
   - However, not running `!updateRecords` beforehand can lead to data being out of date
-    - Exception: For a specific `<level name / fullgame category` and `rating` combination as mentioned above, data is retrieved directly from speedrun.com API, so updating the data beforehand is not needed
+    - Exception: For a specific `<level name / fullgame category>` and `<rating>` combination as mentioned above, data is retrieved directly from speedrun.com API, so updating the data beforehand is not needed
   - `!records` and `!sobs` can be queued with `!updateRecords` as long as the right arguments are provided, as shown in the command list above
     - This will streamline data retrieval if the data hasn't been updated in a while.
       - Something like `!updateRecords all-new 10` can be particularly useful to update the data and then get the 10 latest records afterwards, with just one command
@@ -74,30 +74,32 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ### Command / Argument Troubleshooting
 
-- Command names (anything starting with exclamation mark) are case sensitive. Make sure to type `!updateRecords` with correct capitalization
-- Arguments are case-insensitive
-- Arguments must be provided in the order in the Commands list above
-- `<amount` argument is optional for every command (bot will default to maximum length)
+- Command names (anything starting with `!`) are case sensitive. Make sure to type `!updateRecords` with correct capitalization
+- Arguments are case-insensitive (any capitalization will work)
+- Arguments must be provided in the same order as in the Commands list above
+- `<amount>` argument is optional for every command (bot will default to maximum length)
 - All arguments are generally optional for `!updateRecords`
-- Generally speaking
 - See Argument section below for more info
 
 ### Arguments
 
-- `all`: Returns all records without filtering for tie status, sorting by oldest first
-- `all-new`: Returns all records, sorting by newest first
-- `untied`: Returns all untied records, sorting by oldest first
-- `untied-new`: Returns all records, sorting by newest first
-- `<level name>`: Level name. Choose from:
-  - Destination (ex: `dubai`. Note "haven", "ambrose", "romania" as arguably minor exceptions)
-  - Level mission name (ex: `showstopper`).
-  - Note that if the level mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
-  - For specifics, check [data/levelDict.json](data/levelDict.json) file. Any sufficiently long substring of the full level name (that is long enough to uniquely identify a single level) will work
-- `<full game category>` Full game category. (ex: `trilogy`).
-  - Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "season 1" sa`
-  - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. Any sufficiently long substring of the full game category level name (that is long enough to uniquely identify a single full game category) will work
-- `<rating>`: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", Any% respectively
-- `<amount>`: Specifies how many runs are returned
+- `all` returns all records without filtering for tie status, sorting by oldest first
+  - Technically, in case of a tie, the oldest of the tied runs is returned (also true for `all-new` below)
+- `all-new` returns all records without filtering for tie status, sorting by newest first
+- `untied` returns all untied records, sorting by oldest first
+- `untied-new` returns all untied records, sorting by newest first
+- `<level name>` refers to the Hitman 3 level names, which can be one of the following formats:
+  - Level mission name (e.g. `showstopper`)
+  - Destination name (e.g. `dubai`. Note that `haven`, `ambrose`, and `romania` as arguably minor exceptions to the official in-game destination names of "Maldives", "Andaman Sea", and "Carpathian Mountains" respectively)
+    - Only supported for main missions, for side missions stick with the level mission name
+  - For specifics, check [data/levelDict.json](data/levelDict.json) file. (Or check how the levels are named on https://www.speedrun.com/hitman_3). Any sufficiently long substring of the full level name (that is long enough to uniquely identify it) will work
+  - Note that if the level mission title has a space in it, then you must surround it with quotes. e.g. `!records "a gilded cage" sa`
+- `<full game category>` refers to the Hitman 3 full game speedrun category names, which generally is based on the missions played in that category. (e.g. `trilogy`, `season 3`, etc)
+  - Note that if the campaign mission title has a space in it, then you must surround it with quotes. e.g. `!records "season 1" sa`
+  - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. (Or check how the full game categories are named on https://www.speedrun.com/hitman_3/leaderboards). Any sufficiently long substring of the full game category name (that is long enough to uniquely identify it) will work
+- `<rating>` can be one of the following options: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", and Any% respectively
+- `<amount>` specifies how many runs are returned
+  - As noted above, this argument is optional for all commands
   - Leaving this blank will result in the maximum amount of runs for the query being returned
 
 ### Screenshots / Examples
