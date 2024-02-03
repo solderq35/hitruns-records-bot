@@ -53,7 +53,9 @@ async def records(ctx, arg1, arg2="empty", arg3="empty"):
             else:
                 await ctx.send("Invalid Rating Input. For more help, type `!docs`")
         else:
-            await ctx.send("No definitive match for name given. For more help, type `!docs`")
+            await ctx.send(
+                "No definitive match for name given. For more help, type `!docs`"
+            )
     else:
         await ctx.send("Bad Input. For more help, type `!docs`")
 
@@ -115,7 +117,7 @@ async def sobs(ctx):
 async def docs(ctx):
     embed = discord.Embed(
         title="Command List / Help Doc",
-        description="### [Click Here for Full Documentation if Needed](https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands) \n- !records all <amount>\n- !records all\n- !records all-new <amount>\n- !records all-new\n- !records untied <amount>\n- !records untied\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !records <level name / fullgame category> <rating>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs",
+        description="### [Click Here for Full Documentation if Needed](https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands) \n- !records all <amount>\n- !records all-new <amount>\n- !records untied <amount>\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs\n\n- note: `<amount>` argument is optional. If not included, the maximum length will be used",
         color=0xFF5733,
     )
     await ctx.send(embed=embed)

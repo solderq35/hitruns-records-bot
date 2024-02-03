@@ -43,14 +43,10 @@ Add the bot to your own Discord server with [this URL](https://discord.com/api/o
 You can also use `!docs` command to see this help menu in Discord itself.
 
 - `!records all <amount>`
-- `!records all`
 - `!records all-new <amount>`
-- `!records all-new`
 - `!records untied <amount>`
-- `!records untied`
 - `!records untied-new <amount>`
 - `!records <level name / fullgame category> <rating> <amount>`
-- `!records <level name / fullgame category> <rating>`
 - `!sobs`
 - `!updateRecords`
 - `!updateRecords all <amount>`
@@ -120,4 +116,4 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
 
-![docs](https://media.discordapp.net/attachments/1113022395243036682/1203405157434658848/image.png?ex=65d0f963&is=65be8463&hm=2bd8537e911a364cebecd8c06ca402618cdebcd94a2363441c3cbf7c71db6669)
+![docs](https://media.discordapp.net/attachments/1113022395243036682/1203459146456764537/image.png?ex=65d12bab&is=65beb6ab&hm=bb80efaf06e852485a8758e3bedb66f63b39da811ea3befac29a67fec420b344)
