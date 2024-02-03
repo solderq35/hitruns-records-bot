@@ -55,7 +55,7 @@ async def records(ctx, arg1, arg2="empty", arg3 = "empty"):
         else:
             await ctx.send("No definitive match for name given")
     else:
-        await ctx.send("Bad Input!")
+        await ctx.send("Bad Input. For more help, type `!docs`")
 
 
 """
@@ -110,6 +110,11 @@ async def sobs(ctx):
         await ctx.send(sobName + ": " + str(sobValue)) """
 # await ctx.send('Not available yet')
 
+@bot.command()
+async def docs(ctx):
+    embed=discord.Embed(title="Command List / Help Doc", description="### [Click Here for Full Documentation if Needed](https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD0) \n- !records all <amount>\n- !records all\n- !records all-new <amount>\n- !records all-new\n- !records untied <amount>\n- !records untied\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !records <level name / fullgame category> <rating>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs", color=0xFF5733)
+    await ctx.send(embed=embed)
+
 
 @bot.command()
 async def updateRecords(ctx, arg1="empty", arg2="empty"):
@@ -119,7 +124,7 @@ async def updateRecords(ctx, arg1="empty", arg2="empty"):
     else:
         await ctx.send("Recorddata successfully updated")
         if arg1 in ["all", "untied", "all-new", "untied-new"] and arg1 != "empty":
-            pages, rest, runData = getPageData(arg1, arg2, EMBED_LIMIT)
+            pages, rest, runData = await getPageData(arg1, arg2, EMBED_LIMIT)
             for x in range(pages):
                 await ctx.send(
                     embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, "dict")
@@ -127,7 +132,7 @@ async def updateRecords(ctx, arg1="empty", arg2="empty"):
         elif arg1 == "sobs" and arg1 != "empty":
             await sobs(ctx)
         else:
-            await ctx.send(arg1)
+            await ctx.send("Bad Input. For more help, type `!docs`")
 
 
 bot.run(TOKEN)

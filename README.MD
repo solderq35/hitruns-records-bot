@@ -38,32 +38,44 @@ For a more traditional leaderboard implementation, also check out:
 
 Add the bot to your own Discord server with [this URL](https://discord.com/api/oauth2/authorize?client_id=1048593224735932508&permissions=2147486720&scope=bot%20applications.commands) or you can also DM it at `Hitruns Records Bot#1656`.
 
-### Commands
-- `!records [all | all-new | untied | untied-new] <?amount>`
-  - Retrieves records from all categories and filters them by tie status or sorts them chronologically by newest or oldest first. Will show the number of records specified by user
-  - Example: `!records all-new 10` to get the latest 10 records
-- `!records [{level} | {full game category}] <rating> <?amount>`
-  - Retrieves current leaderboard (sorted by run time) for a given level or full game category and rating  
+### Commands (All Viable Combinations)
+- `!records all <amount>`
+- `!records all`
+- `!records all-new <amount>`
+- `!records all-new`
+- `!records untied <amount>`
+- `!records untied`
+- `!records untied-new <amount>`
+- `!records <level name / fullgame category> <rating> <amount>`
+- `!records <level name / fullgame category> <rating>`
 - `!sobs`
-  - Returns theoretical sum of bests (for full game categories) based on individual level times
-- `!updateRecords ?[all | all-new | untied | untied-new | sobs] <?amount>`
-  - Updates json files in Railway container to ensure fast lookup for `!records [all | all-new | untied | untied-new] <amount>` and `sobs`
-  - **NOTE**: `!records [{level} | {full game category}] <rating>` will still fetch the latest runs even if you haven't run `!updateRecords` in a while. The other commands listed will need to run `!updateData` first to ensure data is up to date
-   - Might be sluggish to respond as it involves going through a lot of data. The other commands should respond fairly quickly.
-   - Restarting container on Railway will retain whatever local `.json` files were in the container, but a redeploy will reset the `.json` files to what is in this Git Repo, until you run `!updateRecords` again
-     - Potential future TODO: Look into migrating those `.json` files onto a cloud provider with Nonrelational database, like AWS DynamoDB or MongoDB
+- `!updateRecords`
+- `!updateRecords all <amount>`
+- `!updateRecords all-new <amount>`
+- `!updateRecords untied <amount>`
+- `!updateRecords untied-new <amount>`
+- `!updateRecords sobs`
 
-### Command Troubleshooting
+### Command General Info
+- `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category` and a `rating` is provided
+- Otherwise, `!records` retrieves the first place runs of every category / rating, and then sorts the data chronologically or filters by tie status as explained in Argument section below
+- `!sobs` calculates theoretical best times for full game categories, by summing up individual level record times
+- `!updateRecords` sends batch requests to every Hitman 3 speedrun.com leaderboard endpoint and stores the data as JSON files in a Railway bucket in the cloud, ensuring good performance
+  - However, not running `!updateRecords` beforehand can lead to data being out of date
+    - Exception: For a specific `<level name / fullgame category` and `rating` combination as mentioned above, data is retrieved directly from speedrun.com API, so updating the data beforehand is not needed
+  - `!records` and `!sobs` can be queued with `!updateRecords` as long as the right arguments are provided, as shown in the command list above
+    - This will streamline data retrieval if the data hasn't been updated in a while
+    - If you've run `!updateRecords` recently, then it's otherwise faster to run `!records` and `!sobs` on their own
+
+### Command / Argument Troubleshooting
 
 - Command names (anything starting with exclamation mark) are case sensitive. Make sure to type `!updateRecords` with correct capitalization
 - Arguments are case-insensitive
-- Arguments must be provided in the order listed for the given command
-- See [Arguments section](#Arguments) for more info on any given argument
-- Nomenclature:
-  - `< >`: Stand-in value, e.g. substitute the specific Hitman level name
-  - `[ | ]`: Multiple options in the square brackets separated by the vertical line, pick one for that argument slot
-  - `{ }`: Denotes a stand-in value inside an argument group (`[ | ]`)
-  - `?`: Means the argument / argument group is optional
+- Arguments must be provided in the order in the Commands list above
+- `<amount` argument is optional for every command (bot will default to maximum length)
+- All arguments are generally optional for `!updateRecords`
+- Generally speaking
+- See Argument section below for more info
 
 ### Arguments
 
@@ -71,15 +83,15 @@ Add the bot to your own Discord server with [this URL](https://discord.com/api/o
 - `all-new`: Returns all records, sorting by newest first
 - `untied`: Returns all untied records, sorting by oldest first
 - `untied-new`: Returns all records, sorting by newest first
-- `{level name}`: Level name. Choose from:
+- `<level name>`: Level name. Choose from:
   - Destination (ex: `dubai`. Note "haven", "ambrose", "romania" as arguably minor exceptions)
   - Level mission name (ex: `showstopper`). 
   - Note that if the level mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
   - For specifics, check [data/levelDict.json](data/levelDict.json) file. Any sufficiently long substring of the full level name (that is long enough to uniquely identify a single level) will work
-- `{full game category}` Full game category. (ex: `trilogy`). 
+- `<full game category>` Full game category. (ex: `trilogy`). 
   - Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "season 1" sa`
   - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. Any sufficiently long substring of the full game category level name (that is long enough to uniquely identify a single full game category) will work
-- `{rating}`: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", Any%  respectively
+- `<rating>`: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", Any%  respectively
 - `<amount>`: Specifies how many runs are returned
   - Leaving this blank will result in the maximum amount of runs for the query being returned
 

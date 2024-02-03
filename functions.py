@@ -106,7 +106,7 @@ def getRecordData(runs, counter, typeOfData):
 
     return value
 
-def getPageData(tieStatus, lengthInput, embedlimit):
+async def getPageData(tieStatus, lengthInput, embedlimit):
     length, file = setOutputLength(tieStatus, lengthInput, embedlimit)
     runData = getDictFromFile("data/" + file)
     if tieStatus == "all-new" or tieStatus == "untied-new":
