@@ -66,7 +66,8 @@ You can also use `!docs` command to see this help menu in Discord itself.
   - However, not running `!updateRecords` beforehand can lead to data being out of date
     - Exception: For a specific `<level name / fullgame category` and `rating` combination as mentioned above, data is retrieved directly from speedrun.com API, so updating the data beforehand is not needed
   - `!records` and `!sobs` can be queued with `!updateRecords` as long as the right arguments are provided, as shown in the command list above
-    - This will streamline data retrieval if the data hasn't been updated in a while
+    - This will streamline data retrieval if the data hasn't been updated in a while.
+      - Something like `!updateRecords all-new 10` can be particularly useful to update the data and then get the 10 latest records afterwards, with just one command
     - If you've run `!updateRecords` recently, then it's otherwise faster to run `!records` and `!sobs` on their own
 
 ### Command / Argument Troubleshooting
@@ -99,14 +100,18 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ### Screenshots / Examples
 
+![updateRecordsAllNew](https://media.discordapp.net/attachments/1113022395243036682/1203184450423226469/image.png?ex=65d02bd7&is=65bdb6d7&hm=03a2a2f519ac5b5bcd2765407c9bff95f30eaf30ec7cd2029671328430f13989)
+
 ![updateRecords](https://media.discordapp.net/attachments/1018323831468851202/1048705618078351380/image.png)
 
 ![recordsfg](https://media.discordapp.net/attachments/1018323831468851202/1049091135022317589/image.png)
 
 ![recordsil](https://media.discordapp.net/attachments/1018323831468851202/1049091366594019438/image.png)
 
-![recordsuntied](https://media.discordapp.net/attachments/1018323831468851202/1049090686437294242/image.png)
+![recordsilamount](https://media.discordapp.net/attachments/1113022395243036682/1203185389456592909/image.png?ex=65d02cb6&is=65bdb7b6&hm=031cd5da223075930e1a4897f413c54c8b71ce5c1e0a6cbb203d3f19dd5f5721)
 
-![recordsall](https://media.discordapp.net/attachments/1018323831468851202/1049090785984909362/image.png)
+![recordsuntied](https://media.discordapp.net/attachments/1018323831468851202/1203185817179258930/image.png?ex=65d02d1c&is=65bdb81c&hm=c0e2561d33ba17c749a2b8354b14fa2c2e10439e6e19a6a783c7099b9f874930)
+
+![recordsall](https://media.discordapp.net/attachments/1113022395243036682/1203185721419112468/image.png?ex=65d02d06&is=65bdb806&hm=2257aa47a98168809835696d42b4683e9448d93ebc4d3f0e279fab3c02e4f95d)
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
