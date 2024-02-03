@@ -55,6 +55,8 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - `!updateRecords untied-new <amount>`
 - `!updateRecords sobs`
 
+- note: `<amount>` is optional. If not included, the maximum amount of records will be returned
+
 ### Command General Info
 
 - `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category>` and a `<rating>` is provided
