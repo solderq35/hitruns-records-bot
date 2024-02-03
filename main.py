@@ -51,9 +51,9 @@ async def records(ctx, arg1, arg2="empty", arg3="empty"):
                         )
                     )
             else:
-                await ctx.send("Invalid Rating Input")
+                await ctx.send("Invalid Rating Input. For more help, type `!docs`")
         else:
-            await ctx.send("No definitive match for name given")
+            await ctx.send("No definitive match for name given. For more help, type `!docs`")
     else:
         await ctx.send("Bad Input. For more help, type `!docs`")
 
