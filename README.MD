@@ -85,7 +85,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - `all`: Returns all records without filtering for tie status, sorting by oldest first
 - `all-new`: Returns all records, sorting by newest first
 - `untied`: Returns all untied records, sorting by oldest first
-- `untied-new`: Returns all records, sorting by newest first
+- `untied-new`: Returns all untied records, sorting by newest first
 - `<level name>`: Level name. Choose from:
   - Destination (ex: `dubai`. Note "haven", "ambrose", "romania" as arguably minor exceptions)
   - Level mission name (ex: `showstopper`). 
