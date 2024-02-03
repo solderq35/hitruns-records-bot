@@ -83,6 +83,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
 ### Arguments
 
 - `all`: Returns all records without filtering for tie status, sorting by oldest first
+  - Technically, in case of a tie, the oldest of the tied runs is returned
 - `all-new`: Returns all records, sorting by newest first
 - `untied`: Returns all untied records, sorting by oldest first
 - `untied-new`: Returns all untied records, sorting by newest first
