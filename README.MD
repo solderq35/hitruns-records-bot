@@ -77,7 +77,6 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - Arguments must be provided in the order in the Commands list above
 - `<amount>` argument is optional for every command (bot will default to maximum length)
 - All arguments are generally optional for `!updateRecords`
-- Generally speaking
 - See Argument section below for more info
 
 ### Arguments
