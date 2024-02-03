@@ -72,7 +72,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ### Command / Argument Troubleshooting
 
-- Command names (anything starting with exclamation mark) are case sensitive. Make sure to type `!updateRecords` with correct capitalization
+- Command names (anything starting with `!`) are case sensitive. Make sure to type `!updateRecords` with correct capitalization
 - Arguments are case-insensitive (any capitalization will work)
 - Arguments must be provided in the same order as in the Commands list above
 - `<amount>` argument is optional for every command (bot will default to maximum length)
@@ -96,6 +96,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
   - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. Any sufficiently long substring of the full game category level name (that is long enough to uniquely identify a single full game category) will work
 - `<rating>`: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", Any%  respectively
 - `<amount>`: Specifies how many runs are returned
+  - As noted above, this argument is optional for all commands
   - Leaving this blank will result in the maximum amount of runs for the query being returned
 
 ### Screenshots / Examples
