@@ -73,8 +73,8 @@ You can also use `!docs` command to see this help menu in Discord itself.
 ### Command / Argument Troubleshooting
 
 - Command names (anything starting with exclamation mark) are case sensitive. Make sure to type `!updateRecords` with correct capitalization
-- Arguments are case-insensitive
-- Arguments must be provided in the order in the Commands list above
+- Arguments are case-insensitive (any capitalization will work)
+- Arguments must be provided in the same order as in the Commands list above
 - `<amount>` argument is optional for every command (bot will default to maximum length)
 - All arguments are generally optional for `!updateRecords`
 - See Argument section below for more info
@@ -82,8 +82,8 @@ You can also use `!docs` command to see this help menu in Discord itself.
 ### Arguments
 
 - `all`: Returns all records without filtering for tie status, sorting by oldest first
-  - Technically, in case of a tie, the oldest of the tied runs is returned
-- `all-new`: Returns all records, sorting by newest first
+  - Technically, in case of a tie, the oldest of the tied runs is returned (also true for `all-new` below)
+- `all-new`: Returns all records without filtering for tie status, sorting by newest first
 - `untied`: Returns all untied records, sorting by oldest first
 - `untied-new`: Returns all untied records, sorting by newest first
 - `<level name>`: Level name. Choose from:
