@@ -41,6 +41,7 @@ Add the bot to your own Discord server with [this URL](https://discord.com/api/o
 ### Commands
 
 You can also use `!docs` command to see this help menu in Discord itself.
+
 - `!records all <amount>`
 - `!records all`
 - `!records all-new <amount>`
@@ -59,6 +60,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - `!updateRecords sobs`
 
 ### Command General Info
+
 - `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category` and a `rating` is provided
 - Otherwise, `!records` retrieves the first place runs of every category / rating, and then sorts the data chronologically or filters by tie status as explained in Argument section below
 - `!sobs` calculates theoretical best times for full game categories, by summing up individual level record times
@@ -88,13 +90,13 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - `untied-new`: Returns all records, sorting by newest first
 - `<level name>`: Level name. Choose from:
   - Destination (ex: `dubai`. Note "haven", "ambrose", "romania" as arguably minor exceptions)
-  - Level mission name (ex: `showstopper`). 
+  - Level mission name (ex: `showstopper`).
   - Note that if the level mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
   - For specifics, check [data/levelDict.json](data/levelDict.json) file. Any sufficiently long substring of the full level name (that is long enough to uniquely identify a single level) will work
-- `<full game category>` Full game category. (ex: `trilogy`). 
+- `<full game category>` Full game category. (ex: `trilogy`).
   - Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "season 1" sa`
   - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. Any sufficiently long substring of the full game category level name (that is long enough to uniquely identify a single full game category) will work
-- `<rating>`: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", Any%  respectively
+- `<rating>`: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", Any% respectively
 - `<amount>`: Specifies how many runs are returned
   - Leaving this blank will result in the maximum amount of runs for the query being returned
 
@@ -115,3 +117,5 @@ You can also use `!docs` command to see this help menu in Discord itself.
 ![recordsall](https://media.discordapp.net/attachments/1113022395243036682/1203185721419112468/image.png?ex=65d02d06&is=65bdb806&hm=2257aa47a98168809835696d42b4683e9448d93ebc4d3f0e279fab3c02e4f95d)
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
+
+![docs](https://media.discordapp.net/attachments/1113022395243036682/1203405157434658848/image.png?ex=65d0f963&is=65be8463&hm=2bd8537e911a364cebecd8c06ca402618cdebcd94a2363441c3cbf7c71db6669)
