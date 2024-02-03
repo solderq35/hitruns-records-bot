@@ -81,21 +81,22 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ### Arguments
 
-- `all`: Returns all records without filtering for tie status, sorting by oldest first
+- `all` returns all records without filtering for tie status, sorting by oldest first
   - Technically, in case of a tie, the oldest of the tied runs is returned (also true for `all-new` below)
-- `all-new`: Returns all records without filtering for tie status, sorting by newest first
-- `untied`: Returns all untied records, sorting by oldest first
-- `untied-new`: Returns all untied records, sorting by newest first
-- `<level name>`: Level name. Choose from:
-  - Destination (ex: `dubai`. Note "haven", "ambrose", "romania" as arguably minor exceptions)
-  - Level mission name (ex: `showstopper`). 
+- `all-new` returns all records without filtering for tie status, sorting by newest first
+- `untied` returns all untied records, sorting by oldest first
+- `untied-new` returns all untied records, sorting by newest first
+- `<level name>` refers to the Hitman 3 level names, which can be one of the following formats:
+  - Level mission name (ex: `showstopper`)
+  - Destination name (ex: `dubai`. Note that `haven`, `ambrose`, and `romania` as arguably minor exceptions to the official in-game destination names of "Maldives", "Andaman Sea", and "Carpathian Mountains" respectively)
+    - Only supported for main missions, for side missions stick with the level mission name
+  - For specifics, check [data/levelDict.json](data/levelDict.json) file. (Or check how the levels are named on https://www.speedrun.com/hitman_3). Any sufficiently long substring of the full level name (that is long enough to uniquely identify it) will work
   - Note that if the level mission title has a space in it, then you must surround it with quotes. Ex: `!records "a gilded cage" sa`
-  - For specifics, check [data/levelDict.json](data/levelDict.json) file. Any sufficiently long substring of the full level name (that is long enough to uniquely identify a single level) will work
-- `<full game category>` Full game category. (ex: `trilogy`). 
+- `<full game category>` refers to the Hitman 3 full game speedrun category names, which generally is based on the missions played in that category. (ex: `trilogy`, `season 3`, etc)
   - Note that if the campaign mission title has a space in it, then you must surround it with quotes. Ex: `!records "season 1" sa`
-  - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. Any sufficiently long substring of the full game category level name (that is long enough to uniquely identify a single full game category) will work
-- `<rating>`: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", Any%  respectively
-- `<amount>`: Specifies how many runs are returned
+  - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. (Or check how the full game categories are named on https://www.speedrun.com/hitman_3/leaderboards). Any sufficiently long substring of the full game category name (that is long enough to uniquely identify it) will work
+- `<rating>` can be one of the following options: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", and Any%  respectively
+- `<amount>` specifies how many runs are returned
   - As noted above, this argument is optional for all commands
   - Leaving this blank will result in the maximum amount of runs for the query being returned
 
