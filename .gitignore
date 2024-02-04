@@ -133,3 +133,6 @@ src_api.txt
 
 # update logs
 update.log
+
+# test if this fixes docker issues
+data/
