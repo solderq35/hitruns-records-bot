@@ -8,8 +8,10 @@ from dotenv import load_dotenv
 from discord.ext import commands
 from functions import *
 from table2ascii import table2ascii as t2a, Alignment
+import time
 
 EMBED_LIMIT = 20
+LOG_LIMIT = 25
 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
@@ -23,10 +25,15 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 async def records(ctx, arg1, arg2="empty", arg3="empty"):
     # check if called for list of records
     if arg1 in ["all", "untied", "all-new", "untied-new"]:
-        pages, rest, runData = await getPageData(arg1, arg2, EMBED_LIMIT)
-        for x in range(pages):
+        if await getPageData(arg1, arg2, EMBED_LIMIT) != False:
+            pages, rest, runData = await getPageData(arg1, arg2, EMBED_LIMIT)
+            for x in range(pages):
+                await ctx.send(
+                    embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, "dict")
+                )
+        else:
             await ctx.send(
-                embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, "dict")
+                "Bad Input, please provide a positive integer value for `<amount>` argument. For more help, type `!docs`"
             )
     # check if called for list of specific board
     elif getBoardType(arg1) != False:
@@ -40,21 +47,26 @@ async def records(ctx, arg1, arg2="empty", arg3="empty"):
                     getBoardType(arg1), getBoardID(boardType, arg1), ratingID
                 )
                 if arg3 != "empty":
-                    length = int(arg3)
+                    if isinstance(arg3, int) and arg3 > 0:
+                        length = int(arg3)
+                    else:
+                        await ctx.send(
+                            "Bad Input, please provide a positive integer value for `<amount>` argument. For more help, type `!docs`"
+                        )
                 else:
                     length = len(boardData)
-                pages, rest = getNumberOfPages(length, EMBED_LIMIT)
-                for x in range(pages):
-                    await ctx.send(
-                        embed=discordEmbed(
-                            pages, rest, boardData, EMBED_LIMIT, x, "list"
+                    pages, rest = getNumberOfPages(length, EMBED_LIMIT)
+                    for x in range(pages):
+                        await ctx.send(
+                            embed=discordEmbed(
+                                pages, rest, boardData, EMBED_LIMIT, x, "list"
+                            )
                         )
-                    )
             else:
                 await ctx.send("Invalid Rating Input. For more help, type `!docs`")
         else:
             await ctx.send(
-                "No definitive match for name given. For more help, type `!docs`"
+                "No definitive match for a level name or full game category name based on input. For more help, type `!docs`"
             )
     else:
         await ctx.send("Bad Input. For more help, type `!docs`")
@@ -125,23 +137,53 @@ async def docs(ctx):
 
 @bot.command()
 async def updateRecords(ctx, arg1="empty", arg2="empty"):
-    ILBoardError, ILError, FGBoardError, FGError = update()
+    ILBoardError, ILError, FGBoardError, FGError = await update()
     if ILBoardError or ILError or FGBoardError or FGError:
         await updateRecords(ctx, arg1, arg2)
     else:
         await ctx.send("Recorddata successfully updated")
+        await updateLog(
+            "update.log", str(int(time.time())) + " | manual update" + "\n", LOG_LIMIT
+        )
         if arg1 in ["all", "untied", "all-new", "untied-new"] and arg1 != "empty":
-            pages, rest, runData = await getPageData(arg1, arg2, EMBED_LIMIT)
-            for x in range(pages):
+            if await getPageData(arg1, arg2, EMBED_LIMIT) == False:
                 await ctx.send(
-                    embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, "dict")
+                    "Bad Input, please provide a positive integer value for `<amount>` argument. For more help, type `!docs`"
                 )
+            else:
+                pages, rest, runData = await getPageData(arg1, arg2, EMBED_LIMIT)
+                for x in range(pages):
+                    await ctx.send(
+                        embed=discordEmbed(pages, rest, runData, EMBED_LIMIT, x, "dict")
+                    )
         elif arg1 == "sobs" and arg1 != "empty":
             await sobs(ctx)
         elif arg1 == "empty":
             pass
         else:
             await ctx.send("Bad Input. For more help, type `!docs`")
+
+
+@bot.command()
+async def getLogs(ctx):
+    with open("update.log", "r") as file:
+        logs = file.read()
+    logOuputArr = []
+    for line in logs.split("\n"):
+        if len(line.split(" | ")) > 1:
+            print(logTimeString(int(line.split(" | ")[0])))
+            logOuputArr.append(
+                logTimeString(int(line.split(" | ")[0])) + " | " + line.split(" | ")[1]
+            )
+    await ctx.send(
+        "```"
+        + "Reccordata Update Logs (Up to "
+        + str(LOG_LIMIT)
+        + " Most Recent):\n\n "
+        + ("\n ".join(logOuputArr))
+        + "\n\nIf it's been a while since the last update, consider running !updateRecords again.```"
+    )
+    file.close()
 
 
 bot.run(TOKEN)

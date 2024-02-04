@@ -2,11 +2,13 @@ import discord
 from discord.ext import commands
 
 import json
+import time
 import datetime
 import requests
 import math
 import re
 from basicFunctions import *
+import os
 
 GAME = "j1ne5891"
 VERSION_IL = "ylpe1pv8=klrpdvwq"
@@ -108,16 +110,20 @@ def getRecordData(runs, counter, typeOfData):
 
 
 async def getPageData(tieStatus, lengthInput, embedlimit):
-    length, file = setOutputLength(tieStatus, lengthInput, embedlimit)
-    runData = getDictFromFile("data/" + file)
-    if tieStatus == "all-new" or tieStatus == "untied-new":
-        # https://stackoverflow.com/a/67401755
-        reverseData = {
-            key: value for key, value in zip(reversed(runData.keys()), runData.values())
-        }
-        runData = reverseData
-    pages, rest = getNumberOfPages(length, embedlimit)
-    return pages, rest, runData
+    if setOutputLength(tieStatus, lengthInput, embedlimit) != False:
+        length, file = setOutputLength(tieStatus, lengthInput, embedlimit)
+        runData = getDictFromFile("data/" + file)
+        if tieStatus == "all-new" or tieStatus == "untied-new":
+            # https://stackoverflow.com/a/67401755
+            reverseData = {
+                key: value
+                for key, value in zip(reversed(runData.keys()), runData.values())
+            }
+            runData = reverseData
+        pages, rest = getNumberOfPages(length, embedlimit)
+        return pages, rest, runData
+    else:
+        return False
 
 
 def requestRecords(board):
@@ -253,26 +259,28 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
     if tieStatus == "all" or tieStatus == "all-new":
         if lengthInput == "empty":
             # length = (int)(str(embedLimit))
-            lengthInput = 300
+            # lengthInput = 300
             length = getNumberOfRuns("data/" + "Ordered_Records.json")
-        elif int(lengthInput) <= getNumberOfRuns("data/" + "Ordered_Records.json"):
-            length = (int)(str(lengthInput))
+        elif isinstance(lengthInput, int) and lengthInput > 0:
+            if int(lengthInput) <= getNumberOfRuns("data/" + "Ordered_Records.json"):
+                length = (int)(str(lengthInput))
         else:
-            length = getNumberOfRuns("data/" + "Ordered_Records.json")
+            return False
         file = "Ordered_Records.json"
     elif tieStatus == "untied" or tieStatus == "untied-new":
         if lengthInput == "all":
-            lengthInput = 300
+            # lengthInput = 300
             length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
         if lengthInput == "empty":
-            lengthInput = 300
+            # lengthInput = 300
             length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
-        elif int(lengthInput) <= getNumberOfRuns(
-            "data/" + "Ordered_Untied_Records.json"
-        ):
-            length = (int)(str(lengthInput))
+        elif isinstance(lengthInput, int) and lengthInput > 0:
+            if int(lengthInput) <= getNumberOfRuns(
+                "data/" + "Ordered_Untied_Records.json"
+            ):
+                length = (int)(str(lengthInput))
         else:
-            length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
+            return False
         file = "Ordered_Untied_Records.json"
     return length, file
 
@@ -432,7 +440,7 @@ def calcSobs():
     return SOBs
 
 
-def update():
+async def update():
     ILBoardRequestResult = requestBoards("data/" + "level")
     ILRequestResult = requestRecords("data/" + "IL")
     orderDict("IL_Records.json")
@@ -451,3 +459,34 @@ def update():
         "data/" + "Ordered_Records.json",
     )
     return ILBoardRequestResult, ILRequestResult, FGBoardRequestResult, FGRequestResult
+
+
+def logTimeString(unixTime):
+    timeSeconds = datetime.datetime.fromtimestamp(unixTime).replace(microsecond=0)
+    logTime = datetime.datetime.strptime(
+        str(timeSeconds), "%Y-%m-%d %H:%M:%S"
+    ).strftime("%Y-%m-%d, %I:%M:%S %p")
+    logTZ = str(datetime.datetime.utcnow().astimezone().tzinfo)
+    logTimeTZ = logTime + ", " + logTZ
+    return str(logTimeTZ)
+
+
+async def updateLog(log_file, new_line, limit):
+
+    if os.path.isfile(log_file):
+        with open(log_file, "r+") as file:
+            lines = file.readlines()
+        lines.insert(0, new_line)
+        # Check if the number of lines exceeds the limit
+        if len(lines) > limit:
+            # Remove the extra lines beyond the limit
+            lines = lines[:limit]
+    else:
+        with open(log_file, "a+") as file:
+            lines = file.readlines()
+        lines.insert(0, new_line)
+
+    # Write the updated lines back to the log file
+    with open(log_file, "w") as file:
+        file.writelines(lines)
+    file.close()
