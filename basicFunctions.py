@@ -160,4 +160,4 @@ def untiedRecords(jsonFile):
 def inTimeFormat(rawSeconds):
     minutes = rawSeconds // 60
     seconds = rawSeconds % 60
-    return str(minutes) + "m " + str(seconds) + "s"
+    return f"{str(minutes): >3}" + "m " + str(seconds).zfill(2) + "s"

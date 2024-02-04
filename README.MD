@@ -55,7 +55,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - `!updateRecords untied-new <amount>`
 - `!updateRecords sobs`
 
-- note: `<amount>` is optional. If not included, the maximum amount of records will be returned
+Note: `<amount>` is optional. If not included, the maximum amount of records will be returned
 
 ### Command General Info
 
@@ -118,4 +118,4 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
 
-![docs](https://cdn.discordapp.com/attachments/1113022395243036682/1203463046706634843/IMG_3020.png)
+![docs](https://media.discordapp.net/attachments/1113022395243036682/1203503863102050384/image.png?ex=65d15550&is=65bee050&hm=37db7b3da228141150c7970e470d7778027196b55988330bd4c8b5835d4ac776&)
