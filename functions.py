@@ -10,6 +10,9 @@ import re
 from basicFunctions import *
 import os
 
+from pathlib import Path
+Path("/app/update.log").mkdir(parents=True, exist_ok=True)
+
 GAME = "j1ne5891"
 VERSION_IL = "ylpe1pv8=klrpdvwq"
 VERSION_FG = "789d3g9n=814nxkjl"
