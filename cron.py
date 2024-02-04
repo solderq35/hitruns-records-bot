@@ -13,7 +13,7 @@ async def updateCron():
         await updateCron()
     else:
         print("Recorddata successfully updated")
-        if sys.argv[1] == "--deploy":
+        if (len(sys.argv) == 2) and sys.argv[1] == "--build":
             await updateLog(
                 "update.log",
                 str(int(time.time())) + " | railway container built" + "\n",
