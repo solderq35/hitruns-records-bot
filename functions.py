@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 
 import json
-import time
 import datetime
 import requests
 import math
@@ -10,9 +9,9 @@ import re
 from basicFunctions import *
 import os
 
-from pathlib import Path
+#from pathlib import Path
 
-Path("/app/").mkdir(parents=True, exist_ok=True)
+#Path("/app/").mkdir(parents=True, exist_ok=True)
 
 GAME = "j1ne5891"
 VERSION_IL = "ylpe1pv8=klrpdvwq"
