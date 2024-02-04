@@ -15,7 +15,7 @@ async def updateCron():
         print("Recorddata successfully updated")
         if (len(sys.argv) == 2) and sys.argv[1] == "--build":
             await updateLog(
-                "update.log",
+                "app/update.log",
                 str(int(time.time())) + " | railway container built" + "\n",
                 10,
             )

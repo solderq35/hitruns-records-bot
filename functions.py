@@ -261,26 +261,32 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
             # length = (int)(str(embedLimit))
             # lengthInput = 300
             length = getNumberOfRuns("data/" + "Ordered_Records.json")
-        elif isinstance(lengthInput, int) and lengthInput > 0:
-            if int(lengthInput) <= getNumberOfRuns("data/" + "Ordered_Records.json"):
-                length = (int)(str(lengthInput))
         else:
-            return False
+            try:
+                if int(lengthInput) <= getNumberOfRuns(
+                    "data/" + "Ordered_Records.json"
+                ):
+                    length = int(str(lengthInput))
+                else:
+                    length = getNumberOfRuns("data/" + "Ordered_Records.json")
+            except ValueError:
+                return False
         file = "Ordered_Records.json"
     elif tieStatus == "untied" or tieStatus == "untied-new":
-        if lengthInput == "all":
-            # lengthInput = 300
-            length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
         if lengthInput == "empty":
             # lengthInput = 300
             length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
-        elif isinstance(lengthInput, int) and lengthInput > 0:
-            if int(lengthInput) <= getNumberOfRuns(
-                "data/" + "Ordered_Untied_Records.json"
-            ):
-                length = (int)(str(lengthInput))
         else:
-            return False
+            try:
+                if int(lengthInput) <= getNumberOfRuns(
+                    "data/" + "Ordered_Untied_Records.json"
+                ):
+                    length = int(str(lengthInput))
+                else:
+                    length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
+            except ValueError:
+                return False
+
         file = "Ordered_Untied_Records.json"
     return length, file
 

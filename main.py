@@ -47,14 +47,15 @@ async def records(ctx, arg1, arg2="empty", arg3="empty"):
                     getBoardType(arg1), getBoardID(boardType, arg1), ratingID
                 )
                 if arg3 != "empty":
-                    if isinstance(arg3, int) and arg3 > 0:
-                        length = int(arg3)
-                    else:
+                    try:
+                        if int(arg3) <= len(boardData):
+                            length = int(arg3)
+                        else:
+                            length = len(boardData)
+                    except ValueError:
                         await ctx.send(
                             "Bad Input, please provide a positive integer value for `<amount>` argument. For more help, type `!docs`"
                         )
-                else:
-                    length = len(boardData)
                     pages, rest = getNumberOfPages(length, EMBED_LIMIT)
                     for x in range(pages):
                         await ctx.send(
@@ -167,28 +168,31 @@ async def updateRecords(ctx, arg1="empty", arg2="empty"):
 
 @bot.command()
 async def getLogs(ctx):
-    with open("update.log", "r") as file:
-        logs = file.read()
-    logOuputArr = []
-    for line in logs.split("\n"):
-        if len(line.split(" | ")) > 1:
-            # print(logTimeString(int(line.split(" | ")[0])))
-            logOuputArr.append(
-                "<t:"
-                + line.split(" | ")[0]
-                + ":f>"
-                + " | `"
-                + line.split(" | ")[1]
-                + "`"
-            )
-    embed = discord.Embed(
-        title="Recorddata Update Logs (Up to " + str(LOG_LIMIT) + "Most Recent)",
-        description=("\n ".join(logOuputArr))
-        + "\n\nIf it's been a while since the last update, consider running `!updateRecords` again.",
-        color=0xFF5733,
-    )
-    await ctx.send(embed=embed)
-    file.close()
+    if os.path.isfile("update.log"):
+        with open("update.log", "r") as file:
+            logs = file.read()
+        logOuputArr = []
+        for line in logs.split("\n"):
+            if len(line.split(" | ")) > 1:
+                # print(logTimeString(int(line.split(" | ")[0])))
+                logOuputArr.append(
+                    "<t:"
+                    + line.split(" | ")[0]
+                    + ":f>"
+                    + " | `"
+                    + line.split(" | ")[1]
+                    + "`"
+                )
+        embed = discord.Embed(
+            title="Recorddata Update Logs (Up to " + str(LOG_LIMIT) + " Most Recent)",
+            description=("\n ".join(logOuputArr))
+            + "\n\nIf it's been a while since the last update, consider running `!updateRecords` again.",
+            color=0xFF5733,
+        )
+        await ctx.send(embed=embed)
+        file.close()
+    else:
+        await ctx.send("No logs found")
 
 
 bot.run(TOKEN)
