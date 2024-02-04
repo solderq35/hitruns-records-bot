@@ -452,21 +452,23 @@ def calcSobs():
 async def update():
     ILBoardRequestResult = requestBoards("data/" + "level")
     ILRequestResult = requestRecords("data/" + "IL")
-    orderDict("IL_Records.json")
-    untiedRecords("Ordered_IL_Records.json")
+    if (ILBoardRequestResult == False):
+        orderDict("IL_Records.json")
+        untiedRecords("Ordered_IL_Records.json")
     FGBoardRequestResult = requestBoards("data/" + "campaign")
     FGRequestResult = requestRecords("data/" + "FG")
-    orderDict("FG_Records.json")
-    combineDicts(
-        "data/" + "Untied_Ordered_IL_Records.json",
-        "data/" + "Ordered_FG_Records.json",
-        "data/" + "Ordered_Untied_Records.json",
-    )
-    combineDicts(
-        "data/" + "Ordered_IL_Records.json",
-        "data/" + "Ordered_FG_Records.json",
-        "data/" + "Ordered_Records.json",
-    )
+    if (FGBoardRequestResult == False and ILBoardRequestResult == False):
+        orderDict("FG_Records.json")
+        combineDicts(
+            "data/" + "Untied_Ordered_IL_Records.json",
+            "data/" + "Ordered_FG_Records.json",
+            "data/" + "Ordered_Untied_Records.json",
+        )
+        combineDicts(
+            "data/" + "Ordered_IL_Records.json",
+            "data/" + "Ordered_FG_Records.json",
+            "data/" + "Ordered_Records.json",
+        )
     return ILBoardRequestResult, ILRequestResult, FGBoardRequestResult, FGRequestResult
 
 
