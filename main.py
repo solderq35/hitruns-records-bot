@@ -128,8 +128,9 @@ async def sobs(ctx):
 @bot.command()
 async def docs(ctx):
     embed = discord.Embed(
-        title="Command List / Help Doc",
-        description="### [Click Here for Full Documentation if Needed](https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands) \n- !records all <amount>\n- !records all-new <amount>\n- !records untied <amount>\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs\n\nNote: `<amount>` argument is optional. If not included, the maximum amount of records will be returned",
+        title="Command List / Help Doc (Click Here if Needed)",
+        url="https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands",
+        description="- !records all <amount>\n- !records all-new <amount>\n- !records untied <amount>\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs\n\nNote: `<amount>` argument is optional. If not included, the maximum amount of records will be returned",
         color=0xFF5733,
     )
     await ctx.send(embed=embed)
@@ -171,18 +172,22 @@ async def getLogs(ctx):
     logOuputArr = []
     for line in logs.split("\n"):
         if len(line.split(" | ")) > 1:
-            print(logTimeString(int(line.split(" | ")[0])))
+            # print(logTimeString(int(line.split(" | ")[0])))
             logOuputArr.append(
-                logTimeString(int(line.split(" | ")[0])) + " | " + line.split(" | ")[1]
+                "<t:"
+                + line.split(" | ")[0]
+                + ":f>"
+                + " | `"
+                + line.split(" | ")[1]
+                + "`"
             )
-    await ctx.send(
-        "```"
-        + "Reccordata Update Logs (Up to "
-        + str(LOG_LIMIT)
-        + " Most Recent):\n\n "
-        + ("\n ".join(logOuputArr))
-        + "\n\nIf it's been a while since the last update, consider running !updateRecords again.```"
+    embed = discord.Embed(
+        title="Recorddata Update Logs (Up to " + str(LOG_LIMIT) + "Most Recent)",
+        description=("\n ".join(logOuputArr))
+        + "\n\nIf it's been a while since the last update, consider running `!updateRecords` again.",
+        color=0xFF5733,
     )
+    await ctx.send(embed=embed)
     file.close()
 
 
