@@ -452,12 +452,12 @@ def calcSobs():
 async def update():
     ILBoardRequestResult = requestBoards("data/" + "level")
     ILRequestResult = requestRecords("data/" + "IL")
-    if (ILBoardRequestResult == False):
+    if (ILBoardRequestResult == False and ILRequestResult == False):
         orderDict("IL_Records.json")
         untiedRecords("Ordered_IL_Records.json")
     FGBoardRequestResult = requestBoards("data/" + "campaign")
     FGRequestResult = requestRecords("data/" + "FG")
-    if (FGBoardRequestResult == False and ILBoardRequestResult == False):
+    if (ILBoardRequestResult == False and ILRequestResult == False and FGBoardRequestResult == False and FGRequestResult == False):
         orderDict("FG_Records.json")
         combineDicts(
             "data/" + "Untied_Ordered_IL_Records.json",
