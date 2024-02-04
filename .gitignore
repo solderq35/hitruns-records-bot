@@ -135,4 +135,8 @@ src_api.txt
 update.log
 
 # test if this fixes docker issues
-data/
+data/*
+!data/campaignDict.json
+!data/levelDict.json
+!data/Ratings_FG.json
+!data/Ratings_IL.json
