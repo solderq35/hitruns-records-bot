@@ -11,6 +11,7 @@ from basicFunctions import *
 import os
 
 from pathlib import Path
+
 Path("/app/update.log").mkdir(parents=True, exist_ok=True)
 
 GAME = "j1ne5891"
