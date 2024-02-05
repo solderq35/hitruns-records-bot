@@ -36,7 +36,7 @@ For a more traditional leaderboard implementation, also check out:
   - Set the start command to `python cron.py && python main.py` to ensure the data is updated before the bot starts
   - Set up a daily cron job to automatically update data by following https://bookmarklets.up.railway.app/cron-config/
     - Also helpful for cron job syntax: https://crontab.guru
-      - For this app, I used https://crontab.guru/#0_12_*_*_* for a cron job every day at 12 PM UTC
+      - I used [this specific config](https://crontab.guru/#0_12_*_*_*) for a cron job every day at 12 PM UTC
 
 ## Usage Instructions
 
