@@ -67,7 +67,9 @@ You can also use `!docs` command to see this help menu in Discord itself.
   - Update Recorddata manually if you need more precision than last 24 hours
   - Can also be 'queued' with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`
 
-Note: `<amount>` is optional. If not set, the max amount of records will be returned
+**Note**: Bot will be down for a minute or two at 12 PM UTC each day for data update
+
+**Note**: `<amount>` is optional. If not set, the max amount of records will be returned
 
 ### Command / Argument Troubleshooting
 
@@ -98,4 +100,4 @@ Note: `<amount>` is optional. If not set, the max amount of records will be retu
 
 ![getLogs](https://media.discordapp.net/attachments/1113022395243036682/1203878167841087578/image.png?ex=65d2b1ea&is=65c03cea&hm=2dea9d9d2dd877260ad47a0349d2b59ea6fa9754594ef7d73b9147e869729300&)
 
-![docs](https://media.discordapp.net/attachments/1113022395243036682/1203880166393257984/image.png?ex=65d2b3c6&is=65c03ec6&hm=04360119cfb87833cefc4676013d4399374a07765880aa9503002c279c41dfde&)
+![docs](https://media.discordapp.net/attachments/1113022395243036682/1203881727236382720/image.png?ex=65d2b53a&is=65c0403a&hm=89d83ab152eec2a7d6688737149cdefbd2c09f2b22c27793230317dcb25f1b94&=)
