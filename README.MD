@@ -99,6 +99,6 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
 
-![getLogs](https://media.discordapp.net/attachments/1113022395243036682/1203878167841087578/image.png?ex=65d2b1ea&is=65c03cea&hm=2dea9d9d2dd877260ad47a0349d2b59ea6fa9754594ef7d73b9147e869729300&)
+![getLogs](https://cdn.discordapp.com/attachments/1113022395243036682/1203999017831374858/image.png?ex=65d32277&is=65c0ad77&hm=3926ec58d2cb1f9ef1c91ef151ca0263924dbcc6d645f39bc01fb1a6d9d8f7bc&)
 
 ![docs](https://media.discordapp.net/attachments/1113022395243036682/1203881727236382720/image.png?ex=65d2b53a&is=65c0403a&hm=89d83ab152eec2a7d6688737149cdefbd2c09f2b22c27793230317dcb25f1b94&=)

@@ -182,7 +182,7 @@ async def getLogs(ctx):
             if len(line.split(" | ")) > 1:
                 # discord timestamp format to render in user's local timezone: https://discord.com/developers/docs/reference#message-formatting
                 logOuputArr.append(
-                    "<t:"
+                    "- <t:"
                     + line.split(" | ")[0]
                     + ":f>"
                     + " | `"
@@ -191,7 +191,7 @@ async def getLogs(ctx):
                 )
         embed = discord.Embed(
             title="Recorddata Update Logs (Up to " + str(LOG_LIMIT) + " Most Recent)",
-            description=("\n ".join(logOuputArr))
+            description=("\n".join(logOuputArr))
             + "\n\nIf it's been a while since the last update, consider running `!updateRecords` again.",
             color=0xFF5733,
         )
