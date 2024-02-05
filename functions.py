@@ -9,10 +9,6 @@ import re
 from basicFunctions import *
 import os
 
-# from pathlib import Path
-
-# Path("/app/").mkdir(parents=True, exist_ok=True)
-
 GAME = "j1ne5891"
 VERSION_IL = "ylpe1pv8=klrpdvwq"
 VERSION_FG = "789d3g9n=814nxkjl"
@@ -282,12 +278,14 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
             length = getNumberOfRuns("data/" + "Ordered_Records.json")
         else:
             try:
-                if int(lengthInput) <= getNumberOfRuns(
-                    "data/" + "Ordered_Records.json"
+                if (
+                    int(lengthInput)
+                    <= getNumberOfRuns("data/" + "Ordered_Records.json")
+                    and int(lengthInput) > 0
                 ):
                     length = int(str(lengthInput))
                 else:
-                    length = getNumberOfRuns("data/" + "Ordered_Records.json")
+                    raise ValueError
             except ValueError:
                 return False
         file = "Ordered_Records.json"
@@ -491,16 +489,6 @@ async def update():
             "data/" + "Ordered_Records.json",
         )
     return ILBoardRequestResult, ILRequestResult, FGBoardRequestResult, FGRequestResult
-
-
-def logTimeString(unixTime):
-    timeSeconds = datetime.datetime.fromtimestamp(unixTime).replace(microsecond=0)
-    logTime = datetime.datetime.strptime(
-        str(timeSeconds), "%Y-%m-%d %H:%M:%S"
-    ).strftime("%Y-%m-%d, %I:%M:%S %p")
-    logTZ = str(datetime.datetime.utcnow().astimezone().tzinfo)
-    logTimeTZ = logTime + ", " + logTZ
-    return str(logTimeTZ)
 
 
 async def updateLog(log_file, new_line, limit):
