@@ -216,6 +216,22 @@ def getBoardType(input):
     return False
 
 
+def getLevelNames():
+    levelDict = getDictFromFile("data/" + "levelDict.json")
+    levelNames = []
+    for levelName, levelID in levelDict.items():
+        levelNames.append(levelName)
+    return levelNames
+
+
+def getFullGameNames():
+    campaignDict = getDictFromFile("data/" + "campaignDict.json")
+    fgNames = []
+    for fgName, fgID in campaignDict.items():
+        fgNames.append(fgName)
+    return fgNames
+
+
 def getBoardID(boardType, input):
     levelDict = getDictFromFile("data/" + "levelDict.json")
     campaignDict = getDictFromFile("data/" + "campaignDict.json")

@@ -67,10 +67,12 @@ async def records(ctx, arg1, arg2="empty", arg3="empty"):
                 await ctx.send("Invalid Rating Input. For more help, type `!docs`")
         else:
             await ctx.send(
-                "No definitive match for a level name or full game category name based on input. For more help, type `!docs`"
+                "Bad Input. If needed, use `!levelNames` or `!fgNames` for a full list of level / fullgame category names. For other help, type `!docs`"
             )
     else:
-        await ctx.send("Bad Input. For more help, type `!docs`")
+        await ctx.send(
+            "Bad Input. If needed, use `!levelNames` or `!fgNames` for a full list of level / fullgame category names. For other help, type `!docs`"
+        )
 
 
 """
@@ -129,12 +131,63 @@ async def sobs(ctx):
 @bot.command()
 async def docs(ctx):
     embed = discord.Embed(
-        title="Command List / Help Doc (Click Here for More Info!)",
+        title="Command List Doc (Click Here for More)",
         url="https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands",
-        description="- `!records all <amount>`\n  - Returns both tied and untied records, sorted by oldest to newest\n- `!records all-new <amount>`\n  - Returns both tied and untied records, sorted by newest to oldest\n- `!records untied <amount>`\n  - Returns untied records, sorted by oldest to newest\n- `!records untied-new <amount>`\n  - Returns all untied records, sorted by newest to oldest\n- `!records <level name / fullgame category> <rating> <amount>`\n  - Returns a single leaderboard for a level / fullgame category and rating\n  - Any sufficiently long substring of a `<level name>` or `<fullgame category>` will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) for a full list of names\n  - Valid `<rating>` inputs: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted)\n  - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results\n- `!sobs`\n  - Calculates theoretical best times for full game categories, by summing up individual level record times\n- `!getLogs`\n  - See when Recorddata was last updated. Tracks both manual updates and cron job automated updates (daily at 12 PM UTC, or <t:1675425600:t> local time)\n- `!updateRecords`\n  - Update Recorddata manually if you need more precision than last 24 hours\n  - Can also be 'queued' with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`\n**Note**: Bot will be down for a minute or two at <t:1675425600:t> each day for data update\n**Note**: `<amount>` is optional. If not set, the max amount of records will be returned",
+        description='- `!records all <amount>`\n  - Returns both tied and untied records, sorted by oldest to newest\n- `!records all-new <amount>`\n  - Returns both tied and untied records, sorted by newest to oldest\n- `!records untied <amount>`\n  - Returns untied records, sorted by oldest to newest\n- `!records untied-new <amount>`\n  - Returns untied records, sorted by newest to oldest\n- `!records <level name / fullgame category> <rating> <amount>`\n  - Returns a single leaderboard for a level / fullgame category and rating\n  - See `!levelNames` and `!fgNames` for a full list of level names / fullgame category names respectively\n  - Any substring of a `<level name>` or `<fullgame category>` long enough to uniquely idenfity it will work, e.g. either `showstopper` or `paris` would be valid\n  - Any level or fullgame category name you input that contains a space (e.g. `"season 3"` or `"a gilded cage"`) should be surrounded by quotes\n  - Valid `<rating>` inputs: `sa`, `saso`, or `any`\n  - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results\n- `!sobs`\n  - Calculates theoretical best times for full game categories, by summing up individual level record times\n- `!getLogs`\n  - See when Recorddata was last updated. Tracks both manual updates and cron job automated updates (daily at 12 PM UTC, or <t:1675425600:t> local time)\n- `!updateRecords`\n  - Update Recorddata manually if you need more precision than last 24 hours\n  - Can also be "queued" with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`\n**Note**: Bot will be down for a minute or two at <t:1675425600:t> each day for data update\n**Note**: `<amount>` is optional. If not set, the max amount of records will be returned',
         color=0xFF5733,
     )
     await ctx.send(embed=embed)
+
+
+@bot.command()
+async def levelNames(ctx):
+    levelNames = getLevelNames()
+    embed = discord.Embed(
+        title="Level Names",
+        description=("\n- " + "\n- ".join(levelNames)),
+        color=0xFF5733,
+    )
+    await ctx.send(embed=embed)
+
+
+@bot.command()
+async def fgNames(ctx):
+    fgNames = getFullGameNames()
+    embed = discord.Embed(
+        title="Full Game Categories",
+        description=("\n- " + "\n- ".join(fgNames)),
+        color=0xFF5733,
+    )
+    await ctx.send(embed=embed)
+
+
+@bot.command()
+async def getLogs(ctx):
+    if os.path.isfile("update.log"):
+        with open("update.log", "r") as file:
+            logs = file.read()
+        logOuputArr = []
+        for line in logs.split("\n"):
+            if len(line.split(" | ")) > 1:
+                # print(logTimeString(int(line.split(" | ")[0])))
+                logOuputArr.append(
+                    "<t:"
+                    + line.split(" | ")[0]
+                    + ":f>"
+                    + " | `"
+                    + line.split(" | ")[1]
+                    + "`"
+                )
+        embed = discord.Embed(
+            title="Recorddata Update Logs (Up to " + str(LOG_LIMIT) + " Most Recent)",
+            description=("\n ".join(logOuputArr))
+            + "\n\nIf it's been a while since the last update, consider running `!updateRecords` again.",
+            color=0xFF5733,
+        )
+        await ctx.send(embed=embed)
+        file.close()
+    else:
+        await ctx.send("No logs found")
 
 
 @bot.command()
@@ -165,35 +218,6 @@ async def updateRecords(ctx, arg1="empty", arg2="empty"):
             pass
         else:
             await ctx.send("Bad Input. For more help, type `!docs`")
-
-
-@bot.command()
-async def getLogs(ctx):
-    if os.path.isfile("update.log"):
-        with open("update.log", "r") as file:
-            logs = file.read()
-        logOuputArr = []
-        for line in logs.split("\n"):
-            if len(line.split(" | ")) > 1:
-                # print(logTimeString(int(line.split(" | ")[0])))
-                logOuputArr.append(
-                    "<t:"
-                    + line.split(" | ")[0]
-                    + ":f>"
-                    + " | `"
-                    + line.split(" | ")[1]
-                    + "`"
-                )
-        embed = discord.Embed(
-            title="Recorddata Update Logs (Up to " + str(LOG_LIMIT) + " Most Recent)",
-            description=("\n ".join(logOuputArr))
-            + "\n\nIf it's been a while since the last update, consider running `!updateRecords` again.",
-            color=0xFF5733,
-        )
-        await ctx.send(embed=embed)
-        file.close()
-    else:
-        await ctx.send("No logs found")
 
 
 bot.run(TOKEN)

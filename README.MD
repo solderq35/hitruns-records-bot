@@ -56,8 +56,9 @@ You can also use `!docs` command to see this help menu in Discord itself.
   - Returns untied records, sorted by newest to oldest
 - `!records <level / fullgame category> <rating> <amount>`
   - Returns a single leaderboard for a level / fullgame category and rating
-  - Any sufficiently long substring of a `<level name>` or `<fullgame category>` will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) for a full list of names
-  - Valid `<rating>` inputs: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted)
+  - Any substring of a `<level name>` or `<fullgame category>` long enough to uniquely idenfity it will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) (or `!levelNames` and `!fgNames` discord commands) for a full list of names
+  - Any level or fullgame category name you input that contains a space (e.g. `"season 3"` or `"a gilded cage"`) should be surrounded by quotes
+  - Valid `<rating>` inputs: `sa`, `saso`, or `any
   - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results
 - `!sobs`
   - Calculates theoretical best times for full game categories, by summing up individual level record times
@@ -65,7 +66,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
   - See when Recorddata was last updated (tracks both manual updates and cron job automated updates, which happen each day at 12 PM UTC)
 - `!updateRecords`
   - Update Recorddata manually if you need more precision than last 24 hours
-  - Can also be 'queued' with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`
+  - Can also be "queued" with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`
 
 **Note**: Bot will be down for a minute or two at 12 PM UTC each day for data update
 
@@ -77,8 +78,8 @@ You can also use `!docs` command to see this help menu in Discord itself.
 - Arguments are case-insensitive (any capitalization will work)
 - Arguments must be provided in the same order as in the Commands list above
 - `<amount>` argument is optional for every command (bot will default to maximum length)
+- `!updateRecords` can be a bit slow to update, it's normal to have to wait a minute or two for it to complete
 - All arguments are generally optional for `!updateRecords`
-- See Argument section below for more info
 
 ### Screenshots / Examples
 
