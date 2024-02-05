@@ -9,9 +9,9 @@ import re
 from basicFunctions import *
 import os
 
-#from pathlib import Path
+# from pathlib import Path
 
-#Path("/app/").mkdir(parents=True, exist_ok=True)
+# Path("/app/").mkdir(parents=True, exist_ok=True)
 
 GAME = "j1ne5891"
 VERSION_IL = "ylpe1pv8=klrpdvwq"
@@ -452,12 +452,17 @@ def calcSobs():
 async def update():
     ILBoardRequestResult = requestBoards("data/" + "level")
     ILRequestResult = requestRecords("data/" + "IL")
-    if (ILBoardRequestResult == False and ILRequestResult == False):
+    if ILBoardRequestResult == False and ILRequestResult == False:
         orderDict("IL_Records.json")
         untiedRecords("Ordered_IL_Records.json")
     FGBoardRequestResult = requestBoards("data/" + "campaign")
     FGRequestResult = requestRecords("data/" + "FG")
-    if (ILBoardRequestResult == False and ILRequestResult == False and FGBoardRequestResult == False and FGRequestResult == False):
+    if (
+        ILBoardRequestResult == False
+        and ILRequestResult == False
+        and FGBoardRequestResult == False
+        and FGRequestResult == False
+    ):
         orderDict("FG_Records.json")
         combineDicts(
             "data/" + "Untied_Ordered_IL_Records.json",

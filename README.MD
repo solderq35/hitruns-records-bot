@@ -33,6 +33,10 @@ For a more traditional leaderboard implementation, also check out:
 - Deploy on [Railway](https://railway.app/)
   - Add [Railway variable](https://docs.railway.app/develop/variables) for `DISCORD_TOKEN` ([See Discord Token Documentation](https://docs.discordbotstudio.org/setting-up-dbs/finding-your-bot-token))
   - I believe the default Python version on Railway is 3.8. (See [this link](https://nixpacks.com/docs/providers/python) for more info)
+  - Set the start command to `python cron.py && python main.py` to ensure the data is updated before the bot starts
+  - Set up a daily cron job to automatically update data by following https://bookmarklets.up.railway.app/cron-config/
+    - Also helpful for cron job syntax: https://crontab.guru
+      - For this app, I used https://crontab.guru/#0_12_*_*_* for a cron job every day at 12 PM UTC
 
 ## Usage Instructions
 
@@ -43,32 +47,27 @@ Add the bot to your own Discord server with [this URL](https://discord.com/api/o
 You can also use `!docs` command to see this help menu in Discord itself.
 
 - `!records all <amount>`
+  - Returns both tied and untied records, sorted by oldest to newest
 - `!records all-new <amount>`
+  - Returns both tied and untied records, sorted by newest to oldest
 - `!records untied <amount>`
+  - Returns untied records, sorted by oldest to newest
 - `!records untied-new <amount>`
-- `!records <level name / fullgame category> <rating> <amount>`
+  - Returns untied records, sorted by newest to oldest
+- `!records <level / fullgame category> <rating> <amount>`
+  - Returns a single leaderboard for a level / fullgame category and rating
+  - Any sufficiently long substring of a `<level name>` or `<fullgame category>` will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) for a full list of names
+  - Valid `<rating>` inputs: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted)
+  - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results
 - `!sobs`
+  - Calculates theoretical best times for full game categories, by summing up individual level record times
+- `!getLogs`
+  - See when Recorddata was last updated (tracks both manual updates and cron job automated updates, which happen each day at 12 PM UTC)
 - `!updateRecords`
-- `!updateRecords all <amount>`
-- `!updateRecords all-new <amount>`
-- `!updateRecords untied <amount>`
-- `!updateRecords untied-new <amount>`
-- `!updateRecords sobs`
+  - Update Recorddata manually if you need more precision than last 24 hours
+  - Can also be 'queued' with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`
 
-Note: `<amount>` is optional. If not included, the maximum amount of records will be returned
-
-### Command General Info
-
-- `!records` retrieves a single leaderboard (fastest runs on top) directly from the speedrun.com API if a `<level name / fullgame category>` and a `<rating>` is provided
-- Otherwise, `!records` retrieves the first place runs of every category / rating, and then sorts the data chronologically or filters by tie status as explained in Argument section below
-- `!sobs` calculates theoretical best times for full game categories, by summing up individual level record times
-- `!updateRecords` sends batch requests to every Hitman 3 speedrun.com leaderboard endpoint and stores the data as JSON files in a Railway bucket in the cloud, ensuring good performance
-  - However, not running `!updateRecords` beforehand can lead to data being out of date
-    - Exception: For a specific `<level name / fullgame category>` and `<rating>` combination as mentioned above, data is retrieved directly from speedrun.com API, so updating the data beforehand is not needed
-  - `!records` and `!sobs` can be queued with `!updateRecords` as long as the right arguments are provided, as shown in the command list above
-    - This will streamline data retrieval if the data hasn't been updated in a while.
-      - Something like `!updateRecords all-new 10` can be particularly useful to update the data and then get the 10 latest records afterwards, with just one command
-    - If you've run `!updateRecords` recently, then it's otherwise faster to run `!records` and `!sobs` on their own
+Note: `<amount>` is optional. If not set, the max amount of records will be returned
 
 ### Command / Argument Troubleshooting
 
@@ -78,27 +77,6 @@ Note: `<amount>` is optional. If not included, the maximum amount of records wil
 - `<amount>` argument is optional for every command (bot will default to maximum length)
 - All arguments are generally optional for `!updateRecords`
 - See Argument section below for more info
-
-### Arguments
-
-- `all` returns all records without filtering for tie status, sorting by oldest first
-  - Technically, in case of a tie, the oldest of the tied runs is returned (also true for `all-new` below)
-- `all-new` returns all records without filtering for tie status, sorting by newest first
-- `untied` returns all untied records, sorting by oldest first
-- `untied-new` returns all untied records, sorting by newest first
-- `<level name>` refers to the Hitman 3 level names, which can be one of the following formats:
-  - Level mission name (e.g. `showstopper`)
-  - Destination name (e.g. `dubai`. Note that `haven`, `ambrose`, and `romania` as arguably minor exceptions to the official in-game destination names of "Maldives", "Andaman Sea", and "Carpathian Mountains" respectively)
-    - Only supported for main missions, for side missions stick with the level mission name
-  - For specifics, check [data/levelDict.json](data/levelDict.json) file. (Or check how the levels are named on https://www.speedrun.com/hitman_3). Any sufficiently long substring of the full level name (that is long enough to uniquely identify it) will work
-  - Note that if the level mission title has a space in it, then you must surround it with quotes. e.g. `!records "a gilded cage" sa`
-- `<full game category>` refers to the Hitman 3 full game speedrun category names, which generally is based on the missions played in that category. (e.g. `trilogy`, `season 3`, etc)
-  - Note that if the campaign mission title has a space in it, then you must surround it with quotes. e.g. `!records "season 1" sa`
-  - For specifics, check [data/campaignDict.json](data/campaignDict.json) file. (Or check how the full game categories are named on https://www.speedrun.com/hitman_3/leaderboards). Any sufficiently long substring of the full game category name (that is long enough to uniquely identify it) will work
-- `<rating>` can be one of the following options: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted), which stands for "Silent Assassin", "Silent Asassin Suit Only", and Any% respectively
-- `<amount>` specifies how many runs are returned
-  - As noted above, this argument is optional for all commands
-  - Leaving this blank will result in the maximum amount of runs for the query being returned
 
 ### Screenshots / Examples
 
@@ -118,4 +96,6 @@ Note: `<amount>` is optional. If not included, the maximum amount of records wil
 
 ![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
 
-![docs](https://media.discordapp.net/attachments/1113022395243036682/1203503863102050384/image.png?ex=65d15550&is=65bee050&hm=37db7b3da228141150c7970e470d7778027196b55988330bd4c8b5835d4ac776&)
+![getLogs](https://media.discordapp.net/attachments/1113022395243036682/1203878167841087578/image.png?ex=65d2b1ea&is=65c03cea&hm=2dea9d9d2dd877260ad47a0349d2b59ea6fa9754594ef7d73b9147e869729300&)
+
+![docs](https://media.discordapp.net/attachments/1113022395243036682/1203877880061239296/image.png?ex=65d2b1a5&is=65c03ca5&hm=892879f406c3fb8227c23c2c208d367f1e13ce47f033b021ed2dbdbcc47097dd)

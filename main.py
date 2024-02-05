@@ -129,9 +129,9 @@ async def sobs(ctx):
 @bot.command()
 async def docs(ctx):
     embed = discord.Embed(
-        title="Command List / Help Doc (Click Here if Needed)",
+        title="Command List / Help Doc (Click Here for More Info!)",
         url="https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands",
-        description="- !records all <amount>\n- !records all-new <amount>\n- !records untied <amount>\n- !records untied-new <amount>\n- !records <level name / fullgame category> <rating> <amount>\n- !sobs\n- !updateRecords\n- !updateRecords all <amount>\n- !updateRecords all-new <amount>\n- !updateRecords untied <amount>\n- !updateRecords untied-new <amount>\n- !updateRecords sobs\n\nNote: `<amount>` argument is optional. If not included, the maximum amount of records will be returned",
+        description="- `!records all <amount>`\n  - Returns both tied and untied records, sorted by oldest to newest\n- `!records all-new <amount>`\n  - Returns both tied and untied records, sorted by newest to oldest\n- `!records untied <amount>`\n  - Returns untied records, sorted by oldest to newest\n- `!records untied-new <amount>`\n  - Returns all untied records, sorted by newest to oldest\n- `!records <level name / fullgame category> <rating> <amount>`\n  - Returns a single leaderboard for a level / fullgame category and rating\n  - Any sufficiently long substring of a `<level name>` or `<fullgame category>` will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) for a full list of names\n  - Valid `<rating>` inputs: `SA`, `SA/SO` (`SASO` also accepted), or `Any%` (`any` also accepted)\n  - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results\n- `!sobs`\n  - Calculates theoretical best times for full game categories, by summing up individual level record times\n- `!getLogs`\n  - See when Recorddata was last updated (tracks both manual updates and cron job automated updates, which happen each day at 12 PM UTC)\n- `!updateRecords`\n  - Update Recorddata manually if you need more precision than last 24 hours\n  - Can also be 'queued' with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`\n\nNote: `<amount>` is optional. If not set, the max amount of records will be returned",
         color=0xFF5733,
     )
     await ctx.send(embed=embed)
@@ -143,6 +143,7 @@ async def updateRecords(ctx, arg1="empty", arg2="empty"):
     if ILBoardError or ILError or FGBoardError or FGError:
         await updateRecords(ctx, arg1, arg2)
     else:
+        print("Recorddata successfully updated")
         await ctx.send("Recorddata successfully updated")
         await updateLog(
             "update.log", str(int(time.time())) + " | manual update" + "\n", LOG_LIMIT

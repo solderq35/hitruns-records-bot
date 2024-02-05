@@ -16,4 +16,5 @@ async def updateCron():
             "update.log", str(int(time.time())) + " | railway cron job" + "\n", 10
         )
 
+
 asyncio.run(updateCron())
