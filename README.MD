@@ -98,4 +98,4 @@ Note: `<amount>` is optional. If not set, the max amount of records will be retu
 
 ![getLogs](https://media.discordapp.net/attachments/1113022395243036682/1203878167841087578/image.png?ex=65d2b1ea&is=65c03cea&hm=2dea9d9d2dd877260ad47a0349d2b59ea6fa9754594ef7d73b9147e869729300&)
 
-![docs](https://media.discordapp.net/attachments/1113022395243036682/1203877880061239296/image.png?ex=65d2b1a5&is=65c03ca5&hm=892879f406c3fb8227c23c2c208d367f1e13ce47f033b021ed2dbdbcc47097dd)
+![docs](https://media.discordapp.net/attachments/1113022395243036682/1203880166393257984/image.png?ex=65d2b3c6&is=65c03ec6&hm=04360119cfb87833cefc4676013d4399374a07765880aa9503002c279c41dfde&)
