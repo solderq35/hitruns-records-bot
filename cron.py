@@ -13,7 +13,7 @@ async def updateCron():
     else:
         print("Recorddata successfully updated")
         await updateLog(
-            "update.log", str(int(time.time())) + " | railway cron job" + "\n", 10
+            "update.log", str(int(time.time())) + " | railway cron job" + "\n", LOG_LIMIT
         )
 
 
