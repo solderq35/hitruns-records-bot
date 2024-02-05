@@ -492,7 +492,15 @@ async def update():
 
 
 async def updateLog(log_file, new_line, limit):
-
+    """
+    a+ creates the file if it does not exist, but lines are added from the end of the file
+    r+ adds lines from the beginning of the file, but the file must exist first
+    It doesn't matter that a+ adds lines from the end of the file when creating the file,
+    because only one line is added at a time and that would be the first line. But after first line,
+    use r+. That way the logs will be shown with newest logs at the top, since after 25 logs, the
+    oldest logs will be removed from the bottom
+    Reference: https://stackoverflow.com/a/1466036
+    """
     if os.path.isfile(log_file):
         with open(log_file, "r+") as file:
             lines = file.readlines()
