@@ -205,6 +205,7 @@ async def getLogs(ctx):
 async def updateRecords(ctx, arg1="empty", arg2="empty"):
     ILBoardError, ILError, FGBoardError, FGError = await update()
     if ILBoardError or ILError or FGBoardError or FGError:
+        print("Error updating records, trying again")
         await updateRecords(ctx, arg1, arg2)
     else:
         print("Recorddata successfully updated")

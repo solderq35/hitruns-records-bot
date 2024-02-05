@@ -292,19 +292,19 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
     elif tieStatus == "untied" or tieStatus == "untied-new":
         if lengthInput == "empty":
             # lengthInput = 300
-            length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
+            length = getNumberOfRuns("data/" + "Untied_Ordered_Records.json")
         else:
             try:
                 if int(lengthInput) <= getNumberOfRuns(
-                    "data/" + "Ordered_Untied_Records.json"
+                    "data/" + "Untied_Ordered_Records.json"
                 ):
                     length = int(str(lengthInput))
                 else:
-                    length = getNumberOfRuns("data/" + "Ordered_Untied_Records.json")
+                    length = getNumberOfRuns("data/" + "Untied_Ordered_Records.json")
             except ValueError:
                 return False
 
-        file = "Ordered_Untied_Records.json"
+        file = "Untied_Ordered_Records.json"
     return length, file
 
 
@@ -463,34 +463,6 @@ def calcSobs():
     return SOBs
 
 
-async def update():
-    ILBoardRequestResult = requestBoards("data/" + "level")
-    ILRequestResult = requestRecords("data/" + "IL")
-    if ILBoardRequestResult == False and ILRequestResult == False:
-        orderDict("IL_Records.json")
-        untiedRecords("Ordered_IL_Records.json")
-    FGBoardRequestResult = requestBoards("data/" + "campaign")
-    FGRequestResult = requestRecords("data/" + "FG")
-    if (
-        ILBoardRequestResult == False
-        and ILRequestResult == False
-        and FGBoardRequestResult == False
-        and FGRequestResult == False
-    ):
-        orderDict("FG_Records.json")
-        combineDicts(
-            "data/" + "Untied_Ordered_IL_Records.json",
-            "data/" + "Ordered_FG_Records.json",
-            "data/" + "Ordered_Untied_Records.json",
-        )
-        combineDicts(
-            "data/" + "Ordered_IL_Records.json",
-            "data/" + "Ordered_FG_Records.json",
-            "data/" + "Ordered_Records.json",
-        )
-    return ILBoardRequestResult, ILRequestResult, FGBoardRequestResult, FGRequestResult
-
-
 async def updateLog(log_file, new_line, limit):
     """
     a+ creates the file if it does not exist, but lines are added from the end of the file
@@ -518,3 +490,33 @@ async def updateLog(log_file, new_line, limit):
     with open(log_file, "w") as file:
         file.writelines(lines)
     file.close()
+
+
+async def update():
+    ILBoardRequestResult = requestBoards("data/" + "level")
+    ILRequestResult = requestRecords("data/" + "IL")
+    if ILBoardRequestResult == False and ILRequestResult == False:
+        orderDict("IL_Records.json")
+        untiedRecords("Ordered_IL_Records.json")
+    FGBoardRequestResult = requestBoards("data/" + "campaign")
+    FGRequestResult = requestRecords("data/" + "FG")
+    if FGBoardRequestResult == False and FGRequestResult == False:
+        orderDict("FG_Records.json")
+        untiedRecords("Ordered_FG_Records.json")
+    if (
+        ILBoardRequestResult == False
+        and ILRequestResult == False
+        and FGBoardRequestResult == False
+        and FGRequestResult == False
+    ):
+        combineDicts(
+            "data/" + "Untied_Ordered_IL_Records.json",
+            "data/" + "Untied_Ordered_FG_Records.json",
+            "data/" + "Untied_Ordered_Records.json",
+        )
+        combineDicts(
+            "data/" + "Ordered_IL_Records.json",
+            "data/" + "Ordered_FG_Records.json",
+            "data/" + "Ordered_Records.json",
+        )
+    return ILBoardRequestResult, ILRequestResult, FGBoardRequestResult, FGRequestResult
