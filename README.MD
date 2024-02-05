@@ -56,7 +56,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
   - Returns untied records, sorted by newest to oldest
 - `!records <level / fullgame category> <rating> <amount>`
   - Returns a single leaderboard for a level / fullgame category and rating
-  - Any substring of a `<level name>` or `<fullgame category>` long enough to uniquely idenfity it will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) (or `!levelNames` and `!fgNames` discord commands) for a full list of names
+  - Any substring of a `<level name>` or `<fullgame category>` long enough to uniquely identify it will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) (or `!levelNames` and `!fgNames` discord commands) for a full list of names
   - Any level or fullgame category name you input that contains a space (e.g. `"season 3"` or `"a gilded cage"`) should be surrounded by quotes
   - Valid `<rating>` inputs: `sa`, `saso`, or `any
   - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results
