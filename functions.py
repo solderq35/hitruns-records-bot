@@ -397,51 +397,90 @@ def discordEmbed(pages, rest, runData, embedLimit, counter, typeOfData):
 
 def calcSobs():
     records = getDictFromFile("data/" + "IL_Records.json")
+    ratingsDict = getDictFromFile("data/" + "Ratings_IL.json")
+    levelDict = getDictFromFile("data/" + "levelDict.json")
+
+    # If for some reason the order of levels changes need to change this (but should be fine)
+    season_3_ids = list(levelDict.values())[0:6]
+    season_1_ids = list(levelDict.values())[8:14]
+    season_2_ids = list(levelDict.values())[14:22]
+
+    # If for some reason the order of ratings changes need to change this (but should be fine)
+    sa_id = list(ratingsDict.values())[0]
+    saso_id = list(ratingsDict.values())[1]
+    any_id = list(ratingsDict.values())[2]
     SOBs = {}
     sas3 = sas1 = sas2 = sasos3 = sasos1 = sasos2 = anys3 = anys1 = anys2 = 0
-    offset = 36
+
     for runs in range(len(records.items())):
-        if runs > -1 and runs < 6:
+        if (
+            records[str(runs)].get("run", {}).get("level") in season_3_ids
+            and records[str(runs)].get("run", {}).get("category") == sa_id
+        ):
             sas3 = math.floor(
                 sas3
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > 7 and runs < 14:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_1_ids
+            and records[str(runs)].get("run", {}).get("category") == sa_id
+        ):
             sas1 = math.floor(
                 sas1
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > 13 and runs < 22:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_2_ids
+            and records[str(runs)].get("run", {}).get("category") == sa_id
+        ):
             sas2 = math.floor(
                 sas2
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > -1 + offset and runs < 6 + offset:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_3_ids
+            and records[str(runs)].get("run", {}).get("category") == saso_id
+        ):
             sasos3 = math.floor(
                 sasos3
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > 7 + offset and runs < 14 + offset:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_1_ids
+            and records[str(runs)].get("run", {}).get("category") == saso_id
+        ):
             sasos1 = math.floor(
                 sasos1
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > 13 + offset and runs < 22 + offset:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_2_ids
+            and records[str(runs)].get("run", {}).get("category") == saso_id
+        ):
             sasos2 = math.floor(
                 sasos2
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > -1 + offset * 2 and runs < 6 + offset * 2:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_3_ids
+            and records[str(runs)].get("run", {}).get("category") == any_id
+        ):
             anys3 = math.floor(
                 anys3
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > 7 + offset * 2 and runs < 14 + offset * 2:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_1_ids
+            and records[str(runs)].get("run", {}).get("category") == any_id
+        ):
             anys1 = math.floor(
                 anys1
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
             )
-        elif runs > 13 + offset * 2 and runs < 22 + offset * 2:
+        elif (
+            records[str(runs)].get("run", {}).get("level") in season_2_ids
+            and records[str(runs)].get("run", {}).get("category") == any_id
+        ):
             anys2 = math.floor(
                 anys2
                 + records[str(runs)].get("run", {}).get("times", {}).get("primary_t")
