@@ -1,13 +1,18 @@
 # Hitruns Records Bot
 
-Discord bot that provides an alternative (read-only) interface to the Hitman 3 leaderboard on speedrun.com as well as additional functionality.
+Discord bot that tracks Hitman 3 speedrun statistics not on speedrun.com, such as latest world records, filtering records by tie status, and calculating sums of bests.
 
 Includes:
 
-- Leaderboards for any given level / full game category (faster than going through speedrun.com itself)
-- List of all records from oldest to newest for historical tracking
-- Filtering for untied vs tied runs
+- **Data Caching**: The bot runs a daily cron job to:
+  1. Collect all needed record data from speedrun.com API for every level and category of Hitman 3
+  2. Transform and store record data in the bot's own database under a condensed and simplified schema
+     - This reduces the number of API calls that would otherwise be needed for calculating sum of bests or fetching the latest records across all levels
+  - For more implementation / usage details, see [Setup](#setup) and [Commands](#commands) sections below. Manually updating the bot's database is also supported
+- Sorting records chronologically (oldest to newest, or newest to oldest)
+- Filtering for untied vs tied records
 - Full game theoretical Sum of Bests based on individual level best times
+- Leaderboards for any given level / full game category (faster than going through speedrun.com itself)
 - Video links included for all runs, and also a [Time Calc](https://solderq35.github.io/fg-time-calc/) link is included for full game runs
 
 Credits: Although I've made a lot of improvements to this bot since, and also improved its reliability by using [Railway](https://railway.app/) for cloud based hosting, [Juliend10](https://www.speedrun.com/users/juliend10) was a major collaborator early into the bot's development.
@@ -17,7 +22,9 @@ For a more traditional leaderboard implementation, also check out:
 - [HitRuns](https://hitruns.vercel.app/)
   - [GitHub Repo](https://github.com/solderq35/hitruns)
 
-**Local Environment**
+## Setup
+
+### Local Environment
 
 - Make sure you have Python 3.8 (or 3.9 I think works) installed locally and in your PATH (for Windows)
 - Pip version (if relevant): pip 23.3.1, from Python 3.8
@@ -27,7 +34,7 @@ For a more traditional leaderboard implementation, also check out:
 - Run `python main.py`
 - Code formatting: `black ./` (from root directory of this repo)
 
-**Remote Environment**
+### Remote Environment
 
 - Dependencies should be handled by `requirements.txt`
 - Deploy on [Railway](https://railway.app/)
@@ -59,16 +66,16 @@ You can also use `!docs` command to see this help menu in Discord itself.
   - Any substring of a `<level name>` or `<fullgame category>` long enough to uniquely identify it will work, e.g. either `showstopper` or `paris` would be valid. See [data/levelDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/levelDict.json) and [data/campaignDict.json](https://github.com/solderq35/hitruns-records-bot/blob/master/data/campaignDict.json) (or `!levelNames` and `!fgNames` discord commands) for a full list of names
   - Any level or fullgame category name you input that contains a space (e.g. `"season 3"` or `"a gilded cage"`) should be surrounded by quotes
   - Valid `<rating>` inputs: `sa`, `saso`, or `any
-  - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results
+  - Unlike the other commands listed here, even if Recorddata (the bot's database) has not been updated recently, this command will still return up-to-date results
 - `!sobs`
   - Calculates theoretical best times for full game categories, by summing up individual level record times
 - `!getLogs`
-  - See when Recorddata was last updated (tracks both manual updates and cron job automated updates, which happen each day at 12 PM UTC)
+  - See when Recorddata (the bot's database) was last updated (tracks both manual updates and cron job automated updates, which happen each day at 12 PM UTC)
 - `!updateRecords`
-  - Update Recorddata manually if you need more precision than last 24 hours
+  - Updates Recorddata (the bot's database) manually if you need more precision than last 24 hours
   - Can also be "queued" with some other commands, e.g. `!updateRecords all-new <amount>`, or `!updateRecords sobs`
 
-**Note**: Bot will be down for a minute or two at 12 PM UTC each day for data update
+**Note**: Bot will be down for a minute or two at 12 PM UTC each day for Recorddata (bot database) update
 
 **Note**: `<amount>` is optional. If not set, the max amount of records will be returned
 
