@@ -1,6 +1,6 @@
 # Hitruns Records Bot
 
-Discord bot that tracks Hitman 3 speedrun statistics not on speedrun.com, such as latest world records, filtering records by tie status, and calculating sums of bests.
+Discord bot that tracks Hitman 3 speedrun statistics not on speedrun.com, such as fetching latest world records, filtering records by tie status, and calculating sums of bests.
 
 Includes:
 
