@@ -284,6 +284,10 @@ def setOutputLength(tieStatus, lengthInput, embedLimit):
                     and int(lengthInput) > 0
                 ):
                     length = int(str(lengthInput))
+                elif int(lengthInput) > getNumberOfRuns(
+                    "data/" + "Ordered_Records.json"
+                ):
+                    length = getNumberOfRuns("data/" + "Ordered_Records.json")
                 else:
                     raise ValueError
             except ValueError:

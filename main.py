@@ -50,15 +50,17 @@ async def records(ctx, arg1, arg2="empty", arg3="empty"):
                     try:
                         if int(arg3) <= len(boardData) and int(arg3) > 0:
                             length = int(arg3)
-                            pages, rest = getNumberOfPages(length, EMBED_LIMIT)
-                            for x in range(pages):
-                                await ctx.send(
-                                    embed=discordEmbed(
-                                        pages, rest, boardData, EMBED_LIMIT, x, "list"
-                                    )
-                                )
+                        elif int(arg3) > len(boardData):
+                            length = len(boardData)
                         else:
                             raise ValueError
+                        pages, rest = getNumberOfPages(length, EMBED_LIMIT)
+                        for x in range(pages):
+                            await ctx.send(
+                                embed=discordEmbed(
+                                    pages, rest, boardData, EMBED_LIMIT, x, "list"
+                                )
+                            )
                     except ValueError:
                         await ctx.send(
                             "Bad Input, please provide a positive integer value for `<amount>` argument. For more help, type `!docs`"
@@ -78,7 +80,7 @@ async def records(ctx, arg1, arg2="empty", arg3="empty"):
                 )
         else:
             await ctx.send(
-                'Bad Input.\n- If needed, reference `!levelNames` or `!fgNames` for a full list of level / fullgame category names.\n- Remember to surround level / fullgame category names with quotes, e.g `"season 3"`, or `"a gilded cage"`\n- For other help, type `!docs`'
+                'Multiple results returned for level or fullgame category name. Try spelling out the full name of the level or category name, e.g. `"sarajevo six campaign"`\n- If needed, reference `!levelNames` or `!fgNames` for a full list of level / fullgame category names.\n- Remember to surround level / fullgame category names with quotes, e.g `"season 3"`, or `"a gilded cage"`\n- For other help, type `!docs`'
             )
     else:
         await ctx.send(
