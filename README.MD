@@ -90,22 +90,22 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ### Screenshots / Examples
 
-![updateRecordsAllNew](https://media.discordapp.net/attachments/1113022395243036682/1203184450423226469/image.png?ex=65d02bd7&is=65bdb6d7&hm=03a2a2f519ac5b5bcd2765407c9bff95f30eaf30ec7cd2029671328430f13989)
+![updateRecordsAllNew](https://i.ibb.co/nQ54dxK/recordsallnew.png)
 
-![updateRecords](https://media.discordapp.net/attachments/1018323831468851202/1048705618078351380/image.png)
+![updateRecords](https://i.ibb.co/FJhS7Fy/updaterecords.png)
 
-![recordsfg](https://media.discordapp.net/attachments/1018323831468851202/1049091135022317589/image.png)
+![recordsfg](https://i.ibb.co/fpJCGPp/recordsfg.png)
 
-![recordsil](https://media.discordapp.net/attachments/1018323831468851202/1049091366594019438/image.png)
+![recordsil](https://i.ibb.co/NpHNP6W/recordsil.png)
 
-![recordsilamount](https://media.discordapp.net/attachments/1113022395243036682/1203185389456592909/image.png?ex=65d02cb6&is=65bdb7b6&hm=031cd5da223075930e1a4897f413c54c8b71ce5c1e0a6cbb203d3f19dd5f5721)
+![recordsilamount](https://i.ibb.co/5c8z63Q/recordsilamount.png)
 
-![recordsuntied](https://media.discordapp.net/attachments/1018323831468851202/1203185817179258930/image.png?ex=65d02d1c&is=65bdb81c&hm=c0e2561d33ba17c749a2b8354b14fa2c2e10439e6e19a6a783c7099b9f874930)
+![recordsuntied](https://i.ibb.co/c1DxHjN/recordsuntied.png)
 
-![recordsall](https://media.discordapp.net/attachments/1113022395243036682/1203185721419112468/image.png?ex=65d02d06&is=65bdb806&hm=2257aa47a98168809835696d42b4683e9448d93ebc4d3f0e279fab3c02e4f95d)
+![recordsall](https://i.ibb.co/xS191j6/recordsall.png)
 
-![sobs](https://media.discordapp.net/attachments/1018323831468851202/1048705959893139526/image.png)
+![sobs](https://i.ibb.co/WBjLB4j/sobs.png)
 
-![getLogs](https://cdn.discordapp.com/attachments/1113022395243036682/1203999017831374858/image.png?ex=65d32277&is=65c0ad77&hm=3926ec58d2cb1f9ef1c91ef151ca0263924dbcc6d645f39bc01fb1a6d9d8f7bc&)
+![getLogs](https://i.ibb.co/s6ZYHKt/getlogs.png)
 
-![docs](https://media.discordapp.net/attachments/1113022395243036682/1203881727236382720/image.png?ex=65d2b53a&is=65c0403a&hm=89d83ab152eec2a7d6688737149cdefbd2c09f2b22c27793230317dcb25f1b94&=)
+![docs](https://i.ibb.co/WHQGq2Y/recordsdocs.png)
