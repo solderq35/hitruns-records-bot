@@ -26,7 +26,7 @@ For a more traditional leaderboard implementation, also check out:
 
 ### Local Environment
 
-- Make sure you have Python 3.8 (or 3.9 I think works) installed locally and in your PATH (for Windows)
+- Make sure you have Python 3.8+ installed locally and in your PATH (for Windows)
 - Pip version (if relevant): pip 23.3.1, from Python 3.8
 - Run `pip install -r requirements.txt`
 - Run `pip freeze > requirements.txt` to save library dependencies (only if you need to add a library or change dependencies for any other reason)
