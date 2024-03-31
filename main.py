@@ -9,6 +9,7 @@ from discord.ext import commands
 from functions import *
 from table2ascii import table2ascii as t2a, Alignment
 import time
+import datetime
 
 EMBED_LIMIT = 20
 LOG_LIMIT = 25
@@ -143,10 +144,20 @@ async def sobs(ctx):
 
 @bot.command()
 async def docs(ctx):
+    today = datetime.date.today()
+    tmrw = today + datetime.timedelta(days=1)
+    dt = datetime.datetime(
+        tmrw.year, tmrw.month, tmrw.day, 12, 0, 0, tzinfo=datetime.timezone.utc
+    )
+    timestamp_12_utc = str(int(dt.timestamp() // 1))
     embed = discord.Embed(
         title="Command List Doc (Click Here for More)",
         url="https://github.com/solderq35/hitruns-records-bot/blob/master/README.MD#commands",
-        description='- `!records all <amount>`\n  - Returns both tied and untied records, sorted by oldest to newest\n- `!records all-new <amount>`\n  - Returns both tied and untied records, sorted by newest to oldest\n- `!records untied <amount>`\n  - Returns untied records, sorted by oldest to newest\n- `!records untied-new <amount>`\n  - Returns untied records, sorted by newest to oldest\n- `!records <level name / fullgame category> <rating> <amount>`\n  - Returns a single leaderboard for a level / fullgame category and rating\n  - Use `!levelNames` or `!fgNames` for a full list of level names / fullgame category names respectively\n  - Any substring of a `<level name>` or `<fullgame category>` long enough to uniquely identify it will work, e.g. either `showstopper` or `paris` would be valid\n  - Any level or fullgame category name you input that contains a space (e.g. `"season 3"` or `"a gilded cage"`) should be surrounded by quotes\n  - Valid `<rating>` inputs: `sa`, `saso`, or `any`\n  - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results\n- `!sobs`\n  - Calculates theoretical best times for full game categories, by summing up individual level record times\n- `!getLogs`\n  - See when Recorddata was last updated. Tracks both manual updates and cron job automated updates (daily at 12 PM UTC, or <t:1675425600:t> local time)\n- `!updateRecords`\n  - Update Recorddata manually if you need more precision than last 24 hours\n  - Can also be "queued" with some other commands, e.g. `!updateRecords all-new <amount>`, `!updateRecords untied`, or `!updateRecords sobs`\n\n**Troubleshooting**:\n- Bot will be down for a minute or two at <t:1675425600:t> each day for data update\n- `<amount>` is optional. If not set, the max amount of records will be returned\n- Commands (anything starting with `!`) are case-sensitive, but arguments are not case-sensitive\n- Arguments should be provided in the same order as they are listed above',
+        description='- `!records all <amount>`\n  - Returns both tied and untied records, sorted by oldest to newest\n- `!records all-new <amount>`\n  - Returns both tied and untied records, sorted by newest to oldest\n- `!records untied <amount>`\n  - Returns untied records, sorted by oldest to newest\n- `!records untied-new <amount>`\n  - Returns untied records, sorted by newest to oldest\n- `!records <level name / fullgame category> <rating> <amount>`\n  - Returns a single leaderboard for a level / fullgame category and rating\n  - Use `!levelNames` or `!fgNames` for a full list of level names / fullgame category names respectively\n  - Any substring of a `<level name>` or `<fullgame category>` long enough to uniquely identify it will work, e.g. either `showstopper` or `paris` would be valid\n  - Any level or fullgame category name you input that contains a space (e.g. `"season 3"` or `"a gilded cage"`) should be surrounded by quotes\n  - Valid `<rating>` inputs: `sa`, `saso`, or `any`\n  - Unlike the other commands listed here, even if Recorddata has not been updated recently, this command will still return up-to-date results\n- `!sobs`\n  - Calculates theoretical best times for full game categories, by summing up individual level record times\n- `!getLogs`\n  - See when Recorddata was last updated. Tracks both manual updates and cron job automated updates (daily at 12 PM UTC, or <t:'
+        + timestamp_12_utc
+        + ':t> local time)\n- `!updateRecords`\n  - Update Recorddata manually if you need more precision than last 24 hours\n  - Can also be "queued" with some other commands, e.g. `!updateRecords all-new <amount>`, `!updateRecords untied`, or `!updateRecords sobs`\n\n**Troubleshooting**:\n- Bot will be down for a minute or two at <t:'
+        + timestamp_12_utc
+        + ":t> each day for data update\n- `<amount>` is optional. If not set, the max amount of records will be returned\n- Commands (anything starting with `!`) are case-sensitive, but arguments are not case-sensitive\n- Arguments should be provided in the same order as they are listed above",
         color=0xFF5733,
     )
     await ctx.send(embed=embed)
