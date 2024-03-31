@@ -90,7 +90,7 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ### Screenshots / Examples
 
-![updateRecordsAllNew](https://i.ibb.co/nQ54dxK/recordsallnew.png)
+![updateRecordsAllNew](https://i.ibb.co/nQ54dxK/recordsallnew.PNG)
 
 ![updateRecords](https://i.ibb.co/FJhS7Fy/updaterecords.png)
 
@@ -106,6 +106,6 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ![sobs](https://i.ibb.co/WBjLB4j/sobs.png)
 
-![getLogs](https://i.ibb.co/s6ZYHKt/getlogs.png)
+![getLogs](https://i.ibb.co/s6ZYHKt/getlogs.PNG)
 
-![docs](https://i.ibb.co/WHQGq2Y/recordsdocs.png)
+![docs](https://i.ibb.co/WHQGq2Y/recordsdocs.PNG)
