@@ -106,6 +106,6 @@ You can also use `!docs` command to see this help menu in Discord itself.
 
 ![sobs](https://i.ibb.co/WBjLB4j/sobs.png)
 
-![getLogs](https://i.ibb.co/s6ZYHKt/getlogs.PNG)
+![getLogs](https://i.ibb.co/s6ZYHKt/getlogs.png)
 
-![docs](https://i.ibb.co/WHQGq2Y/recordsdocs.PNG)
+![docs](https://i.ibb.co/WHQGq2Y/recordsdocs.png)
