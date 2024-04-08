@@ -12,7 +12,9 @@ import os
 GAME = "j1ne5891"
 VERSION_IL = "ylpe1pv8=klrpdvwq"
 VERSION_FG = "789d3g9n=814nxkjl"
-DIFFICULTY_IL_PRO = "r8r1dv7n=21dz5xpl"
+# TODO: Maybe move these to json, and look into supporting master properly (maybe wait on rewrite to slash commands)
+DIFFICULTY_IL_SA_PRO = "p854xo3l=gq7jpmpq"
+DIFFICULTY_IL_SASO_PRO = "r8r1dv7n=21dz5xpl"
 # DIFFICULTY_IL_MASTER = 'p854xo3l=21g85z6l'
 DIFFICULTY_FG_PRO = "5lypzk9l=4qyp9g6q"
 # DIFFICULTY_FG_MASTER = ''
@@ -136,7 +138,9 @@ def requestRecords(board):
 
     for ratingName, ratingID in ratingsDict.items():
         for boardName, boardID in boardDict.items():
-            if board == "data/" + "IL":
+            if (board == "data/" + "IL") and (
+                ratingID == "7kj890zd" or ratingID == "jdz6nx62"
+            ):
                 leaderboard = requests.get(
                     "https://www.speedrun.com/api/v1/leaderboards/"
                     + GAME
@@ -147,7 +151,20 @@ def requestRecords(board):
                     + "?var-"
                     + VERSION_IL
                     + "&var-"
-                    + DIFFICULTY_IL_PRO
+                    + DIFFICULTY_IL_SA_PRO
+                )
+            elif (board == "data/" + "IL") and (ratingID == "jdronyld"):
+                leaderboard = requests.get(
+                    "https://www.speedrun.com/api/v1/leaderboards/"
+                    + GAME
+                    + "/level/"
+                    + boardID
+                    + "/"
+                    + ratingID
+                    + "?var-"
+                    + VERSION_IL
+                    + "&var-"
+                    + DIFFICULTY_IL_SASO_PRO
                 )
             elif board == "data/" + "FG":
                 leaderboard = requests.get(
@@ -326,18 +343,32 @@ def getNumberOfPages(length, embedLimit):
 
 
 def ILRequest(levelID, ratingID):
-    leaderboard = requests.get(
-        "https://www.speedrun.com/api/v1/leaderboards/"
-        + GAME
-        + "/level/"
-        + levelID
-        + "/"
-        + ratingID
-        + "?var-"
-        + VERSION_IL
-        + "&var-"
-        + DIFFICULTY_IL_PRO
-    )
+    if ratingID == "7kj890zd" or ratingID == "jdz6nx62":
+        leaderboard = requests.get(
+            "https://www.speedrun.com/api/v1/leaderboards/"
+            + GAME
+            + "/level/"
+            + levelID
+            + "/"
+            + ratingID
+            + "?var-"
+            + VERSION_IL
+            + "&var-"
+            + DIFFICULTY_IL_SA_PRO
+        )
+    elif ratingID == "jdronyld":
+        leaderboard = requests.get(
+            "https://www.speedrun.com/api/v1/leaderboards/"
+            + GAME
+            + "/level/"
+            + levelID
+            + "/"
+            + ratingID
+            + "?var-"
+            + VERSION_IL
+            + "&var-"
+            + DIFFICULTY_IL_SASO_PRO
+        )
     return leaderboard.json().get("data", {}).get("runs")
 
 
