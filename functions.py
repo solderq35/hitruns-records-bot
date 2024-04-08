@@ -75,7 +75,7 @@ def getRecordData(runs, counter, typeOfData):
 
     date = runs[counter].get("run", {}).get("date")
 
-    video = runs[counter].get("run", {}).get("videos").get("links")[0].get("uri")
+    video = runs[counter].get("run", {}).get("videos").get("links")[-1].get("uri")
 
     if grun2 == " ":
         value = (
