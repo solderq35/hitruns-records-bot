@@ -189,17 +189,19 @@ def requestRecords(board):
                     isTied = True
                 else:
                     isTied = False
-                runList[0].update({"isTied": isTied})
-                bestRun = runList[0]
-                RecordsDict[
-                    (list(ratingsDict.keys()).index(ratingName) * len(boardDict))
-                    + (list(boardDict.keys()).index(boardName))
-                ] = bestRun
+                if len(runList) > 0:
+                    runList[0].update({"isTied": isTied})
+                    bestRun = runList[0]
+                    RecordsDict[
+                        (list(ratingsDict.keys()).index(ratingName) * len(boardDict))
+                        + (list(boardDict.keys()).index(boardName))
+                    ] = bestRun
             except TypeError:
                 return True
 
-    with open(board + "_Records.json", "w") as write_file:
-        json.dump(RecordsDict, write_file, indent=4)
+    if len(RecordsDict) > 0:
+        with open(board + "_Records.json", "w") as write_file:
+            json.dump(RecordsDict, write_file, indent=4)
     return False
 
 
